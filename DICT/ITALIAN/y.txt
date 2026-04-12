@@ -1,0 +1,11 @@
+﻿﻿
+ y ( NOUN_PROPER_SINGULAR ) 
+ yang ( NOUN_PROPER_SINGULAR ) 
+ yankee ( NOUN_PROPER_SINGULAR ) 
+ yankees ( NOUN_PROPER_PLURAL ) lemma=`yankee` NCCP  
+ yearling ( NOUN_PROPER_SINGULAR ) 
+ yin ( NOUN_PROPER_SINGULAR ) 
+ yin-yang ( NOUN_PROPER_SINGULAR ) 
+ yogurte ( NOUN_PROPER_SINGULAR ) 
+ yogurtes ( NOUN_PROPER_PLURAL ) lemma=`yogurte` NCMP  
+ yy ( NOUN_PROPER_PLURAL ) lemma=`y` NCMP  

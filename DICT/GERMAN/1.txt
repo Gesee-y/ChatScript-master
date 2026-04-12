@@ -1,0 +1,2221 @@
+﻿﻿
+1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,028 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,1-Kilo-Packung ( NOUN NOUN_SINGULAR )  
+1,1-Kubikmeter-Container ( NOUN NOUN_SINGULAR )  
+1,1-Kubikmeter-Containern ( NOUN NOUN_PLURAL ) lemma=`1,1-Kubikmeter-Container` NN   
+1,1-Milliarden ( NOUN NOUN_PLURAL ) lemma=`1,1-Milliarde` NN   
+1,1-Millionen-Watt-Reaktor ( NOUN NOUN_SINGULAR )  
+1,2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,2-Liter-Flasche ( NOUN NOUN_SINGULAR )  
+1,2-Millionen-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1,2-Millionen-Etat ( NOUN NOUN_SINGULAR )  
+1,2-Millionen-Mark-Computers ( NOUN NOUN_PLURAL ) lemma=`1,2-Millionen-Mark-Computer` NN   
+1,2-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+1,2-ungesättigtem ( ADJECTIVE ) lemma=`1,2-ungesättigt` ADJA   
+1,2-ungesättigten ( ADJECTIVE ) lemma=`1,2-ungesättigt` ADJA   
+1,22 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,2355 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,2400 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,2936/46 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,358 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,35fache ( ADJECTIVE ) lemma=`1,35fach` ADJA   
+1,3870 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,3fache ( ADJECTIVE ) lemma=`1,3fach` ADJA   
+1,3fachen ( ADJECTIVE ) lemma=`1,3fach` ADJA   
+1,4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,4-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+1,4070/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,4100/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,4340 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,4465 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,45-Millionen-Beute ( NOUN NOUN_SINGULAR )  
+1,461 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,4970/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5-Liter-Flaschen ( NOUN NOUN_PLURAL ) lemma=`1,5-Liter-Flasche` NN   
+1,5-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+1,5-Prozent-Hürde ( NOUN NOUN_SINGULAR )  
+1,5-facher ( ADJECTIVE ) lemma=`1,5-fach` ADJA   
+1,5660/70 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5695 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5700/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5745 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5785/95 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5850/60 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5910/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5980/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,5fache ( ADJECTIVE ) lemma=`1,5fach` ADJA   
+1,5prozentigen ( ADJECTIVE ) lemma=`1,5prozentig` ADJA   
+1,6-Millionen-Projekt ( NOUN NOUN_SINGULAR )  
+1,6-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+1,6-facher ( ADJECTIVE ) lemma=`1,6-fach` ADJA   
+1,6300/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,6310/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,6fache ( ADJECTIVE ) lemma=`1,6fach` ADJA   
+1,7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,75 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,7960/70 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,8-Gigahertz-Bereich ( NOUN NOUN_SINGULAR )  
+1,8-Millionen-Spende ( NOUN NOUN_SINGULAR )  
+1,9 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1,9-Millionen-Zuschuss ( NOUN NOUN_SINGULAR )  
+1,9-Millionen-Zuschuß ( NOUN NOUN_PLURAL ) lemma=`1,9-Millionen-Zuschuss` NN   
+1-A ( NOUN NOUN_SINGULAR )  
+1-A-Geldscheine ( NOUN NOUN_PLURAL ) lemma=`1-A-Geldschein` NN   
+1-Anlage ( NOUN NOUN_SINGULAR )  
+1-Auto ( NOUN NOUN_SINGULAR )  
+1-Beitrag ( NOUN NOUN_SINGULAR )  
+1-Bibel-Lexikon ( NOUN NOUN_SINGULAR )  
+1-Bibellexikon ( NOUN NOUN_PLURAL ) lemma=`1-Bibellexika` NN   
+1-Brompropan ( NOUN NOUN_SINGULAR )  
+1-Bällchen ( NOUN NOUN_SINGULAR )  
+1-Chef ( NOUN NOUN_SINGULAR )  
+1-Chefredakteur ( NOUN NOUN_SINGULAR )  
+1-Chefredaktion ( NOUN NOUN_SINGULAR )  
+1-Empfang ( NOUN NOUN_SINGULAR )  
+1-Fernsehmagazin ( NOUN NOUN_SINGULAR )  
+1-Feuilleton ( NOUN NOUN_SINGULAR )  
+1-Film ( NOUN NOUN_SINGULAR )  
+1-Frühstücksfernsehen ( NOUN NOUN_SINGULAR )  
+1-Fussballsendung ( NOUN NOUN_PLURAL ) lemma=`1-Fußballsendung` NN   
+1-Fussballshow ( NOUN NOUN_PLURAL ) lemma=`1-Fußballshow` NN   
+1-Fußballsendung ( NOUN NOUN_SINGULAR )  
+1-Fußballshow ( NOUN NOUN_SINGULAR )  
+1-Geschäftsführer ( NOUN NOUN_SINGULAR )  
+1-Geschäftsführung ( NOUN NOUN_SINGULAR )  
+1-Gesellschafter ( NOUN NOUN_SINGULAR )  
+1-Glücksrad ( NOUN NOUN_SINGULAR )  
+1-Hexen ( NOUN NOUN_PLURAL ) lemma=`1-Hexe` NN   
+1-Horn ( NOUN NOUN_SINGULAR )  
+1-Informationsdirektor ( NOUN NOUN_SINGULAR )  
+1-Interview ( NOUN NOUN_SINGULAR )  
+1-Jugend ( NOUN NOUN_SINGULAR )  
+1-Klasse ( NOUN NOUN_SINGULAR )  
+1-Kollegin ( NOUN NOUN_SINGULAR )  
+1-Kunden ( NOUN NOUN_PLURAL ) lemma=`1-Kunde` NN   
+1-Lebenshilfe ( NOUN NOUN_SINGULAR )  
+1-Leute ( NOUN NOUN_SINGULAR )  
+1-M ( NOUN NOUN_SINGULAR )  
+1-Mangel ( NOUN NOUN_SINGULAR )  
+1-Mann ( NOUN NOUN_SINGULAR )  
+1-Megabit-Chip ( NOUN NOUN_SINGULAR )  
+1-Mitarbeiterin ( NOUN NOUN_SINGULAR )  
+1-Moderator ( NOUN NOUN_SINGULAR )  
+1-Netz ( NOUN NOUN_SINGULAR )  
+1-Netzes ( NOUN NOUN_PLURAL ) lemma=`1-Netz` NN   
+1-Notizen ( NOUN NOUN_PLURAL ) lemma=`1-Notiz` NN   
+1-Panzer ( NOUN NOUN_SINGULAR )  
+1-Plus ( NOUN NOUN_SINGULAR )  
+1-Pressekonferenz ( NOUN NOUN_SINGULAR )  
+1-Pressestelle ( NOUN NOUN_SINGULAR )  
+1-Programm ( NOUN NOUN_SINGULAR )  
+1-Programmdirektor ( NOUN NOUN_SINGULAR )  
+1-Publikum ( NOUN NOUN_SINGULAR )  
+1-Rakete ( NOUN NOUN_SINGULAR )  
+1-Rennen ( NOUN NOUN_SINGULAR )  
+1-Reporter ( NOUN NOUN_SINGULAR )  
+1-Sendelizenz ( NOUN NOUN_SINGULAR )  
+1-Sender ( NOUN NOUN_SINGULAR )  
+1-Sendung ( NOUN NOUN_SINGULAR )  
+1-Serie ( NOUN NOUN_SINGULAR )  
+1-Show ( NOUN NOUN_SINGULAR )  
+1-Sport ( NOUN NOUN_SINGULAR )  
+1-Sportchef ( NOUN NOUN_SINGULAR )  
+1-Sprecher ( NOUN NOUN_SINGULAR )  
+1-Sprecherin ( NOUN NOUN_SINGULAR )  
+1-Stunden-Takt ( NOUN NOUN_SINGULAR )  
+1-Talk-Show ( NOUN NOUN_SINGULAR )  
+1-Talkshow ( NOUN NOUN_SINGULAR )  
+1-Umweltreportage ( NOUN NOUN_SINGULAR )  
+1-Verlängerung ( NOUN NOUN_SINGULAR )  
+1-Vertreter ( NOUN NOUN_SINGULAR )  
+1-Weltmeisterschaft ( NOUN NOUN_SINGULAR )  
+1-West ( NOUN NOUN_SINGULAR )  
+1-Zimmer-Appartements ( NOUN NOUN_PLURAL ) lemma=`1-Zimmer-Appartement` NN   
+1-fachen ( ADJECTIVE ) lemma=`1-fach` ADJA   
+1-m-Brett ( NOUN NOUN_SINGULAR )  
+1. ( ADJECTIVE ADVERB ) lemma=`1.`1.` ADJA  ADV   
+1.-August-Feier ( NOUN NOUN_SINGULAR )  
+1.-Mai-Demonstration ( NOUN NOUN_SINGULAR )  
+1.-Mai-Kundgebung ( NOUN NOUN_SINGULAR )  
+1.-Mai-Rede ( NOUN NOUN_SINGULAR )  
+1.000-Dächer-Programm ( NOUN NOUN_SINGULAR )  
+1.000-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1.000-Jahrfeier ( NOUN NOUN_SINGULAR )  
+1.000-MW-Reaktoren ( NOUN NOUN_PLURAL ) lemma=`1.000-MW-Reaktor` NN   
+1.000-Mark-Grenze ( NOUN NOUN_SINGULAR )  
+1.000-Mark-Scheine ( NOUN NOUN_PLURAL ) lemma=`1.000-Mark-Schein` NN   
+1.000-Mark-Scheinen ( NOUN NOUN_PLURAL ) lemma=`1.000-Mark-Schein` NN   
+1.000-Marks-Rad ( NOUN NOUN_SINGULAR )  
+1.000-Megawatt-Blöcke ( NOUN NOUN_PLURAL ) lemma=`1.000-Megawatt-Block` NN   
+1.000-Megawatt-Klasse ( NOUN NOUN_SINGULAR )  
+1.000-Megawatt-Reaktor ( NOUN NOUN_SINGULAR )  
+1.000-Megawatt-Reaktoren ( NOUN NOUN_PLURAL ) lemma=`1.000-Megawatt-Reaktor` NN   
+1.000-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+1.000-Meter-Zeitfahren ( NOUN NOUN_SINGULAR )  
+1.000-Seelen-Dorf ( NOUN NOUN_SINGULAR )  
+1.000-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+1.000-Stunden-Brenndauer ( NOUN NOUN_SINGULAR )  
+1.000-Watt-Anlage ( NOUN NOUN_SINGULAR )  
+1.000-m-Zeitfahren ( NOUN NOUN_SINGULAR )  
+1.000er ( NOUN NOUN_SINGULAR )  
+1.000fach ( ADJECTIVE )  
+1.000fache ( ADJECTIVE ) lemma=`1.000fach` ADJA   
+1.000jährigen ( ADJECTIVE ) lemma=`1.000jährig` ADJA   
+1.000köpfige ( ADJECTIVE ) lemma=`1.000köpfig` ADJA   
+1.200-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1.200-Jahr-Feiern ( NOUN NOUN_PLURAL ) lemma=`1.200-Jahr-Feier` NN   
+1.200-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+1.200jährigen ( ADJECTIVE ) lemma=`1.200jährig` ADJA   
+1.300-MW-Reaktoren ( NOUN NOUN_PLURAL ) lemma=`1.300-MW-Reaktor` NN   
+1.300-Megawatt ( NOUN NOUN_SINGULAR )  
+1.300-Megawatt-Block ( NOUN NOUN_SINGULAR )  
+1.300-Megawatt-Druckwasserreaktor ( NOUN NOUN_SINGULAR )  
+1.300-Megawatt-Reaktor ( NOUN NOUN_SINGULAR )  
+1.300-Megawatt-Reaktoren ( NOUN NOUN_PLURAL ) lemma=`1.300-Megawatt-Reaktor` NN   
+1.300-Megawatt-Reaktors ( NOUN NOUN_PLURAL ) lemma=`1.300-Megawatt-Reaktor` NN   
+1.5/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1.500-Megawatt-Reaktor ( NOUN NOUN_SINGULAR )  
+1.500-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+1.500-Meter-Läufers ( NOUN NOUN_PLURAL ) lemma=`1.500-Meter-Läufer` NN   
+1.500-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+1/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/100 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/115 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/120 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/135 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1984 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1990 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1991 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1992 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/1993 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/2/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/24 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/25 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/26 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/30 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/31 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/32 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/33 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/36 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/37 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/38 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/4"-Technik ( NOUN NOUN_SINGULAR )  
+1/4-Technik ( NOUN NOUN_SINGULAR )  
+1/4-Zoll-Technologie ( NOUN NOUN_SINGULAR )  
+1/40 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/41 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/43 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/435 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/44 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/45 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/47 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/49 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/52 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/55 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/60 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/61 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/62 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/65 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/70 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/75 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/76 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/79 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/84 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10,3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10,5/316,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10,5/318,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10-A ( NOUN NOUN_SINGULAR )  
+10-Ausschuss ( NOUN NOUN_SINGULAR )  
+10-Ausschuß ( NOUN NOUN_PLURAL ) lemma=`10-Ausschuss` NN   
+10-Darlehen ( NOUN NOUN_SINGULAR )  
+10-Gesetz ( NOUN NOUN_SINGULAR )  
+10-Gremiums ( NOUN NOUN_PLURAL ) lemma=`10-Gremium` NN   
+10-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+10-Jahres-Feier ( NOUN NOUN_SINGULAR )  
+10-Jahres-Vertrag ( NOUN NOUN_SINGULAR )  
+10-Kilometer-Marsch ( NOUN NOUN_SINGULAR )  
+10-Kilometer-Strecke ( NOUN NOUN_SINGULAR )  
+10-Kommission ( NOUN NOUN_SINGULAR )  
+10-Kommissionen ( NOUN NOUN_PLURAL ) lemma=`10-Kommission` NN   
+10-Liter ( NOUN NOUN_SINGULAR )  
+10-Mark-Schein ( NOUN NOUN_SINGULAR )  
+10-Massnahme ( NOUN NOUN_PLURAL ) lemma=`10-Maßnahme` NN   
+10-Maßnahme ( NOUN NOUN_SINGULAR )  
+10-Meter-Schanze ( NOUN NOUN_SINGULAR )  
+10-Milliarden-Dollar-Bürgschaft ( NOUN NOUN_SINGULAR )  
+10-Milliarden-Dollar-Kredit ( NOUN NOUN_SINGULAR )  
+10-Millionen-Kredit ( NOUN NOUN_SINGULAR )  
+10-Millionen-Marke ( NOUN NOUN_SINGULAR )  
+10-Millionen-Metropole ( NOUN NOUN_SINGULAR )  
+10-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+10-Minuten-Abstand ( NOUN NOUN_SINGULAR )  
+10-Minuten-Gespräch ( NOUN NOUN_SINGULAR )  
+10-Minuten-Takt ( NOUN NOUN_SINGULAR )  
+10-Mio ( NOUN NOUN_PROPER_SINGULAR )  
+10-Mord-Scheine ( NOUN NOUN_PLURAL ) lemma=`10-Mord-Schein` NN   
+10-Prozent-Kappungsgrenze ( NOUN NOUN_SINGULAR )  
+10-Prozent-Marke ( NOUN NOUN_SINGULAR )  
+10-Punkte ( NOUN NOUN_PLURAL ) lemma=`10-Punkt` NN   
+10-Punkte-Forderungskatalog ( NOUN NOUN_SINGULAR )  
+10-Punkte-Katalog ( NOUN NOUN_SINGULAR )  
+10-Punkte-Papier ( NOUN NOUN_SINGULAR )  
+10-Punkte-Plan ( NOUN NOUN_SINGULAR )  
+10-Punkte-Programm ( NOUN NOUN_SINGULAR )  
+10-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+10-Uhr-Gottesdienst ( NOUN NOUN_SINGULAR )  
+10-Uhr-Zug ( NOUN NOUN_SINGULAR )  
+10-fach ( ADJECTIVE )  
+10-jährige ( ADJECTIVE ) lemma=`10-jährig` ADJA   
+10-jährigen ( ADJECTIVE ) lemma=`10-jährig` ADJA   
+10-km-Gehen ( NOUN NOUN_SINGULAR )  
+10-km-Konkurrenz ( NOUN NOUN_SINGULAR )  
+10-km-Lauf ( NOUN NOUN_SINGULAR )  
+10-km-Olympiasieger ( NOUN NOUN_SINGULAR )  
+10-km-Rennen ( NOUN NOUN_SINGULAR )  
+10-km-Sprint ( NOUN NOUN_SINGULAR )  
+10-km-Staffel ( NOUN NOUN_SINGULAR )  
+10-km-Strecke ( NOUN NOUN_SINGULAR )  
+10-km-Weltmeister ( NOUN NOUN_SINGULAR )  
+10-monatiger ( ADJECTIVE ) lemma=`10-monatig` ADJA   
+10-prozentigen ( ADJECTIVE ) lemma=`10-prozentig` ADJA   
+10-tägigen ( ADJECTIVE ) lemma=`10-tägig` ADJA   
+10. ( ADJECTIVE )  
+10.000-Einwohner-Gemeinde ( NOUN NOUN_SINGULAR )  
+10.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+10.000-Mark-Spende ( NOUN NOUN_SINGULAR )  
+10.000-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+10.000-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+10.000-m-Lauf ( NOUN NOUN_SINGULAR )  
+10.000-m-Weltmeister ( NOUN NOUN_SINGULAR )  
+10.000-m-Weltrekord ( NOUN NOUN_SINGULAR )  
+10.000er ( NOUN NOUN_SINGULAR )  
+10.000fach ( ADJECTIVE )  
+10.000fache ( NOUN ADJECTIVE NOUN_PLURAL ) lemma=`10.000fach`10.000fache` ADJA  NN   
+10.30-Uhr-Gottesdienst ( NOUN NOUN_SINGULAR )  
+10.30-Uhr-Messe ( NOUN NOUN_SINGULAR )  
+10/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/11 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/1993 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/27 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/27-Querspange ( NOUN NOUN_SINGULAR )  
+10/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/47 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100,0/98,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100,0/98,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100,5/101,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100,5/90,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100-Betten-Hotel ( NOUN NOUN_SINGULAR )  
+100-Betten-Klinik ( NOUN NOUN_SINGULAR )  
+100-DM-Aktie ( NOUN NOUN_SINGULAR )  
+100-DM-Schein ( NOUN NOUN_SINGULAR )  
+100-Dollar-Noten ( NOUN NOUN_PLURAL ) lemma=`100-Dollar-Note` NN   
+100-Dollar-Schein ( NOUN NOUN_SINGULAR )  
+100-Dollar-Scheinen ( NOUN NOUN_PLURAL ) lemma=`100-Dollar-Schein` NN   
+100-Geschäftsführer ( NOUN NOUN_SINGULAR )  
+100-Gramm-Fläschchen ( NOUN NOUN_SINGULAR )  
+100-Gramm-Portion ( NOUN NOUN_SINGULAR )  
+100-Hand ( NOUN NOUN_SINGULAR )  
+100-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+100-Jahr-Jubiläum ( NOUN NOUN_SINGULAR )  
+100-Jahr-Jubiläums ( NOUN NOUN_PLURAL ) lemma=`100-Jahr-Jubiläum` NN   
+100-Kilometer ( NOUN NOUN_SINGULAR )  
+100-Kilometer-Bahnlauf ( NOUN NOUN_SINGULAR )  
+100-Kilometer-Lauf ( NOUN NOUN_SINGULAR )  
+100-Kilometer-Netz ( NOUN NOUN_SINGULAR )  
+100-Kilometer-Staffellauf ( NOUN NOUN_SINGULAR )  
+100-Liter-Behälter ( NOUN NOUN_SINGULAR )  
+100-Liter-Sack ( NOUN NOUN_SINGULAR )  
+100-MW-Förderprogramm ( NOUN NOUN_SINGULAR )  
+100-Macher ( NOUN NOUN_SINGULAR )  
+100-Mark-Aktie ( NOUN NOUN_SINGULAR )  
+100-Mark-Anteile ( NOUN NOUN_PLURAL ) lemma=`100-Mark-Anteil` NN   
+100-Mark-Dinner-Show ( NOUN NOUN_SINGULAR )  
+100-Mark-Schein ( NOUN NOUN_SINGULAR )  
+100-Mark-Scheine ( NOUN NOUN_PLURAL ) lemma=`100-Mark-Schein` NN   
+100-Mark-Scheinen ( NOUN NOUN_PLURAL ) lemma=`100-Mark-Schein` NN   
+100-Mark-Stückelung ( NOUN NOUN_SINGULAR )  
+100-Mark-Vignette ( NOUN NOUN_SINGULAR )  
+100-Megawatt ( NOUN NOUN_SINGULAR )  
+100-Megawatt-Programm ( NOUN NOUN_SINGULAR )  
+100-Meter ( NOUN NOUN_SINGULAR )  
+100-Meter-Bahn ( NOUN NOUN_SINGULAR )  
+100-Meter-Distanz ( NOUN NOUN_SINGULAR )  
+100-Meter-Endlauf ( NOUN NOUN_SINGULAR )  
+100-Meter-Finale ( NOUN NOUN_SINGULAR )  
+100-Meter-Grenze ( NOUN NOUN_SINGULAR )  
+100-Meter-Hürden ( NOUN NOUN_PLURAL ) lemma=`100-Meter-Hürde` NN   
+100-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+100-Meter-Laufbahn ( NOUN NOUN_SINGULAR )  
+100-Meter-Olympiasieger ( NOUN NOUN_SINGULAR )  
+100-Meter-Olympiasiegerin ( NOUN NOUN_SINGULAR )  
+100-Meter-Rennen ( NOUN NOUN_SINGULAR )  
+100-Meter-Rückenstrecke ( NOUN NOUN_SINGULAR )  
+100-Meter-Schmetterling ( NOUN NOUN_SINGULAR )  
+100-Meter-Sprint ( NOUN NOUN_SINGULAR )  
+100-Meter-Sprints ( NOUN NOUN_PLURAL ) lemma=`100-Meter-Sprint` NN   
+100-Meter-Staffel ( NOUN NOUN_SINGULAR )  
+100-Meter-Turm ( NOUN NOUN_SINGULAR )  
+100-Milliarden ( NOUN NOUN_PLURAL ) lemma=`100-Milliarde` NN   
+100-Milliliter-Flasche ( NOUN NOUN_SINGULAR )  
+100-Millionen ( NOUN NOUN_PLURAL ) lemma=`100-Million` NN   
+100-Millionen-Bau ( NOUN NOUN_SINGULAR )  
+100-Millionen-Dollar-Kredit ( NOUN NOUN_SINGULAR )  
+100-Millionen-Förderprogramm ( NOUN NOUN_SINGULAR )  
+100-Millionen-Grenze ( NOUN NOUN_SINGULAR )  
+100-Millionen-Kredit ( NOUN NOUN_SINGULAR )  
+100-Millionen-Mark ( NOUN NOUN_SINGULAR )  
+100-Millionen-Mark-Grenze ( NOUN NOUN_SINGULAR )  
+100-Millionen-Mark-Programm ( NOUN NOUN_SINGULAR )  
+100-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+100-Millionen-Mark-Projektes ( NOUN NOUN_PLURAL ) lemma=`100-Millionen-Mark-Projekt` NN   
+100-Millionen-Mark-Projekts ( NOUN NOUN_PLURAL ) lemma=`100-Millionen-Mark-Projekt` NN   
+100-Millionen-Programm ( NOUN NOUN_SINGULAR )  
+100-Millionen-Projekt ( NOUN NOUN_SINGULAR )  
+100-Mio ( NOUN NOUN_PROPER_SINGULAR )  
+100-Prozent-Ausstieg ( NOUN NOUN_SINGULAR )  
+100-Prozent-Kurzarbeiter ( NOUN NOUN_SINGULAR )  
+100-Prozent-Marke ( NOUN NOUN_SINGULAR )  
+100-Prozent-Regelung ( NOUN NOUN_SINGULAR )  
+100-Prozent-Tochter ( NOUN NOUN_SINGULAR )  
+100-Quadratmeter-Wohnung ( NOUN NOUN_SINGULAR )  
+100-Rubel-Scheinen ( NOUN NOUN_PLURAL ) lemma=`100-Rubel-Schein` NN   
+100-Rubelscheine ( NOUN NOUN_PLURAL ) lemma=`100-Rubelschein` NN   
+100-Seiten-Konzepts ( NOUN NOUN_PLURAL ) lemma=`100-Seiten-Konzept` NN   
+100-Tage-Aktionsprogramm ( NOUN NOUN_SINGULAR )  
+100-Tage-Bilanz ( NOUN NOUN_SINGULAR )  
+100-Tage-Programm ( NOUN NOUN_SINGULAR )  
+100-Tage-Sofortprogramm ( NOUN NOUN_SINGULAR )  
+100-Watt-Glühbirne ( NOUN NOUN_SINGULAR )  
+100-Watt-Glühbirnen ( NOUN NOUN_PLURAL ) lemma=`100-Watt-Glühbirne` NN   
+100-Yuan-Scheine ( NOUN NOUN_PLURAL ) lemma=`100-Yuan-Schein` NN   
+100-jährige ( ADJECTIVE ) lemma=`100-jährig` ADJA   
+100-jährigen ( ADJECTIVE ) lemma=`100-jährig` ADJA   
+100-kg-Mann ( NOUN NOUN_SINGULAR )  
+100-km-Lauf ( NOUN NOUN_SINGULAR )  
+100-km-Mannschaftsrennen ( NOUN NOUN_SINGULAR )  
+100-m-Brust ( NOUN NOUN_SINGULAR )  
+100-m-Europarekord ( NOUN NOUN_SINGULAR )  
+100-m-Finale ( NOUN NOUN_SINGULAR )  
+100-m-Freistil ( NOUN NOUN_SINGULAR )  
+100-m-Halbfinale ( NOUN NOUN_SINGULAR )  
+100-m-Hürden ( NOUN NOUN_PLURAL ) lemma=`100-m-Hürde` NN   
+100-m-Lagen ( NOUN NOUN_PLURAL ) lemma=`100-m-Lage` NN   
+100-m-Lagenstaffel ( NOUN NOUN_SINGULAR )  
+100-m-Lauf ( NOUN NOUN_SINGULAR )  
+100-m-Olympiasieger ( NOUN NOUN_SINGULAR )  
+100-m-Olympiasiegerin ( NOUN NOUN_SINGULAR )  
+100-m-Rücken ( NOUN NOUN_SINGULAR )  
+100-m-Schmetterling ( NOUN NOUN_SINGULAR )  
+100-m-Sieg ( NOUN NOUN_SINGULAR )  
+100-m-Sieger ( NOUN NOUN_SINGULAR )  
+100-m-Sprint ( NOUN NOUN_SINGULAR )  
+100-m-Sprinter ( NOUN NOUN_SINGULAR )  
+100-m-Staffel ( NOUN NOUN_SINGULAR )  
+100-m-Weltrekorde ( NOUN NOUN_PLURAL ) lemma=`100-m-Weltrekord` NN   
+100-m-Zeit ( NOUN NOUN_SINGULAR )  
+100-prozentige ( ADJECTIVE ) lemma=`100-prozentig` ADJA   
+100-prozentigen ( ADJECTIVE ) lemma=`100-prozentig` ADJA   
+100-tägigen ( ADJECTIVE ) lemma=`100-tägig` ADJA   
+100.000-Dächer-Programm ( NOUN NOUN_SINGULAR )  
+100.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+100.000-Mann-Armee ( NOUN NOUN_SINGULAR )  
+100.000er ( NOUN NOUN_SINGULAR )  
+100.000er-Auflage ( NOUN NOUN_SINGULAR )  
+100.000fache ( ADJECTIVE ) lemma=`100.000fach` ADJA   
+100.000faches ( ADJECTIVE ) lemma=`100.000fach` ADJA   
+100/200 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1000-Betten-Klinik ( NOUN NOUN_SINGULAR )  
+1000-Dächer-Programm ( NOUN NOUN_SINGULAR )  
+1000-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1000-Jahrfeier ( NOUN NOUN_SINGULAR )  
+1000-Kronen-Investition ( NOUN NOUN_SINGULAR )  
+1000-Lire-Scheinen ( NOUN NOUN_PLURAL ) lemma=`1000-Lire-Schein` NN   
+1000-Liter-Behälter ( NOUN NOUN_SINGULAR )  
+1000-Mark-Gewinne ( NOUN NOUN_PLURAL ) lemma=`1000-Mark-Gewinn` NN   
+1000-Mark-Grenze ( NOUN NOUN_SINGULAR )  
+1000-Mark-Schein ( NOUN NOUN_SINGULAR )  
+1000-Mark-Scheine ( NOUN NOUN_PLURAL ) lemma=`1000-Mark-Schein` NN   
+1000-Mark-Scheinen ( NOUN NOUN_PLURAL ) lemma=`1000-Mark-Schein` NN   
+1000-Mark-Spende ( NOUN NOUN_SINGULAR )  
+1000-Mark-Zuschuss ( NOUN NOUN_SINGULAR )  
+1000-Mark-Zuschuß ( NOUN NOUN_PLURAL ) lemma=`1000-Mark-Zuschuss` NN   
+1000-Megawatt-Druckwasserreaktor ( NOUN NOUN_SINGULAR )  
+1000-Megawatt-Reaktoren ( NOUN NOUN_PLURAL ) lemma=`1000-Megawatt-Reaktor` NN   
+1000-Meter-Distanz ( NOUN NOUN_SINGULAR )  
+1000-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+1000-Meter-Marke ( NOUN NOUN_SINGULAR )  
+1000-Meter-Zeitfahren ( NOUN NOUN_SINGULAR )  
+1000-Punkte-Grenze ( NOUN NOUN_SINGULAR )  
+1000-Punkte-Wertung ( NOUN NOUN_SINGULAR )  
+1000-Quadratmeter-Gelände ( NOUN NOUN_SINGULAR )  
+1000-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+1000-Seen-Rallye ( NOUN NOUN_SINGULAR )  
+1000-Seiten-Wälzer ( NOUN NOUN_SINGULAR )  
+1000-m-Bestzeit ( NOUN NOUN_SINGULAR )  
+1000-m-Erfolg ( NOUN NOUN_SINGULAR )  
+1000-m-Rekord ( NOUN NOUN_SINGULAR )  
+1000-m-Strecke ( NOUN NOUN_SINGULAR )  
+1000-m-Zeitfahren ( NOUN NOUN_SINGULAR )  
+10000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+10000-Einwohner-Gemeinde ( NOUN NOUN_SINGULAR )  
+10000-Einwohner-Grenze ( NOUN NOUN_SINGULAR )  
+10000-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+10000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+10000-Einwohner-Städtchen ( NOUN NOUN_SINGULAR )  
+10000-Volt-Kabel ( NOUN NOUN_SINGULAR )  
+10000-Volt-Mittelspannungskabel ( NOUN NOUN_SINGULAR )  
+100000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+100000-Lire-Noten ( NOUN NOUN_PLURAL ) lemma=`100000-Lire-Note` NN   
+100000-Mann-Heeres ( NOUN NOUN_PLURAL ) lemma=`100000-Mann-Heer` NN   
+100000-Mark-Spende ( NOUN NOUN_SINGULAR )  
+100000-Mark-Zuschuss ( NOUN NOUN_SINGULAR )  
+100000-Mark-Zuschuß ( NOUN NOUN_PLURAL ) lemma=`100000-Mark-Zuschuss` NN   
+100000er ( NOUN NOUN_SINGULAR )  
+1000er ( NOUN NOUN_SINGULAR )  
+1000jährige ( ADJECTIVE ) lemma=`1000jährig` ADJA   
+1000jährigen ( ADJECTIVE ) lemma=`1000jährig` ADJA   
+1000jähriges ( ADJECTIVE ) lemma=`1000jährig` ADJA   
+1000köpfigen ( ADJECTIVE ) lemma=`1000köpfig` ADJA   
+1000prozentiger ( ADJECTIVE ) lemma=`1000prozentig` ADJA   
+1001-Gruppe ( NOUN NOUN_SINGULAR )  
+10028/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+100er ( NOUN NOUN_SINGULAR )  
+100fach ( ADJECTIVE )  
+100fache ( ADJECTIVE ) lemma=`100fach` ADJA   
+100fachen ( ADJECTIVE ) lemma=`100fach` ADJA   
+100jährige ( ADJECTIVE ) lemma=`100jährig` ADJA   
+100jährigen ( ADJECTIVE ) lemma=`100jährig` ADJA   
+100jähriger ( ADJECTIVE ) lemma=`100jährig` ADJA   
+100jähriges ( ADJECTIVE ) lemma=`100jährig` ADJA   
+100köpfige ( ADJECTIVE ) lemma=`100köpfig` ADJA   
+100köpfigen ( ADJECTIVE ) lemma=`100köpfig` ADJA   
+100m-Lauf ( NOUN NOUN_SINGULAR )  
+100prozentig ( ADJECTIVE )  
+100prozentige ( ADJECTIVE ) lemma=`100prozentig` ADJA   
+100prozentigem ( ADJECTIVE ) lemma=`100prozentig` ADJA   
+100prozentigen ( ADJECTIVE ) lemma=`100prozentig` ADJA   
+100prozentiger ( ADJECTIVE ) lemma=`100prozentig` ADJA   
+100prozentiges ( ADJECTIVE ) lemma=`100prozentig` ADJA   
+100tägigen ( ADJECTIVE ) lemma=`100tägig` ADJA   
+101,5/76,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101/105 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101/1992 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1013/216 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+101jährige ( ADJECTIVE ) lemma=`101jährig` ADJA   
+101köpfigen ( ADJECTIVE ) lemma=`101köpfig` ADJA   
+102 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+102,0/89,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+102/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1025-Teiler ( NOUN NOUN_SINGULAR )  
+102jährige ( ADJECTIVE ) lemma=`102jährig` ADJA   
+103:113-Niederlage ( NOUN NOUN_SINGULAR )  
+103jährige ( ADJECTIVE ) lemma=`103jährig` ADJA   
+103jährigen ( ADJECTIVE ) lemma=`103jährig` ADJA   
+104,0/94,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+104,0/98,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+104jährigen ( ADJECTIVE ) lemma=`104jährig` ADJA   
+105,0/95,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+105-Hubschrauber ( NOUN NOUN_SINGULAR )  
+105prozentige ( ADJECTIVE ) lemma=`105prozentig` ADJA   
+106,6-Millionen-Etat ( NOUN NOUN_SINGULAR )  
+106/122 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+107/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1074/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+107jährige ( ADJECTIVE ) lemma=`107jährig` ADJA   
+107jährigen ( ADJECTIVE ) lemma=`107jährig` ADJA   
+108,5/97,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+108/114 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+108000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1089 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+109-Teiler ( NOUN NOUN_SINGULAR )  
+1099:1061-Sieg ( NOUN NOUN_SINGULAR )  
+109er ( NOUN NOUN_SINGULAR )  
+10:0-Endstand ( NOUN NOUN_SINGULAR )  
+10:0-Punkte ( NOUN NOUN_PLURAL ) lemma=`10:0-Punkt` NN   
+10:1-Sieg ( NOUN NOUN_SINGULAR )  
+10:10-Ausgleich ( NOUN NOUN_SINGULAR )  
+10:10-Punkten ( NOUN NOUN_PLURAL ) lemma=`10:10-Punkt` NN   
+10:10-Zählern ( NOUN NOUN_PLURAL ) lemma=`10:10-Zähler` NN   
+10:13-Rückstand ( NOUN NOUN_SINGULAR )  
+10:2-Punkte ( NOUN NOUN_PLURAL ) lemma=`10:2-Punkt` NN   
+10:2-Punkten ( NOUN NOUN_PLURAL ) lemma=`10:2-Punkt` NN   
+10:2-Tore ( NOUN NOUN_PLURAL ) lemma=`10:2-Tor` NN   
+10:2-Zählern ( NOUN NOUN_PLURAL ) lemma=`10:2-Zähler` NN   
+10:5-Sieg ( NOUN NOUN_SINGULAR )  
+10:6-Punkten ( NOUN NOUN_PLURAL ) lemma=`10:6-Punkt` NN   
+10:8-Führung ( NOUN NOUN_SINGULAR )  
+10e-Abschreibung ( NOUN NOUN_SINGULAR )  
+10e-Förderung ( NOUN NOUN_SINGULAR )  
+10er ( NOUN NOUN_SINGULAR )  
+10er-Kanus ( NOUN NOUN_PLURAL ) lemma=`10er-Kanu` NN   
+10er-Pack ( NOUN NOUN_SINGULAR )  
+10fach-Bestimmung ( NOUN NOUN_SINGULAR )  
+10fache ( ADJECTIVE ) lemma=`10fach` ADJA   
+10fachen ( ADJECTIVE ) lemma=`10fach` ADJA   
+10jährige ( ADJECTIVE ) lemma=`10jährig` ADJA   
+10jährigen ( ADJECTIVE ) lemma=`10jährig` ADJA   
+10jähriger ( ADJECTIVE ) lemma=`10jährig` ADJA   
+10jähriges ( ADJECTIVE ) lemma=`10jährig` ADJA   
+10köpfige ( ADJECTIVE ) lemma=`10köpfig` ADJA   
+10köpfigen ( ADJECTIVE ) lemma=`10köpfig` ADJA   
+10monatiger ( ADJECTIVE ) lemma=`10monatig` ADJA   
+10prozentige ( ADJECTIVE ) lemma=`10prozentig` ADJA   
+10prozentigen ( ADJECTIVE ) lemma=`10prozentig` ADJA   
+10teilige ( ADJECTIVE ) lemma=`10teilig` ADJA   
+10teiligen ( ADJECTIVE ) lemma=`10teilig` ADJA   
+10tägige ( ADJECTIVE ) lemma=`10tägig` ADJA   
+10tägigen ( ADJECTIVE ) lemma=`10tägig` ADJA   
+11 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11,07/7,26/13,02/1,94/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11,3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11,5prozentige ( ADJECTIVE ) lemma=`11,5prozentig` ADJA   
+11,6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11-Kilometer-Abendwanderung ( NOUN NOUN_SINGULAR )  
+11-Klassen ( NOUN NOUN_PLURAL ) lemma=`11-Klasse` NN   
+11-M ( NOUN NOUN_SINGULAR )  
+11-Millionen-Projekt ( NOUN NOUN_SINGULAR )  
+11-Millionen-Sondertopf ( NOUN NOUN_SINGULAR )  
+11-Minuten ( NOUN NOUN_PLURAL ) lemma=`11-Minute` NN   
+11-Prozent-Forderung ( NOUN NOUN_SINGULAR )  
+11-Uhr-Matinee ( NOUN NOUN_SINGULAR )  
+11-jährige ( ADJECTIVE ) lemma=`11-jährig` ADJA   
+11-m-Schiessen ( NOUN NOUN_SINGULAR )  
+11-m-Schießen ( NOUN NOUN_SINGULAR )  
+11. ( ADJECTIVE )  
+11/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/1990 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/58 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+110 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+110-Betten-Krankenhaus ( NOUN NOUN_SINGULAR )  
+110-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+110-KV-Antrag ( NOUN NOUN_SINGULAR )  
+110-KV-Leitung ( NOUN NOUN_SINGULAR )  
+110-KV-Leitungen ( NOUN NOUN_PLURAL ) lemma=`110-KV-Leitung` NN   
+110-Kilovolt ( NOUN NOUN_SINGULAR )  
+110-Kilovolt-Leitung ( NOUN NOUN_SINGULAR )  
+110-Kilovolt-Stromleitung ( NOUN NOUN_SINGULAR )  
+110-Mark-Gebühr ( NOUN NOUN_SINGULAR )  
+110-Meter-Hürden ( NOUN NOUN_PLURAL ) lemma=`110-Meter-Hürde` NN   
+110-Meter-Hürden-Olympiasieger ( NOUN NOUN_SINGULAR )  
+110-Notrufe ( NOUN NOUN_PLURAL ) lemma=`110-Notruf` NN   
+110-Teiler ( NOUN NOUN_SINGULAR )  
+110-Zentrale ( NOUN NOUN_SINGULAR )  
+110-kV-Leitung ( NOUN NOUN_SINGULAR )  
+110-m-Hürden ( NOUN NOUN_PLURAL ) lemma=`110-m-Hürde` NN   
+110-m-Hürden-Olympiasieger ( NOUN NOUN_SINGULAR )  
+110.000-Volt-Leitung ( NOUN NOUN_SINGULAR )  
+1100 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1100-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1100-Jahrfeier ( NOUN NOUN_SINGULAR )  
+1100-Liter-Container ( NOUN NOUN_SINGULAR )  
+1100-Liter-Tonnen ( NOUN NOUN_PLURAL ) lemma=`1100-Liter-Tonne` NN   
+110000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+110000-Volt-Hochspannungskabel ( NOUN NOUN_SINGULAR )  
+1100er ( NOUN NOUN_SINGULAR )  
+1100jährigen ( ADJECTIVE ) lemma=`1100jährig` ADJA   
+110fache ( ADJECTIVE ) lemma=`110fach` ADJA   
+110jährige ( ADJECTIVE ) lemma=`110jährig` ADJA   
+110jährigen ( ADJECTIVE ) lemma=`110jährig` ADJA   
+110jähriges ( ADJECTIVE ) lemma=`110jährig` ADJA   
+110köpfigen ( ADJECTIVE ) lemma=`110köpfig` ADJA   
+110prozentig ( ADJECTIVE )  
+111-Minuten-Büttenfeuerwerk ( NOUN NOUN_SINGULAR )  
+111/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+111fache ( ADJECTIVE ) lemma=`111fach` ADJA   
+111fachen ( ADJECTIVE ) lemma=`111fach` ADJA   
+111jährige ( ADJECTIVE ) lemma=`111jährig` ADJA   
+111jährigen ( ADJECTIVE ) lemma=`111jährig` ADJA   
+112 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+112/114 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+113 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11334 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+114jährigen ( ADJECTIVE ) lemma=`114jährig` ADJA   
+115-Milliarden-Solidarfonds ( NOUN NOUN_SINGULAR )  
+115/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1150 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1150-Jahr-Feiern ( NOUN NOUN_PLURAL ) lemma=`1150-Jahr-Feier` NN   
+11500/23000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1150jährige ( ADJECTIVE ) lemma=`1150jährig` ADJA   
+1154/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+115jährigen ( ADJECTIVE ) lemma=`115jährig` ADJA   
+116/118 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1165,6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+116tägigen ( ADJECTIVE ) lemma=`116tägig` ADJA   
+117 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+117000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1175-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1175-Jahrfeier ( NOUN NOUN_SINGULAR )  
+1175jährigen ( ADJECTIVE ) lemma=`1175jährig` ADJA   
+1175jähriges ( ADJECTIVE ) lemma=`1175jährig` ADJA   
+118/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+118/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+118/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1189mal ( ADVERB )  
+118köpfige ( ADJECTIVE ) lemma=`118köpfig` ADJA   
+119 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1192/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1195/13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+11:1-Punkte ( NOUN NOUN_PLURAL ) lemma=`11:1-Punkt` NN   
+11:1-Punkten ( NOUN NOUN_PLURAL ) lemma=`11:1-Punkt` NN   
+11:11-Remis ( NOUN NOUN_SINGULAR )  
+11:13-Heimniederlage ( NOUN NOUN_SINGULAR )  
+11:13-Rückstand ( NOUN NOUN_SINGULAR )  
+11:20-Niederlage ( NOUN NOUN_SINGULAR )  
+11:3-Punkten ( NOUN NOUN_PLURAL ) lemma=`11:3-Punkt` NN   
+11:5-Tore ( NOUN NOUN_PLURAL ) lemma=`11:5-Tor` NN   
+11:6-Siegen ( NOUN NOUN_PLURAL ) lemma=`11:6-Sieg` NN   
+11:9-Punkten ( NOUN NOUN_PLURAL ) lemma=`11:9-Punkt` NN   
+11er ( NOUN NOUN_SINGULAR )  
+11jährige ( ADJECTIVE ) lemma=`11jährig` ADJA   
+11jährigen ( ADJECTIVE ) lemma=`11jährig` ADJA   
+11jähriger ( ADJECTIVE ) lemma=`11jährig` ADJA   
+11jähriges ( ADJECTIVE ) lemma=`11jährig` ADJA   
+11köpfige ( ADJECTIVE ) lemma=`11köpfig` ADJA   
+11m-Schiessen ( NOUN NOUN_SINGULAR )  
+11m-Schießen ( NOUN NOUN_SINGULAR )  
+11monatiger ( ADJECTIVE ) lemma=`11monatig` ADJA   
+12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,0/321,6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,5-Prozent-Anteil ( NOUN NOUN_SINGULAR )  
+12,5-Prozent-Hürde ( NOUN NOUN_SINGULAR )  
+12,50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,5prozentigen ( ADJECTIVE ) lemma=`12,5prozentig` ADJA   
+12,8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12,9 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12-GHz-Bereich ( NOUN NOUN_SINGULAR )  
+12-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+12-Millionen-Kredit ( NOUN NOUN_SINGULAR )  
+12-Millionen-Programm ( NOUN NOUN_SINGULAR )  
+12-Mio ( NOUN NOUN_PROPER_SINGULAR )  
+12-Punkte-Katalog ( NOUN NOUN_SINGULAR )  
+12-Punkte-Programm ( NOUN NOUN_SINGULAR )  
+12-Stunden ( NOUN NOUN_PLURAL ) lemma=`12-Stunde` NN   
+12-Stunden-Laufs ( NOUN NOUN_PLURAL ) lemma=`12-Stunden-Lauf` NN   
+12-Stunden-Schichten ( NOUN NOUN_PLURAL ) lemma=`12-Stunden-Schicht` NN   
+12-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+12-Turnier ( NOUN NOUN_SINGULAR )  
+12-Uhr-Läuten ( NOUN NOUN_SINGULAR )  
+12-V-Anschluß ( NOUN NOUN_PLURAL ) lemma=`12-V-Anschluss` NN   
+12-Wochen-Frist ( NOUN NOUN_SINGULAR )  
+12-Zentimeter-CD ( NOUN NOUN_PROPER_SINGULAR )  
+12-Zylinder ( NOUN NOUN_SINGULAR )  
+12-g-Gebinde ( NOUN NOUN_SINGULAR )  
+12-jährige ( ADJECTIVE ) lemma=`12-jährig` ADJA   
+12-jährigen ( ADJECTIVE ) lemma=`12-jährig` ADJA   
+12-köpfigen ( ADJECTIVE ) lemma=`12-köpfig` ADJA   
+12. ( ADJECTIVE )  
+12.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+12.000-Seelen-Städtchen ( NOUN NOUN_SINGULAR )  
+12.000/19.000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12.000fach ( ADJECTIVE )  
+12.15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12.30 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12.45 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/11 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/13.9.89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/1972 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/236 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/56,69 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/6/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/82 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+12/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+120 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+120-Betten-Haus ( NOUN NOUN_SINGULAR )  
+120-Betten-Hotel ( NOUN NOUN_SINGULAR )  
+120-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+120-Liter-Behälter ( NOUN NOUN_SINGULAR )  
+120-Liter-Eimer ( NOUN NOUN_SINGULAR )  
+120-Liter-Gefäss ( NOUN NOUN_PLURAL ) lemma=`120-Liter-Gefäß` NN   
+120-Liter-Gefässes ( NOUN NOUN_PLURAL ) lemma=`120-Liter-Gefäß` NN   
+120-Liter-Gefäß ( NOUN NOUN_SINGULAR )  
+120-Liter-Gefäßes ( NOUN NOUN_PLURAL ) lemma=`120-Liter-Gefäß` NN   
+120-Liter-Restmülltonne ( NOUN NOUN_SINGULAR )  
+120-Liter-Tonne ( NOUN NOUN_SINGULAR )  
+120-Liter-Tonnen ( NOUN NOUN_PLURAL ) lemma=`120-Liter-Tonne` NN   
+120-Meter-Schanze ( NOUN NOUN_SINGULAR )  
+120-Mikrogramm-Grenze ( NOUN NOUN_SINGULAR )  
+120-Millionen-Etat ( NOUN NOUN_SINGULAR )  
+120-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+120-Millionen-Mark-Schiebung ( NOUN NOUN_SINGULAR )  
+120-Millionen-Programm ( NOUN NOUN_SINGULAR )  
+120-Millionen-Volkes ( NOUN NOUN_PLURAL ) lemma=`120-Millionen-Volk` NN   
+120-Seiten-Dokumentation ( NOUN NOUN_SINGULAR )  
+120-m-Schanze ( NOUN NOUN_SINGULAR )  
+120.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+120/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1200 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1200-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1200-Jahr-Jubiläum ( NOUN NOUN_SINGULAR )  
+1200-Jahrfeier ( NOUN NOUN_SINGULAR )  
+12000-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+12000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+120000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1200jährige ( ADJECTIVE ) lemma=`1200jährig` ADJA   
+1200jährigen ( ADJECTIVE ) lemma=`1200jährig` ADJA   
+1200jähriges ( ADJECTIVE ) lemma=`1200jährig` ADJA   
+1209/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+120er ( NOUN NOUN_SINGULAR )  
+120fache ( ADJECTIVE ) lemma=`120fach` ADJA   
+120jährige ( ADJECTIVE ) lemma=`120jährig` ADJA   
+120jährigen ( ADJECTIVE ) lemma=`120jährig` ADJA   
+120jähriges ( ADJECTIVE ) lemma=`120jährig` ADJA   
+120köpfigen ( ADJECTIVE ) lemma=`120köpfig` ADJA   
+120prozentig ( ADJECTIVE )  
+121/122 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1213/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+121jährigen ( ADJECTIVE ) lemma=`121jährig` ADJA   
+122-Millimeter-Raketen ( NOUN NOUN_PLURAL ) lemma=`122-Millimeter-Rakete` NN   
+122-Teiler ( NOUN NOUN_SINGULAR )  
+1225-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1225jähriges ( ADJECTIVE ) lemma=`1225jährig` ADJA   
+1228/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+123/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+123jährigen ( ADJECTIVE ) lemma=`123jährig` ADJA   
+124-Teiler ( NOUN NOUN_SINGULAR )  
+125 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+125-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+125-Jahr-Jubiläum ( NOUN NOUN_SINGULAR )  
+125-Teiler ( NOUN NOUN_SINGULAR )  
+125-ccm-Klasse ( NOUN NOUN_SINGULAR )  
+125/127 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+125/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1250-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1250jähriges ( ADJECTIVE ) lemma=`1250jährig` ADJA   
+1252/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1253/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+125er ( NOUN NOUN_SINGULAR )  
+125er-DKW-Motorrades ( NOUN NOUN_PLURAL ) lemma=`125er-DKW-Motorrad` NN   
+125fache ( ADJECTIVE ) lemma=`125fach` ADJA   
+125jährige ( ADJECTIVE ) lemma=`125jährig` ADJA   
+125jährigen ( ADJECTIVE ) lemma=`125jährig` ADJA   
+125jähriges ( ADJECTIVE ) lemma=`125jährig` ADJA   
+126 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+126-Betten-Klinik ( NOUN NOUN_SINGULAR )  
+126/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+126/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1266/31 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1268/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1268/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1269/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+126köpfige ( ADJECTIVE ) lemma=`126köpfig` ADJA   
+127,4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1277/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1279/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+127jährige ( ADJECTIVE ) lemma=`127jährig` ADJA   
+128/129 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+128/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1280/53 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1285/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1285/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1287/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1288/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+128köpfigen ( ADJECTIVE ) lemma=`128köpfig` ADJA   
+129-Prozess ( NOUN NOUN_SINGULAR )  
+129-Prozeß ( NOUN NOUN_PLURAL ) lemma=`129-Prozess` NN   
+1292/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1296/33 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1298/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+129a-Angeklagte ( NOUN NOUN_SINGULAR )  
+129a-Anklage ( NOUN NOUN_SINGULAR )  
+129a-Ermittlungsverfahren ( NOUN NOUN_SINGULAR )  
+129a-Gefangenen ( NOUN NOUN_PLURAL ) lemma=`129a-Gefangene` NN   
+129a-Konstruktion ( NOUN NOUN_SINGULAR )  
+129a-Praxis ( NOUN NOUN_SINGULAR )  
+129a-Prozess ( NOUN NOUN_SINGULAR )  
+129a-Prozesse ( NOUN NOUN_PLURAL ) lemma=`129a-Prozess` NN   
+129a-Prozesses ( NOUN NOUN_PLURAL ) lemma=`129a-Prozess` NN   
+129a-Prozeß ( NOUN NOUN_PLURAL ) lemma=`129a-Prozess` NN   
+129a-Verfahren ( NOUN NOUN_SINGULAR )  
+129a-Verfahrens ( NOUN NOUN_PLURAL ) lemma=`129a-Verfahren` NN   
+129a-Verurteilung ( NOUN NOUN_SINGULAR )  
+129a-Vorwurf ( NOUN NOUN_SINGULAR )  
+129a-Vorwurfs ( NOUN NOUN_PLURAL ) lemma=`129a-Vorwurf` NN   
+129er ( NOUN NOUN_SINGULAR )  
+12:0-Punkte ( NOUN NOUN_PLURAL ) lemma=`12:0-Punkt` NN   
+12:0-Punkten ( NOUN NOUN_PLURAL ) lemma=`12:0-Punkt` NN   
+12:10-Vorsprung ( NOUN NOUN_SINGULAR )  
+12:11-Sieg ( NOUN NOUN_SINGULAR )  
+12:11-Vorsprung ( NOUN NOUN_SINGULAR )  
+12:14-Anschlusstreffer ( NOUN NOUN_SINGULAR )  
+12:14-Anschlußtreffer ( NOUN NOUN_PLURAL ) lemma=`12:14-Anschlusstreffer` NN   
+12:15-Niederlage ( NOUN NOUN_SINGULAR )  
+12:15-Rückstand ( NOUN NOUN_SINGULAR )  
+12:16-Niederlage ( NOUN NOUN_SINGULAR )  
+12:2-Punkte ( NOUN NOUN_PLURAL ) lemma=`12:2-Punkt` NN   
+12:4-Führung ( NOUN NOUN_SINGULAR )  
+12:8-Heimsieg ( NOUN NOUN_SINGULAR )  
+12:9-Derbysieg ( NOUN NOUN_SINGULAR )  
+12bändige ( ADJECTIVE ) lemma=`12bändig` ADJA   
+12er ( NOUN NOUN_SINGULAR )  
+12er-Gemeinschaftskurses ( NOUN NOUN_PLURAL ) lemma=`12er-Gemeinschaftskurs` NN   
+12jährig ( ADJECTIVE )  
+12jährige ( ADJECTIVE ) lemma=`12jährig` ADJA   
+12jährigen ( ADJECTIVE ) lemma=`12jährig` ADJA   
+12jähriger ( ADJECTIVE ) lemma=`12jährig` ADJA   
+12jähriges ( ADJECTIVE ) lemma=`12jährig` ADJA   
+12köpfige ( ADJECTIVE ) lemma=`12köpfig` ADJA   
+12köpfigen ( ADJECTIVE ) lemma=`12köpfig` ADJA   
+12monatige ( ADJECTIVE ) lemma=`12monatig` ADJA   
+12monatigen ( ADJECTIVE ) lemma=`12monatig` ADJA   
+12prozentigen ( ADJECTIVE ) lemma=`12prozentig` ADJA   
+12stündige ( ADJECTIVE ) lemma=`12stündig` ADJA   
+12teilige ( ADJECTIVE ) lemma=`12teilig` ADJA   
+13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13,1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13,5-Teiler-Schuss ( NOUN NOUN_SINGULAR )  
+13,5-Teiler-Schuß ( NOUN NOUN_PLURAL ) lemma=`13,5-Teiler-Schuss` NN   
+13-A ( NOUN NOUN_SINGULAR )  
+13-Milliarden-Haushalt ( NOUN NOUN_SINGULAR )  
+13-Millionen-Grenze ( NOUN NOUN_SINGULAR )  
+13-Millionen-Mark-Defizit ( NOUN NOUN_SINGULAR )  
+13-Millionen-Neubau ( NOUN NOUN_SINGULAR )  
+13-Prozent-Sturz ( NOUN NOUN_SINGULAR )  
+13-Punkte-Papier ( NOUN NOUN_SINGULAR )  
+13-Stellen ( NOUN NOUN_PLURAL ) lemma=`13-Stelle` NN   
+13-Stunden-Film ( NOUN NOUN_SINGULAR )  
+13-jährige ( ADJECTIVE ) lemma=`13-jährig` ADJA   
+13-jährigen ( ADJECTIVE ) lemma=`13-jährig` ADJA   
+13-köpfige ( ADJECTIVE ) lemma=`13-köpfig` ADJA   
+13. ( ADJECTIVE )  
+13.39 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/100 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/17 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/4/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+130 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+130,0/160,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+130,0/165,0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+130-Köpfe-Orchester ( NOUN NOUN_SINGULAR )  
+130-Millionen-Mark-Etat ( NOUN NOUN_SINGULAR )  
+130-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+130-Seelen-Vorort ( NOUN NOUN_SINGULAR )  
+130.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+130/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1300 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1300-Einwohner-Gemeinde ( NOUN NOUN_SINGULAR )  
+1300-Megawatt-Kraftwerk ( NOUN NOUN_SINGULAR )  
+1300-Megawatt-Reaktors ( NOUN NOUN_PLURAL ) lemma=`1300-Megawatt-Reaktor` NN   
+13000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1301/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1305/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1306/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+130er ( NOUN NOUN_SINGULAR )  
+130jährige ( ADJECTIVE ) lemma=`130jährig` ADJA   
+130jährigem ( ADJECTIVE ) lemma=`130jährig` ADJA   
+130jährigen ( ADJECTIVE ) lemma=`130jährig` ADJA   
+130jähriges ( ADJECTIVE ) lemma=`130jährig` ADJA   
+130köpfige ( ADJECTIVE ) lemma=`130köpfig` ADJA   
+130köpfigen ( ADJECTIVE ) lemma=`130köpfig` ADJA   
+131/133 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1313/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1313/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1315/66 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1317/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1318/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1319/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1319/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+131er ( NOUN NOUN_SINGULAR )  
+132-Teiler ( NOUN NOUN_SINGULAR )  
+1320/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1321/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1323/08 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1324/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1326/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1327/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1327/40 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+133/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1332/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1332/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1334/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1334/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1336/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1337/25 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1337/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1337/60 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1338/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1339/75 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+133jährigen ( ADJECTIVE ) lemma=`133jährig` ADJA   
+1341/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1341/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1342/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1342/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1343/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1345/61 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1346/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+134a-Produktion ( NOUN NOUN_SINGULAR )  
+134a-Produktionsanlage ( NOUN NOUN_SINGULAR )  
+134köpfige ( ADJECTIVE ) lemma=`134köpfig` ADJA   
+135/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1350/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1352/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1352/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1352/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1353/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1355/83 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1357/66 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1359/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+135jähriger ( ADJECTIVE ) lemma=`135jährig` ADJA   
+1360/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1363/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1363/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1364/33 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1367/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1367/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1368/83 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+136köpfigen ( ADJECTIVE ) lemma=`136köpfig` ADJA   
+137 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+137,5/167,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+137/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1370/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1373/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1374/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1375/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1375/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1376/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1376/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1376/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1377/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+137köpfigen ( ADJECTIVE ) lemma=`137köpfig` ADJA   
+138-Teiler ( NOUN NOUN_SINGULAR )  
+1381/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1383/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1385/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1385/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1386/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1388 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1388/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+139 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+139/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1390/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1392/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1394/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1396/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1397/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1398/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+13:1-Punkte ( NOUN NOUN_PLURAL ) lemma=`13:1-Punkt` NN   
+13:1-Punkten ( NOUN NOUN_PLURAL ) lemma=`13:1-Punkt` NN   
+13:11-Führung ( NOUN NOUN_SINGULAR )  
+13:14-Anschlusstreffer ( NOUN NOUN_SINGULAR )  
+13:14-Anschlußtreffer ( NOUN NOUN_PLURAL ) lemma=`13:14-Anschlusstreffer` NN   
+13:5-Punkte ( NOUN NOUN_PLURAL ) lemma=`13:5-Punkt` NN   
+13:6-Sieg ( NOUN NOUN_SINGULAR )  
+13:6-Siegen ( NOUN NOUN_PLURAL ) lemma=`13:6-Sieg` NN   
+13:7-Erfolgen ( NOUN NOUN_PLURAL ) lemma=`13:7-Erfolg` NN   
+13:7-Punkte ( NOUN NOUN_PLURAL ) lemma=`13:7-Punkt` NN   
+13:9-Punkte ( NOUN NOUN_PLURAL ) lemma=`13:9-Punkt` NN   
+13er ( NOUN NOUN_SINGULAR )  
+13er-Feld ( NOUN NOUN_SINGULAR )  
+13fache ( ADJECTIVE ) lemma=`13fach` ADJA   
+13fachen ( ADJECTIVE ) lemma=`13fach` ADJA   
+13geschossige ( ADJECTIVE ) lemma=`13geschossig` ADJA   
+13geschossigen ( ADJECTIVE ) lemma=`13geschossig` ADJA   
+13jährige ( ADJECTIVE ) lemma=`13jährig` ADJA   
+13jährigem ( ADJECTIVE ) lemma=`13jährig` ADJA   
+13jährigen ( ADJECTIVE ) lemma=`13jährig` ADJA   
+13jähriger ( ADJECTIVE ) lemma=`13jährig` ADJA   
+13jähriges ( ADJECTIVE ) lemma=`13jährig` ADJA   
+13köpfige ( ADJECTIVE ) lemma=`13köpfig` ADJA   
+13köpfigen ( ADJECTIVE ) lemma=`13köpfig` ADJA   
+13mal ( ADVERB )  
+13maligen ( ADJECTIVE ) lemma=`13malig` ADJA   
+13monatigem ( ADJECTIVE ) lemma=`13monatig` ADJA   
+13monatigen ( ADJECTIVE ) lemma=`13monatig` ADJA   
+13monatiger ( ADJECTIVE ) lemma=`13monatig` ADJA   
+13prozentige ( ADJECTIVE ) lemma=`13prozentig` ADJA   
+13prozentigen ( ADJECTIVE ) lemma=`13prozentig` ADJA   
+13stündigen ( ADJECTIVE ) lemma=`13stündig` ADJA   
+13teilig ( ADJECTIVE )  
+13teilige ( ADJECTIVE ) lemma=`13teilig` ADJA   
+13teiligen ( ADJECTIVE ) lemma=`13teilig` ADJA   
+13tägigen ( ADJECTIVE ) lemma=`13tägig` ADJA   
+14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14,75 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14-A ( NOUN NOUN_SINGULAR )  
+14-Ausbau ( NOUN NOUN_SINGULAR )  
+14-Millionen-Metropole ( NOUN NOUN_SINGULAR )  
+14-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+14-Neubau ( NOUN NOUN_SINGULAR )  
+14-Parteien-Koalition ( NOUN NOUN_SINGULAR )  
+14-Prozent-Marke ( NOUN NOUN_SINGULAR )  
+14-Punkte ( NOUN NOUN_PLURAL ) lemma=`14-Punkt` NN   
+14-Punkte-Katalog ( NOUN NOUN_SINGULAR )  
+14-Punkte-Plan ( NOUN NOUN_SINGULAR )  
+14-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+14-Tage-Arrangement ( NOUN NOUN_SINGULAR )  
+14-Tage-Geld ( NOUN NOUN_SINGULAR )  
+14-Tage-Rhythmus ( NOUN NOUN_SINGULAR )  
+14-Tage-Takt ( NOUN NOUN_SINGULAR )  
+14-Tages-Rhythmus ( NOUN NOUN_SINGULAR )  
+14-Tunnel ( NOUN NOUN_SINGULAR )  
+14-Tunnel-Eröffnung ( NOUN NOUN_SINGULAR )  
+14-Tunnels ( NOUN NOUN_PLURAL ) lemma=`14-Tunnel` NN   
+14-Verlegung ( NOUN NOUN_SINGULAR )  
+14-jährige ( ADJECTIVE ) lemma=`14-jährig` ADJA   
+14-jährigen ( ADJECTIVE ) lemma=`14-jährig` ADJA   
+14-jähriger ( ADJECTIVE ) lemma=`14-jährig` ADJA   
+14-tägig ( ADJECTIVE )  
+14-tägige ( ADJECTIVE ) lemma=`14-tägig` ADJA   
+14-tägigem ( ADJECTIVE ) lemma=`14-tägig` ADJA   
+14-tägigen ( ADJECTIVE ) lemma=`14-tägig` ADJA   
+14. ( ADJECTIVE )  
+14.06 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14.10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/27 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/2780 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/29 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+140-Betten-Hotel ( NOUN NOUN_SINGULAR )  
+140-Doppelzimmer-Hotel ( NOUN NOUN_SINGULAR )  
+140-Millionen-Mark-Objekts ( NOUN NOUN_PLURAL ) lemma=`140-Millionen-Mark-Objekt` NN   
+140-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+140-Seiten ( NOUN NOUN_PLURAL ) lemma=`140-Seite` NN   
+140-Seiten-Werk ( NOUN NOUN_SINGULAR )  
+140-Teiler ( NOUN NOUN_SINGULAR )  
+1400-Ringe-Grenze ( NOUN NOUN_SINGULAR )  
+1400-Ringe-Marke ( NOUN NOUN_SINGULAR )  
+1400-Seelen-Dorf ( NOUN NOUN_SINGULAR )  
+1400-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+14000-Einwohner-Gemeinde ( NOUN NOUN_SINGULAR )  
+14000-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+14000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1400köpfigen ( ADJECTIVE ) lemma=`1400köpfig` ADJA   
+1401/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1402/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1403/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1405/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1408/07 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1408/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1409/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1409/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+140jährigen ( ADJECTIVE ) lemma=`140jährig` ADJA   
+1411/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1412/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1413/08 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1416/07 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1417/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1418/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1419/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1419/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+142/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+142/3 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+142/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1421/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1423/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1425/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1426/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1426/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1427/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1428/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1428/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1429/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1429/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1430/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1432/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1433/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+144/5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1442/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1442/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1443/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1443/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1444/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1444/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1446 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1446/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1447/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1448/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1449/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1449/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+144er ( NOUN NOUN_SINGULAR )  
+1452/07 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1454/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1460/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1461/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1462/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1462/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1462/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1463/07 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1463/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14661/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1467/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1467/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+146er ( NOUN NOUN_SINGULAR )  
+1470/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1472/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1474:1488-Niederlage ( NOUN NOUN_SINGULAR )  
+1478/00 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1478/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1489/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1493/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1499/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+14:10-Führung ( NOUN NOUN_SINGULAR )  
+14:11-Führung ( NOUN NOUN_SINGULAR )  
+14:11-Sieg ( NOUN NOUN_SINGULAR )  
+14:12-Sieg ( NOUN NOUN_SINGULAR )  
+14:13-Sieger ( NOUN NOUN_SINGULAR )  
+14:17-Niederlage ( NOUN NOUN_SINGULAR )  
+14:19-Niederlage ( NOUN NOUN_SINGULAR )  
+14:2-Zähler ( NOUN NOUN_SINGULAR )  
+14:4-Punkte ( NOUN NOUN_PLURAL ) lemma=`14:4-Punkt` NN   
+14:4-Zähler ( NOUN NOUN_SINGULAR )  
+14er-Feld ( NOUN NOUN_SINGULAR )  
+14fache ( ADJECTIVE ) lemma=`14fach` ADJA   
+14fachen ( ADJECTIVE ) lemma=`14fach` ADJA   
+14facher ( ADJECTIVE ) lemma=`14fach` ADJA   
+14jährig ( ADJECTIVE )  
+14jährige ( ADJECTIVE ) lemma=`14jährig` ADJA   
+14jährigem ( ADJECTIVE ) lemma=`14jährig` ADJA   
+14jährigen ( ADJECTIVE ) lemma=`14jährig` ADJA   
+14jähriger ( ADJECTIVE ) lemma=`14jährig` ADJA   
+14jähriges ( ADJECTIVE ) lemma=`14jährig` ADJA   
+14köpfige ( ADJECTIVE ) lemma=`14köpfig` ADJA   
+14köpfigen ( ADJECTIVE ) lemma=`14köpfig` ADJA   
+14maligen ( ADJECTIVE ) lemma=`14malig` ADJA   
+14monatige ( ADJECTIVE ) lemma=`14monatig` ADJA   
+14monatigen ( ADJECTIVE ) lemma=`14monatig` ADJA   
+14monatiger ( ADJECTIVE ) lemma=`14monatig` ADJA   
+14prozentige ( ADJECTIVE ) lemma=`14prozentig` ADJA   
+14prozentigen ( ADJECTIVE ) lemma=`14prozentig` ADJA   
+14stöckigen ( ADJECTIVE ) lemma=`14stöckig` ADJA   
+14stöckiges ( ADJECTIVE ) lemma=`14stöckig` ADJA   
+14stündige ( ADJECTIVE ) lemma=`14stündig` ADJA   
+14stündigen ( ADJECTIVE ) lemma=`14stündig` ADJA   
+14stündiger ( ADJECTIVE ) lemma=`14stündig` ADJA   
+14teilige ( ADJECTIVE ) lemma=`14teilig` ADJA   
+14tägig ( ADJECTIVE )  
+14tägige ( ADJECTIVE ) lemma=`14tägig` ADJA   
+14tägigem ( ADJECTIVE ) lemma=`14tägig` ADJA   
+14tägigen ( ADJECTIVE ) lemma=`14tägig` ADJA   
+14tägiger ( ADJECTIVE ) lemma=`14tägig` ADJA   
+14tägiges ( ADJECTIVE ) lemma=`14tägig` ADJA   
+15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15,5prozentige ( ADJECTIVE ) lemma=`15,5prozentig` ADJA   
+15,6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15-A ( NOUN NOUN_SINGULAR )  
+15-Betten-Klinik ( NOUN NOUN_SINGULAR )  
+15-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+15-Jahrfeier ( NOUN NOUN_SINGULAR )  
+15-Kilometer-Distanz ( NOUN NOUN_SINGULAR )  
+15-Länder ( NOUN NOUN_PLURAL ) lemma=`15-Land` NN   
+15-Mark-Taschen ( NOUN NOUN_PLURAL ) lemma=`15-Mark-Tasche` NN   
+15-Meter-Klasse ( NOUN NOUN_SINGULAR )  
+15-Meter-Rennklasse ( NOUN NOUN_SINGULAR )  
+15-Millionen-Bevölkerung ( NOUN NOUN_SINGULAR )  
+15-Millionen-Mark-Zuschuss ( NOUN NOUN_SINGULAR )  
+15-Millionen-Mark-Zuschuß ( NOUN NOUN_PLURAL ) lemma=`15-Millionen-Mark-Zuschuss` NN   
+15-Millionen-Projekt ( NOUN NOUN_SINGULAR )  
+15-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+15-Minuten-Interviews ( NOUN NOUN_PLURAL ) lemma=`15-Minuten-Interview` NN   
+15-Minuten-Takt ( NOUN NOUN_SINGULAR )  
+15-Minuten-Taktes ( NOUN NOUN_PLURAL ) lemma=`15-Minuten-Takt` NN   
+15-Minuten-Takts ( NOUN NOUN_PLURAL ) lemma=`15-Minuten-Takt` NN   
+15-Minuten-Verkehr ( NOUN NOUN_SINGULAR )  
+15-Prozent-Marke ( NOUN NOUN_SINGULAR )  
+15-Prozent-Regelung ( NOUN NOUN_SINGULAR )  
+15-Punkte-Katalog ( NOUN NOUN_SINGULAR )  
+15-Punkte-Papier ( NOUN NOUN_SINGULAR )  
+15-Punkte-Programm ( NOUN NOUN_SINGULAR )  
+15-Quadratmeter-Zimmer ( NOUN NOUN_SINGULAR )  
+15-Stunden-Job ( NOUN NOUN_SINGULAR )  
+15-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+15-Stunden-Tage ( NOUN NOUN_PLURAL ) lemma=`15-Stunden-Tag` NN   
+15-Uhr-Spielen ( NOUN NOUN_PLURAL ) lemma=`15-Uhr-Spiel` NN   
+15-Uhr-Vorstellung ( NOUN NOUN_SINGULAR )  
+15-jährige ( ADJECTIVE ) lemma=`15-jährig` ADJA   
+15-jährigen ( ADJECTIVE ) lemma=`15-jährig` ADJA   
+15-jähriger ( ADJECTIVE ) lemma=`15-jährig` ADJA   
+15-jähriges ( ADJECTIVE ) lemma=`15-jährig` ADJA   
+15-km-Langlauf ( NOUN NOUN_SINGULAR )  
+15-km-Lauf ( NOUN NOUN_SINGULAR )  
+15-km-Rennen ( NOUN NOUN_SINGULAR )  
+15-km-Sieg ( NOUN NOUN_SINGULAR )  
+15-köpfige ( ADJECTIVE ) lemma=`15-köpfig` ADJA   
+15-köpfigen ( ADJECTIVE ) lemma=`15-köpfig` ADJA   
+15-m-Rennklasse ( NOUN NOUN_SINGULAR )  
+15. ( ADJECTIVE )  
+15.000köpfige ( ADJECTIVE ) lemma=`15.000köpfig` ADJA   
+15.05 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/25 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+150 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+150,0/177,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+150-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+150-Jahr-Jubiläum ( NOUN NOUN_SINGULAR )  
+150-Jahr-Jubiläums ( NOUN NOUN_PLURAL ) lemma=`150-Jahr-Jubiläum` NN   
+150-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+150-Millionen-Volk ( NOUN NOUN_SINGULAR )  
+150-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+150-g-Erdbeerjoghurt ( NOUN NOUN_SINGULAR )  
+150-köpfige ( ADJECTIVE ) lemma=`150-köpfig` ADJA   
+150-prozentig ( ADJECTIVE )  
+150-prozentiges ( ADJECTIVE ) lemma=`150-prozentig` ADJA   
+150/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1500 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1500-Einwohner-Marke ( NOUN NOUN_SINGULAR )  
+1500-Mark-Scheck ( NOUN NOUN_SINGULAR )  
+1500-Meter-Lauf ( NOUN NOUN_SINGULAR )  
+1500-Meter-Rennen ( NOUN NOUN_SINGULAR )  
+1500-Meter-Rennens ( NOUN NOUN_PLURAL ) lemma=`1500-Meter-Rennen` NN   
+1500-Meter-Staffellauf ( NOUN NOUN_SINGULAR )  
+1500-Meter-Strecke ( NOUN NOUN_SINGULAR )  
+1500-Punkte-Marke ( NOUN NOUN_SINGULAR )  
+1500-Ringe-Grenze ( NOUN NOUN_SINGULAR )  
+1500-Seelen-Ort ( NOUN NOUN_SINGULAR )  
+1500-m-Distanz ( NOUN NOUN_SINGULAR )  
+1500-m-Europameister ( NOUN NOUN_SINGULAR )  
+1500-m-Freistil ( NOUN NOUN_SINGULAR )  
+1500-m-Lauf ( NOUN NOUN_SINGULAR )  
+1500-m-Läuferin ( NOUN NOUN_SINGULAR )  
+1500-m-Olympiasiegerin ( NOUN NOUN_SINGULAR )  
+1500-m-Rennen ( NOUN NOUN_SINGULAR )  
+1500-m-Sieg ( NOUN NOUN_SINGULAR )  
+1500-m-Weltmeister ( NOUN NOUN_SINGULAR )  
+1500-m-Weltrekord ( NOUN NOUN_SINGULAR )  
+15000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15000-Punkte-Marke ( NOUN NOUN_SINGULAR )  
+150000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1500er ( NOUN NOUN_SINGULAR )  
+1503-Verfahren ( NOUN NOUN_SINGULAR )  
+150D-Mark ( NOUN NOUN_SINGULAR )  
+150fache ( ADJECTIVE ) lemma=`150fach` ADJA   
+150fachen ( ADJECTIVE ) lemma=`150fach` ADJA   
+150jährige ( ADJECTIVE ) lemma=`150jährig` ADJA   
+150jährigen ( ADJECTIVE ) lemma=`150jährig` ADJA   
+150jähriges ( ADJECTIVE ) lemma=`150jährig` ADJA   
+150köpfige ( ADJECTIVE ) lemma=`150köpfig` ADJA   
+150köpfigen ( ADJECTIVE ) lemma=`150köpfig` ADJA   
+150prozentig ( ADJECTIVE )  
+150prozentige ( ADJECTIVE ) lemma=`150prozentig` ADJA   
+150prozentigen ( ADJECTIVE ) lemma=`150prozentig` ADJA   
+150prozentiger ( ADJECTIVE ) lemma=`150prozentig` ADJA   
+151/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1515/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1516:1513-Sieg ( NOUN NOUN_SINGULAR )  
+151jährigen ( ADJECTIVE ) lemma=`151jährig` ADJA   
+152/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1520:1543-Niederlage ( NOUN NOUN_SINGULAR )  
+1521/22 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+152er ( NOUN NOUN_SINGULAR )  
+1534/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+155-Millimeter ( NOUN NOUN_SINGULAR )  
+155-Millimeter-Geschosse ( NOUN NOUN_PLURAL ) lemma=`155-Millimeter-Geschoss` NN   
+155-mm-Haubitzen ( NOUN NOUN_PLURAL ) lemma=`155-mm-Haubitze` NN   
+155/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1555/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+155jährigen ( ADJECTIVE ) lemma=`155jährig` ADJA   
+156/6 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+156er-Nummer ( NOUN NOUN_SINGULAR )  
+156er-Nummern ( NOUN NOUN_PLURAL ) lemma=`156er-Nummer` NN   
+1586/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+159-Teiler ( NOUN NOUN_SINGULAR )  
+15921,22 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1594/95 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1595,04 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+15:0-Sieg ( NOUN NOUN_SINGULAR )  
+15:1-Punkten ( NOUN NOUN_PLURAL ) lemma=`15:1-Punkt` NN   
+15:13-Lösung ( NOUN NOUN_SINGULAR )  
+15:13-Punkten ( NOUN NOUN_PLURAL ) lemma=`15:13-Punkt` NN   
+15:15-Punkten ( NOUN NOUN_PLURAL ) lemma=`15:15-Punkt` NN   
+15:17-Niederlage ( NOUN NOUN_SINGULAR )  
+15:18-Niederlage ( NOUN NOUN_SINGULAR )  
+15:2-Sieg ( NOUN NOUN_SINGULAR )  
+15:3-Punkte ( NOUN NOUN_PLURAL ) lemma=`15:3-Punkt` NN   
+15:7-Zählern ( NOUN NOUN_PLURAL ) lemma=`15:7-Zähler` NN   
+15er ( NOUN NOUN_SINGULAR )  
+15er-Clubs ( NOUN NOUN_PLURAL ) lemma=`15er-Club` NN   
+15er-Feld ( NOUN NOUN_SINGULAR )  
+15er-Kader ( NOUN NOUN_SINGULAR )  
+15fach ( ADJECTIVE )  
+15fache ( ADJECTIVE ) lemma=`15fach` ADJA   
+15fachen ( ADJECTIVE ) lemma=`15fach` ADJA   
+15jährig ( ADJECTIVE )  
+15jährige ( ADJECTIVE ) lemma=`15jährig` ADJA   
+15jährigem ( ADJECTIVE ) lemma=`15jährig` ADJA   
+15jährigen ( ADJECTIVE ) lemma=`15jährig` ADJA   
+15jähriger ( ADJECTIVE ) lemma=`15jährig` ADJA   
+15jähriges ( ADJECTIVE ) lemma=`15jährig` ADJA   
+15köpfige ( ADJECTIVE ) lemma=`15köpfig` ADJA   
+15köpfigen ( ADJECTIVE ) lemma=`15köpfig` ADJA   
+15köpfiger ( ADJECTIVE ) lemma=`15köpfig` ADJA   
+15köpfiges ( ADJECTIVE ) lemma=`15köpfig` ADJA   
+15malige ( ADJECTIVE ) lemma=`15malig` ADJA   
+15maliges ( ADJECTIVE ) lemma=`15malig` ADJA   
+15monatige ( ADJECTIVE ) lemma=`15monatig` ADJA   
+15monatigen ( ADJECTIVE ) lemma=`15monatig` ADJA   
+15monatiger ( ADJECTIVE ) lemma=`15monatig` ADJA   
+15prozentige ( ADJECTIVE ) lemma=`15prozentig` ADJA   
+15prozentigen ( ADJECTIVE ) lemma=`15prozentig` ADJA   
+15prozentiger ( ADJECTIVE ) lemma=`15prozentig` ADJA   
+15stöckigen ( ADJECTIVE ) lemma=`15stöckig` ADJA   
+15stündige ( ADJECTIVE ) lemma=`15stündig` ADJA   
+15stündigem ( ADJECTIVE ) lemma=`15stündig` ADJA   
+15stündigen ( ADJECTIVE ) lemma=`15stündig` ADJA   
+15stündiger ( ADJECTIVE ) lemma=`15stündig` ADJA   
+15teilige ( ADJECTIVE ) lemma=`15teilig` ADJA   
+15tägig ( ADJECTIVE )  
+15tägige ( ADJECTIVE ) lemma=`15tägig` ADJA   
+15tägigen ( ADJECTIVE ) lemma=`15tägig` ADJA   
+15tägiger ( ADJECTIVE ) lemma=`15tägig` ADJA   
+15wöchige ( ADJECTIVE ) lemma=`15wöchig` ADJA   
+16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16,7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16,9 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16-A ( NOUN NOUN_SINGULAR )  
+16-Bit-Konsole ( NOUN NOUN_SINGULAR )  
+16-Bomber ( NOUN NOUN_SINGULAR )  
+16-Bombern ( NOUN NOUN_PLURAL ) lemma=`16-Bomber` NN   
+16-E ( NOUN NOUN_SINGULAR )  
+16-Europameister ( NOUN NOUN_SINGULAR )  
+16-Kilometer-Lauf ( NOUN NOUN_SINGULAR )  
+16-Kilometer-Laufs ( NOUN NOUN_PLURAL ) lemma=`16-Kilometer-Lauf` NN   
+16-Megabit-Chip ( NOUN NOUN_SINGULAR )  
+16-Megabit-Chips ( NOUN NOUN_PLURAL ) lemma=`16-Megabit-Chip` NN   
+16-Meter-Handzugleiter ( NOUN NOUN_SINGULAR )  
+16-Meter-Marke ( NOUN NOUN_SINGULAR )  
+16-Meter-Raum ( NOUN NOUN_SINGULAR )  
+16-Meter-Schuss ( NOUN NOUN_SINGULAR )  
+16-Meter-Schuß ( NOUN NOUN_PLURAL ) lemma=`16-Meter-Schuss` NN   
+16-Millimeter-Filmprojektoren ( NOUN NOUN_PLURAL ) lemma=`16-Millimeter-Filmprojektor` NN   
+16-Millimeter-Kameras ( NOUN NOUN_PLURAL ) lemma=`16-Millimeter-Kamera` NN   
+16-Punkte ( NOUN NOUN_PLURAL ) lemma=`16-Punkt` NN   
+16-Punkte-Programm ( NOUN NOUN_SINGULAR )  
+16-Punkte-Rückstand ( NOUN NOUN_SINGULAR )  
+16-Quadratmeter-Zimmer ( NOUN NOUN_SINGULAR )  
+16-Stunden-Arbeitstag ( NOUN NOUN_SINGULAR )  
+16-Stunden-Kleid ( NOUN NOUN_SINGULAR )  
+16-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+16-Stunden-Tagen ( NOUN NOUN_PLURAL ) lemma=`16-Stunden-Tag` NN   
+16-jährige ( ADJECTIVE ) lemma=`16-jährig` ADJA   
+16-jährigen ( ADJECTIVE ) lemma=`16-jährig` ADJA   
+16-m-Schuss ( NOUN NOUN_SINGULAR )  
+16-m-Schuß ( NOUN NOUN_PLURAL ) lemma=`16-m-Schuss` NN   
+16-mm ( NOUN NOUN_SINGULAR )  
+16-mm-Film ( NOUN NOUN_SINGULAR )  
+16-mm-Filme ( NOUN NOUN_PLURAL ) lemma=`16-mm-Film` NN   
+16-mm-Kamera ( NOUN NOUN_SINGULAR )  
+16-mm-Material ( NOUN NOUN_SINGULAR )  
+16-mm-Streifen ( NOUN NOUN_SINGULAR )  
+16-mm-Zelluloid ( NOUN NOUN_SINGULAR )  
+16. ( ADJECTIVE )  
+16./17. ( ADJECTIVE )  
+16.000köpfigen ( ADJECTIVE ) lemma=`16.000köpfig` ADJA   
+16.03 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16.56 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/100 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/17 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/24 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+160 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+160-Betten-Hotels ( NOUN NOUN_PLURAL ) lemma=`160-Betten-Hotel` NN   
+160-Betten-Kurhotels ( NOUN NOUN_PLURAL ) lemma=`160-Betten-Kurhotel` NN   
+160-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+160-Millionen-Mark-Vorschuss ( NOUN NOUN_SINGULAR )  
+160-Millionen-Mark-Vorschuß ( NOUN NOUN_PLURAL ) lemma=`160-Millionen-Mark-Vorschuss` NN   
+160-Millionen-SSB-Defizit ( NOUN NOUN_SINGULAR )  
+16000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16000-Einwohner-Gemeinde ( NOUN NOUN_SINGULAR )  
+16000-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+16000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1600er ( NOUN NOUN_SINGULAR )  
+160köpfigen ( ADJECTIVE ) lemma=`160köpfig` ADJA   
+161 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+161/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1613/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1616 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1628/83 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+163 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+163/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1644mal ( ADVERB )  
+166 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+166/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+167/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+167fache ( ADJECTIVE ) lemma=`167fach` ADJA   
+167fachen ( ADJECTIVE ) lemma=`167fach` ADJA   
+169/170 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1696,74 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1696,76 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1698/99 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+16:0-Punkten ( NOUN NOUN_PLURAL ) lemma=`16:0-Punkt` NN   
+16:10-Heimsieg ( NOUN NOUN_SINGULAR )  
+16:10-Vorsprung ( NOUN NOUN_SINGULAR )  
+16:13-Heimerfolg ( NOUN NOUN_SINGULAR )  
+16:13-Heimsieg ( NOUN NOUN_SINGULAR )  
+16:14-Erfolg ( NOUN NOUN_SINGULAR )  
+16:14-Vorsprung ( NOUN NOUN_SINGULAR )  
+16:15-Führung ( NOUN NOUN_SINGULAR )  
+16:2-Punkte ( NOUN NOUN_PLURAL ) lemma=`16:2-Punkt` NN   
+16:26-Punkte ( NOUN NOUN_PLURAL ) lemma=`16:26-Punkt` NN   
+16:4-Punkte ( NOUN NOUN_PLURAL ) lemma=`16:4-Punkt` NN   
+16:8-Führung ( NOUN NOUN_SINGULAR )  
+16:9-Format ( NOUN NOUN_SINGULAR )  
+16:9-Sieger ( NOUN NOUN_SINGULAR )  
+16E-Schicht ( NOUN NOUN_SINGULAR )  
+16er ( NOUN NOUN_SINGULAR )  
+16er-Aufgebot ( NOUN NOUN_SINGULAR )  
+16er-Feld ( NOUN NOUN_SINGULAR )  
+16er-Kader ( NOUN NOUN_SINGULAR )  
+16er-Staffel ( NOUN NOUN_SINGULAR )  
+16fache ( ADJECTIVE ) lemma=`16fach` ADJA   
+16fachen ( ADJECTIVE ) lemma=`16fach` ADJA   
+16geschossige ( ADJECTIVE ) lemma=`16geschossig` ADJA   
+16geschossigen ( ADJECTIVE ) lemma=`16geschossig` ADJA   
+16jährig ( ADJECTIVE )  
+16jährige ( ADJECTIVE ) lemma=`16jährig` ADJA   
+16jährigem ( ADJECTIVE ) lemma=`16jährig` ADJA   
+16jährigen ( ADJECTIVE ) lemma=`16jährig` ADJA   
+16jähriger ( ADJECTIVE ) lemma=`16jährig` ADJA   
+16jähriges ( ADJECTIVE ) lemma=`16jährig` ADJA   
+16köpfige ( ADJECTIVE ) lemma=`16köpfig` ADJA   
+16köpfigen ( ADJECTIVE ) lemma=`16köpfig` ADJA   
+16köpfiges ( ADJECTIVE ) lemma=`16köpfig` ADJA   
+16mal ( ADVERB )  
+16malige ( ADJECTIVE ) lemma=`16malig` ADJA   
+16mm-Film ( NOUN NOUN_SINGULAR )  
+16mm-Filme ( NOUN NOUN_PLURAL ) lemma=`16mm-Film` NN   
+16mm-Filmen ( NOUN NOUN_PLURAL ) lemma=`16mm-Film` NN   
+16mm-Kamera ( NOUN NOUN_SINGULAR )  
+16monatige ( ADJECTIVE ) lemma=`16monatig` ADJA   
+16monatigen ( ADJECTIVE ) lemma=`16monatig` ADJA   
+16monatiger ( ADJECTIVE ) lemma=`16monatig` ADJA   
+16prozentige ( ADJECTIVE ) lemma=`16prozentig` ADJA   
+16prozentigen ( ADJECTIVE ) lemma=`16prozentig` ADJA   
+16stöckiges ( ADJECTIVE ) lemma=`16stöckig` ADJA   
+16stündigen ( ADJECTIVE ) lemma=`16stündig` ADJA   
+16stündiger ( ADJECTIVE ) lemma=`16stündig` ADJA   
+16teilige ( ADJECTIVE ) lemma=`16teilig` ADJA   
+16tägige ( ADJECTIVE ) lemma=`16tägig` ADJA   
+16tägigen ( ADJECTIVE ) lemma=`16tägig` ADJA   
+16wöchige ( ADJECTIVE ) lemma=`16wöchig` ADJA   
+16wöchigen ( ADJECTIVE ) lemma=`16wöchig` ADJA   
+16wöchiger ( ADJECTIVE ) lemma=`16wöchig` ADJA   
+16wöchiges ( ADJECTIVE ) lemma=`16wöchig` ADJA   
+17 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17,50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17-19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17-Meter-Schuss ( NOUN NOUN_SINGULAR )  
+17-Meter-Schuß ( NOUN NOUN_PLURAL ) lemma=`17-Meter-Schuss` NN   
+17-Millionen-Stadt ( NOUN NOUN_SINGULAR )  
+17-Minuten-Takt ( NOUN NOUN_SINGULAR )  
+17-Nationalmannschaft ( NOUN NOUN_SINGULAR )  
+17-Nationen-Fest ( NOUN NOUN_SINGULAR )  
+17-Programm ( NOUN NOUN_SINGULAR )  
+17-Punkte-Abkommen ( NOUN NOUN_SINGULAR )  
+17-Punkte-Katalog ( NOUN NOUN_SINGULAR )  
+17-Seiten-Papier ( NOUN NOUN_SINGULAR )  
+17-Stimmen-Vorsprung ( NOUN NOUN_SINGULAR )  
+17-jährige ( ADJECTIVE ) lemma=`17-jährig` ADJA   
+17-m-Schuss ( NOUN NOUN_SINGULAR )  
+17-m-Schuß ( NOUN NOUN_PLURAL ) lemma=`17-m-Schuss` NN   
+17/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/10 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+170 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+170-Hektar-Gelände ( NOUN NOUN_SINGULAR )  
+170/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1700 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1700-Seelen-Gemeinde ( NOUN NOUN_SINGULAR )  
+17000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+170er ( NOUN NOUN_SINGULAR )  
+172/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1744 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+175-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+175-Jahr-Jubiläum ( NOUN NOUN_SINGULAR )  
+175-Jahr-Jubiläums ( NOUN NOUN_PLURAL ) lemma=`175-Jahr-Jubiläum` NN   
+175/212,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1750/60 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17500-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+1758/59 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+175er ( NOUN NOUN_SINGULAR )  
+175jährige ( ADJECTIVE ) lemma=`175jährig` ADJA   
+175jährigen ( ADJECTIVE ) lemma=`175jährig` ADJA   
+175jähriges ( ADJECTIVE ) lemma=`175jährig` ADJA   
+175mal ( ADVERB )  
+1761/62 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1770,64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1777/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1779/82 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1787er ( NOUN NOUN_SINGULAR )  
+1789/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1789/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1789er ( NOUN NOUN_SINGULAR )  
+179/180 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1791/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1792/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1793/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1795/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+17:10-Auswärtssieg ( NOUN NOUN_SINGULAR )  
+17:10-Heimsieg ( NOUN NOUN_SINGULAR )  
+17:12-Vorsprung ( NOUN NOUN_SINGULAR )  
+17:15-Heimsieg ( NOUN NOUN_SINGULAR )  
+17:15-Sieg ( NOUN NOUN_SINGULAR )  
+17:16-Endstand ( NOUN NOUN_SINGULAR )  
+17:16-Sieg ( NOUN NOUN_SINGULAR )  
+17:16-Zittersieg ( NOUN NOUN_SINGULAR )  
+17:17-Endstand ( NOUN NOUN_SINGULAR )  
+17:17-Punkte ( NOUN NOUN_PLURAL ) lemma=`17:17-Punkt` NN   
+17:19-Rückstand ( NOUN NOUN_SINGULAR )  
+17:8-Auswärtserfolg ( NOUN NOUN_SINGULAR )  
+17:9-Punkten ( NOUN NOUN_PLURAL ) lemma=`17:9-Punkt` NN   
+17er-Feld ( NOUN NOUN_SINGULAR )  
+17er-Feldes ( NOUN NOUN_PLURAL ) lemma=`17er-Feld` NN   
+17er-Gruppe ( NOUN NOUN_SINGULAR )  
+17fach ( ADJECTIVE )  
+17fache ( ADJECTIVE ) lemma=`17fach` ADJA   
+17fachen ( ADJECTIVE ) lemma=`17fach` ADJA   
+17jährig ( ADJECTIVE )  
+17jährige ( ADJECTIVE ) lemma=`17jährig` ADJA   
+17jährigem ( ADJECTIVE ) lemma=`17jährig` ADJA   
+17jährigen ( ADJECTIVE ) lemma=`17jährig` ADJA   
+17jähriger ( ADJECTIVE ) lemma=`17jährig` ADJA   
+17jähriges ( ADJECTIVE ) lemma=`17jährig` ADJA   
+17köpfige ( ADJECTIVE ) lemma=`17köpfig` ADJA   
+17köpfigen ( ADJECTIVE ) lemma=`17köpfig` ADJA   
+17monatige ( ADJECTIVE ) lemma=`17monatig` ADJA   
+17monatigen ( ADJECTIVE ) lemma=`17monatig` ADJA   
+17prozentige ( ADJECTIVE ) lemma=`17prozentig` ADJA   
+17stündige ( ADJECTIVE ) lemma=`17stündig` ADJA   
+17stündigen ( ADJECTIVE ) lemma=`17stündig` ADJA   
+17stündiger ( ADJECTIVE ) lemma=`17stündig` ADJA   
+17tägigen ( ADJECTIVE ) lemma=`17tägig` ADJA   
+17tägiger ( ADJECTIVE ) lemma=`17tägig` ADJA   
+18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18,9-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR )  
+18-Familien-Haus ( NOUN NOUN_SINGULAR )  
+18-Gang-Kettenschaltung ( NOUN NOUN_SINGULAR )  
+18-Gang-Schaltung ( NOUN NOUN_SINGULAR )  
+18-Kampfflugzeuge ( NOUN NOUN_PLURAL ) lemma=`18-Kampfflugzeug` NN   
+18-Loch-Anlage ( NOUN NOUN_SINGULAR )  
+18-Loch-Golfanlage ( NOUN NOUN_SINGULAR )  
+18-Loch-Golfplatz ( NOUN NOUN_SINGULAR )  
+18-Loch-Platz ( NOUN NOUN_SINGULAR )  
+18-Loch-Plätze ( NOUN NOUN_PLURAL ) lemma=`18-Loch-Platz` NN   
+18-Meter-Schuss ( NOUN NOUN_SINGULAR )  
+18-Meter-Schuß ( NOUN NOUN_PLURAL ) lemma=`18-Meter-Schuss` NN   
+18-Millionen-Metropole ( NOUN NOUN_SINGULAR )  
+18-Nationen-Turniers ( NOUN NOUN_PLURAL ) lemma=`18-Nationen-Turnier` NN   
+18-Punkte-Plan ( NOUN NOUN_SINGULAR )  
+18-Stunden-Tag ( NOUN NOUN_SINGULAR )  
+18-Teiler ( NOUN NOUN_SINGULAR )  
+18-Uhr-Gottesdienst ( NOUN NOUN_SINGULAR )  
+18-Uhr-Vorstellung ( NOUN NOUN_SINGULAR )  
+18-West ( NOUN NOUN_SINGULAR )  
+18-Wettbewerb ( NOUN NOUN_SINGULAR )  
+18-jährige ( ADJECTIVE ) lemma=`18-jährig` ADJA   
+18-jähriges ( ADJECTIVE ) lemma=`18-jährig` ADJA   
+18-m-Flachschuss ( NOUN NOUN_SINGULAR )  
+18-m-Flachschuß ( NOUN NOUN_PLURAL ) lemma=`18-m-Flachschuss` NN   
+18-m-Freistoss ( NOUN NOUN_PLURAL ) lemma=`18-m-Freistoß` NN   
+18-m-Freistoß ( NOUN NOUN_SINGULAR )  
+18-m-Schuss ( NOUN NOUN_SINGULAR )  
+18-m-Schuß ( NOUN NOUN_PLURAL ) lemma=`18-m-Schuss` NN   
+18-monatiger ( ADJECTIVE ) lemma=`18-monatig` ADJA   
+18-stündigen ( ADJECTIVE ) lemma=`18-stündig` ADJA   
+18. ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) lemma=`18.`18.` ADJA  CARD   
+18/19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+180 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+180-Grad-Drehung ( NOUN NOUN_SINGULAR )  
+180-Grad-Wende ( NOUN NOUN_SINGULAR )  
+180-Grad-Wendung ( NOUN NOUN_SINGULAR )  
+180-Meter-Schanze ( NOUN NOUN_SINGULAR )  
+180-Mikrogramm-Schwelle ( NOUN NOUN_SINGULAR )  
+180-Minuten-Regelung ( NOUN NOUN_SINGULAR )  
+180.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1800 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1800-Einwohner-Stadtteil ( NOUN NOUN_SINGULAR )  
+1800/1900 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18000-Einwohner-Kommune ( NOUN NOUN_SINGULAR )  
+18000-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+1802/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+180er ( NOUN NOUN_SINGULAR )  
+180köpfigen ( ADJECTIVE ) lemma=`180köpfig` ADJA   
+181/46 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1810 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1811er ( NOUN NOUN_SINGULAR )  
+1812/13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1814/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1817/1818 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1820/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1822-Festival ( NOUN NOUN_SINGULAR )  
+1822-Jazz ( NOUN NOUN_SINGULAR )  
+1822-Jazz-Konzert ( NOUN NOUN_SINGULAR )  
+1822-Rock-Festival ( NOUN NOUN_SINGULAR )  
+1822-Rock-Festivals ( NOUN NOUN_PLURAL ) lemma=`1822-Rock-Festival` NN   
+1822-Rockfestival ( NOUN NOUN_SINGULAR )  
+1822-Rockfestivals ( NOUN NOUN_PLURAL ) lemma=`1822-Rockfestival` NN   
+1827/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1828/29 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1830er ( NOUN NOUN_SINGULAR )  
+1830ern ( NOUN NOUN_PLURAL ) lemma=`1830er` NN   
+1833/34 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1841/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1842 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1844 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1847/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1848/49 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1848er ( NOUN NOUN_SINGULAR )  
+1848er-Revolution ( NOUN NOUN_SINGULAR )  
+185 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+185/54/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+185/72/4 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1850/09 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18500-Einwohner-Stadt ( NOUN NOUN_SINGULAR )  
+18500-Einwohner-Städtchen ( NOUN NOUN_SINGULAR )  
+1854 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1856/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1857/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1860-Fanclub ( NOUN NOUN_SINGULAR )  
+1860er ( NOUN NOUN_SINGULAR )  
+1861 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1862/63 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1866 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+187 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1870/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18724 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1873 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1873/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18776/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1878-Erfolge ( NOUN NOUN_PLURAL ) lemma=`1878-Erfolg` NN   
+1879 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1879/1920 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+187malige ( ADJECTIVE ) lemma=`187malig` ADJA   
+1880er ( NOUN NOUN_SINGULAR )  
+1882 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1884/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1885 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1887 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1890 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1890er ( NOUN NOUN_SINGULAR )  
+1893 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1893/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1895 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1895/07 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1895/96 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1896/97 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1897 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1899/1900 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+18:0-Punkte ( NOUN NOUN_PLURAL ) lemma=`18:0-Punkt` NN   
+18:14-Sieg ( NOUN NOUN_SINGULAR )  
+18:15-Heimsieg ( NOUN NOUN_SINGULAR )  
+18:17-Sieg ( NOUN NOUN_SINGULAR )  
+18:19-Niederlage ( NOUN NOUN_SINGULAR )  
+18:2-Punkte ( NOUN NOUN_PLURAL ) lemma=`18:2-Punkt` NN   
+18:2-Punkten ( NOUN NOUN_PLURAL ) lemma=`18:2-Punkt` NN   
+18:2-Tore ( NOUN NOUN_PLURAL ) lemma=`18:2-Tor` NN   
+18:4-Punkten ( NOUN NOUN_PLURAL ) lemma=`18:4-Punkt` NN   
+18:7-Heimsieg ( NOUN NOUN_SINGULAR )  
+18a-Verfahren ( NOUN NOUN_SINGULAR )  
+18er-Feld ( NOUN NOUN_SINGULAR )  
+18er-Kader ( NOUN NOUN_SINGULAR )  
+18fache ( ADJECTIVE ) lemma=`18fach` ADJA   
+18fachen ( ADJECTIVE ) lemma=`18fach` ADJA   
+18jährig ( ADJECTIVE )  
+18jährige ( ADJECTIVE ) lemma=`18jährig` ADJA   
+18jährigem ( ADJECTIVE ) lemma=`18jährig` ADJA   
+18jährigen ( ADJECTIVE ) lemma=`18jährig` ADJA   
+18jähriger ( ADJECTIVE ) lemma=`18jährig` ADJA   
+18jähriges ( ADJECTIVE ) lemma=`18jährig` ADJA   
+18karätigem ( ADJECTIVE ) lemma=`18karätig` ADJA   
+18köpfige ( ADJECTIVE ) lemma=`18köpfig` ADJA   
+18köpfigen ( ADJECTIVE ) lemma=`18köpfig` ADJA   
+18köpfiges ( ADJECTIVE ) lemma=`18köpfig` ADJA   
+18maligen ( ADJECTIVE ) lemma=`18malig` ADJA   
+18monatige ( ADJECTIVE ) lemma=`18monatig` ADJA   
+18monatigen ( ADJECTIVE ) lemma=`18monatig` ADJA   
+18monatiger ( ADJECTIVE ) lemma=`18monatig` ADJA   
+18prozentigen ( ADJECTIVE ) lemma=`18prozentig` ADJA   
+18stöckiges ( ADJECTIVE ) lemma=`18stöckig` ADJA   
+18stündigem ( ADJECTIVE ) lemma=`18stündig` ADJA   
+18stündigen ( ADJECTIVE ) lemma=`18stündig` ADJA   
+18stündiger ( ADJECTIVE ) lemma=`18stündig` ADJA   
+18teiligen ( ADJECTIVE ) lemma=`18teilig` ADJA   
+19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19,6-Prozent-Beteiligung ( NOUN NOUN_SINGULAR )  
+19,8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19-Kräfte ( NOUN NOUN_PLURAL ) lemma=`19-Kraft` NN   
+19-Nationalspielerin ( NOUN NOUN_SINGULAR )  
+19-Punkte-Programm ( NOUN NOUN_SINGULAR )  
+19-Seiten-Text ( NOUN NOUN_SINGULAR )  
+19-Stellen ( NOUN NOUN_PLURAL ) lemma=`19-Stelle` NN   
+19-Verträge ( NOUN NOUN_PLURAL ) lemma=`19-Vertrag` NN   
+19-jährige ( ADJECTIVE ) lemma=`19-jährig` ADJA   
+19-jährigen ( ADJECTIVE ) lemma=`19-jährig` ADJA   
+19-köpfige ( ADJECTIVE ) lemma=`19-köpfig` ADJA   
+19. ( ADJECTIVE )  
+19.30 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+190/230 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1900 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1900-Jahr-Feier ( NOUN NOUN_SINGULAR )  
+1901 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1901er ( NOUN NOUN_SINGULAR )  
+1902 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1903 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1904/05 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1905/06 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1907/08 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+190er ( NOUN NOUN_SINGULAR )  
+190er-Kompaktklasse ( NOUN NOUN_SINGULAR )  
+190er-Nachfolger ( NOUN NOUN_SINGULAR )  
+190er-Reihe ( NOUN NOUN_SINGULAR )  
+190ern ( NOUN NOUN_PLURAL ) lemma=`190er` NN   
+1910/11 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1910/1911 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1911/12 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1912/13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1913/14 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1914/15 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1914/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1915/16 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1916/17 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1917/18 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1918/19 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1918/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1918/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19183 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1919/20 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+192-Seiten-Buch ( NOUN NOUN_SINGULAR )  
+1920/21 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1920er ( NOUN NOUN_SINGULAR )  
+1921/22 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1922/23 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1922er-Komitee ( NOUN NOUN_SINGULAR )  
+1923/24 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1924/25 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1925/26 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1926/27 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1927/28 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1927/29 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1928 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1928/29 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1928er ( NOUN NOUN_SINGULAR )  
+1929 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1929/30 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+193/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1930/31 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1930er ( NOUN NOUN_SINGULAR )  
+1931/32 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1932/1933 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1932/33 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1933/34 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1934 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1934/35 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1935/36 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19355.3/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1936/37 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1937 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1937/38 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1938/39 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1939 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1939/40 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+193jährigen ( ADJECTIVE ) lemma=`193jährig` ADJA   
+194/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+194/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1940/41 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1940/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1941 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1941/42 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1941/43 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1942 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1942/43 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1943 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1943/44 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1943/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1944/45 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1945 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1945/46 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1946/47 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1947 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1947/48 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1948 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1948/49 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1948/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1948er ( NOUN NOUN_SINGULAR )  
+1949/1950 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1949/50 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+195-Millionen-Mark-Etat ( NOUN NOUN_SINGULAR )  
+1950/51 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1950/8 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1951/1967 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1951/52 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1952/53 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1953/54 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1954/55 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1955/56 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1956/57 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1957/58 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1958/59 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1959/60 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1960/61 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1960/70 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1960er ( NOUN NOUN_SINGULAR )  
+1961/62 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1961er ( NOUN NOUN_SINGULAR )  
+1962 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1962/63 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1963 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1963/64 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1964/65 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1965/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1965/66 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1966/67 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1967/68 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1967/69 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1968 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1968/69 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1968er ( NOUN NOUN_SINGULAR )  
+1969/70 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1969/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1969er ( NOUN NOUN_SINGULAR )  
+197,5 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1970 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1970/71 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1970er ( NOUN NOUN_SINGULAR )  
+1971/72 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1971/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1972 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1972/73 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1972er ( NOUN NOUN_SINGULAR )  
+1973/1990 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1973/74 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1974 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1974/75 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1974/76 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1975 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1975/76 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1975er ( NOUN NOUN_SINGULAR )  
+1976 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1976/77 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1977 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1977/78 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1977/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1977er ( NOUN NOUN_SINGULAR )  
+1978/79 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1978er ( NOUN NOUN_SINGULAR )  
+1979 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1979/80 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1979er ( NOUN NOUN_SINGULAR )  
+1980/81 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1980/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1980er ( NOUN NOUN_SINGULAR )  
+1981/82 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1982/83 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1982er ( NOUN NOUN_SINGULAR )  
+1983/1984 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1983/84 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1983er ( NOUN NOUN_SINGULAR )  
+1984 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1984/85 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1984er ( NOUN NOUN_SINGULAR )  
+1985 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1985/1986 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1985/86 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1985er ( NOUN NOUN_SINGULAR )  
+1986 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986/7 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986/87 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986/88/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1986er ( NOUN NOUN_SINGULAR )  
+1987 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1987/1988 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1987/1994 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1987/88 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1987/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1987er ( NOUN NOUN_SINGULAR )  
+1988 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988/1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988/89 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988/89/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988/9 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1988er ( NOUN NOUN_SINGULAR )  
+1989 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1989/1990 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1989/90 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1989/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1989er ( NOUN NOUN_SINGULAR )  
+1990 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1990/1991 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1990/91 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1990/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1990er ( NOUN NOUN_SINGULAR )  
+1991 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991/1992 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991/1996 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991/92 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1991er ( NOUN NOUN_SINGULAR )  
+1992 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/13 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/1993 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/1997 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/93 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992/97 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1992er ( NOUN NOUN_SINGULAR )  
+1993 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1993/1994 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1993/94 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1993/95 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1993er ( NOUN NOUN_SINGULAR )  
+1994 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1994/1995 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1994/95 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1994er ( NOUN NOUN_SINGULAR )  
+1995 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1995/1996 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1995/96 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1996 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1996/97 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1996/98 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1997 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1997/98 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1998 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1998/2000 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1998/99 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1999 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+19:1-Punkte ( NOUN NOUN_PLURAL ) lemma=`19:1-Punkt` NN   
+19:1-Zähler ( NOUN NOUN_SINGULAR )  
+19:10-Favorit ( NOUN NOUN_SINGULAR )  
+19:18-Sieg ( NOUN NOUN_SINGULAR )  
+19:18-Vorsprung ( NOUN NOUN_SINGULAR )  
+19:19-Unentschieden ( NOUN NOUN_SINGULAR )  
+19:20-Blamage ( NOUN NOUN_SINGULAR )  
+19:21-Niederlage ( NOUN NOUN_SINGULAR )  
+19er ( NOUN NOUN_SINGULAR )  
+19er-Feld ( NOUN NOUN_SINGULAR )  
+19fache ( ADJECTIVE ) lemma=`19fach` ADJA   
+19fachen ( ADJECTIVE ) lemma=`19fach` ADJA   
+19jährig ( ADJECTIVE )  
+19jährige ( ADJECTIVE ) lemma=`19jährig` ADJA   
+19jährigem ( ADJECTIVE ) lemma=`19jährig` ADJA   
+19jährigen ( ADJECTIVE ) lemma=`19jährig` ADJA   
+19jähriger ( ADJECTIVE ) lemma=`19jährig` ADJA   
+19jähriges ( ADJECTIVE ) lemma=`19jährig` ADJA   
+19köpfige ( ADJECTIVE ) lemma=`19köpfig` ADJA   
+19köpfigen ( ADJECTIVE ) lemma=`19köpfig` ADJA   
+19malige ( ADJECTIVE ) lemma=`19malig` ADJA   
+19monatigen ( ADJECTIVE ) lemma=`19monatig` ADJA   
+19stündigen ( ADJECTIVE ) lemma=`19stündig` ADJA   
+19tägigen ( ADJECTIVE ) lemma=`19tägig` ADJA   
+1:0 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1:0-Auftaktsieg ( NOUN NOUN_SINGULAR )  
+1:0-Auswärtssieg ( NOUN NOUN_SINGULAR )  
+1:0-Derbyerfolg ( NOUN NOUN_SINGULAR )  
+1:0-Endstand ( NOUN NOUN_SINGULAR )  
+1:0-Erfolg ( NOUN NOUN_SINGULAR )  
+1:0-Finalsieg ( NOUN NOUN_SINGULAR )  
+1:0-Führung ( NOUN NOUN_SINGULAR )  
+1:0-Führungstreffer ( NOUN NOUN_SINGULAR )  
+1:0-Halbzeitstand ( NOUN NOUN_SINGULAR )  
+1:0-Heimsieg ( NOUN NOUN_SINGULAR )  
+1:0-Pausenführung ( NOUN NOUN_SINGULAR )  
+1:0-Sieg ( NOUN NOUN_SINGULAR )  
+1:0-Siege ( NOUN NOUN_PLURAL ) lemma=`1:0-Sieg` NN   
+1:0-Sieges ( NOUN NOUN_PLURAL ) lemma=`1:0-Sieg` NN   
+1:0-Siegtreffer ( NOUN NOUN_SINGULAR )  
+1:0-Vorsprung ( NOUN NOUN_SINGULAR )  
+1:1 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1:1-Ausgleich ( NOUN NOUN_SINGULAR )  
+1:1-Ausgleichstreffer ( NOUN NOUN_SINGULAR )  
+1:1-Endergebnis ( NOUN NOUN_SINGULAR )  
+1:1-Endstand ( NOUN NOUN_SINGULAR )  
+1:1-Halbzeitstand ( NOUN NOUN_SINGULAR )  
+1:1-Kurs ( NOUN NOUN_SINGULAR )  
+1:1-Kurses ( NOUN NOUN_PLURAL ) lemma=`1:1-Kurs` NN   
+1:1-Pausenstand ( NOUN NOUN_SINGULAR )  
+1:1-Remis ( NOUN NOUN_SINGULAR )  
+1:1-Tausch ( NOUN NOUN_SINGULAR )  
+1:1-Umstellung ( NOUN NOUN_SINGULAR )  
+1:1-Umtausch ( NOUN NOUN_SINGULAR )  
+1:1-Umtausches ( NOUN NOUN_PLURAL ) lemma=`1:1-Umtausch` NN   
+1:1-Umtauschkurs ( NOUN NOUN_SINGULAR )  
+1:1-Umtauschs ( NOUN NOUN_PLURAL ) lemma=`1:1-Umtausch` NN   
+1:1-Unentschieden ( NOUN NOUN_SINGULAR )  
+1:1-Verhältnis ( NOUN NOUN_SINGULAR )  
+1:1-Übersetzung ( NOUN NOUN_SINGULAR )  
+1:15-Punkte ( NOUN NOUN_PLURAL ) lemma=`1:15-Punkt` NN   
+1:2 ( ADJECTIVE_NUMBER NOUN_NUMBER )  
+1:2-Anschlusstreffer ( NOUN NOUN_SINGULAR )  
+1:2-Anschlußtreffer ( NOUN NOUN_PLURAL ) lemma=`1:2-Anschlusstreffer` NN   
+1:2-Endstand ( NOUN NOUN_SINGULAR )  
+1:2-Heimniederlage ( NOUN NOUN_SINGULAR )  
+1:2-Niederlage ( NOUN NOUN_SINGULAR )  
+1:2-Niederlagen ( NOUN NOUN_PLURAL ) lemma=`1:2-Niederlage` NN   
+1:2-Pleite ( NOUN NOUN_SINGULAR )  
+1:2-Regelung ( NOUN NOUN_SINGULAR )  
+1:2-Rückstand ( NOUN NOUN_SINGULAR )  
+1:2-Umtausch ( NOUN NOUN_SINGULAR )  
+1:3-Anschlusstreffer ( NOUN NOUN_SINGULAR )  
+1:3-Anschlußtreffer ( NOUN NOUN_PLURAL ) lemma=`1:3-Anschlusstreffer` NN   
+1:3-Debakel ( NOUN NOUN_SINGULAR )  
+1:3-Endstand ( NOUN NOUN_SINGULAR )  
+1:3-Heimniederlage ( NOUN NOUN_SINGULAR )  
+1:3-Heimpleite ( NOUN NOUN_SINGULAR )  
+1:3-Hinspielniederlage ( NOUN NOUN_SINGULAR )  
+1:3-Niederlage ( NOUN NOUN_SINGULAR )  
+1:3-Niederlagen ( NOUN NOUN_PLURAL ) lemma=`1:3-Niederlage` NN   
+1:3-Punkten ( NOUN NOUN_PLURAL ) lemma=`1:3-Punkt` NN   
+1:3-Rückstand ( NOUN NOUN_SINGULAR )  
+1:3-Verkauf ( NOUN NOUN_SINGULAR )  
+1:4-Anschlusstreffer ( NOUN NOUN_SINGULAR )  
+1:4-Anschlußtreffer ( NOUN NOUN_PLURAL ) lemma=`1:4-Anschlusstreffer` NN   
+1:4-Endstand ( NOUN NOUN_SINGULAR )  
+1:4-Heimniederlage ( NOUN NOUN_SINGULAR )  
+1:4-Niederlage ( NOUN NOUN_SINGULAR )  
+1:4-Packung ( NOUN NOUN_SINGULAR )  
+1:4-Rückstand ( NOUN NOUN_SINGULAR )  
+1:4-Schlappe ( NOUN NOUN_SINGULAR )  
+1:5-Niederlage ( NOUN NOUN_SINGULAR )  
+1:5-Punkte ( NOUN NOUN_PLURAL ) lemma=`1:5-Punkt` NN   
+1:5-Punkten ( NOUN NOUN_PLURAL ) lemma=`1:5-Punkt` NN   
+1:6-Debakel ( NOUN NOUN_SINGULAR )  
+1:6-Niederlage ( NOUN NOUN_SINGULAR )  
+1:6-Schlappe ( NOUN NOUN_SINGULAR )  
+1:7-Niederlage ( NOUN NOUN_SINGULAR )  
+1:7-Punkte ( NOUN NOUN_PLURAL ) lemma=`1:7-Punkt` NN   
+1:8-Debakel ( NOUN NOUN_SINGULAR )  
+1:8-Sätzen ( NOUN NOUN_PLURAL ) lemma=`1:8-Satz` NN   
+1:9-Niederlage ( NOUN NOUN_SINGULAR )  
+1D-Mark ( NOUN NOUN_SINGULAR )  
+1a ( NOUN NOUN_PROPER_SINGULAR )  
+1a-Lage ( NOUN NOUN_SINGULAR )  
+1a-Lagen ( NOUN NOUN_PLURAL ) lemma=`1a-Lage` NN   
+1b-Lagen ( NOUN NOUN_PLURAL ) lemma=`1b-Lage` NN   
+1b-Mannschaft ( NOUN NOUN_SINGULAR )  
+1b-Stelle ( NOUN NOUN_SINGULAR )  
+1er ( NOUN NOUN_SINGULAR )  
+1er-Wertung ( NOUN NOUN_SINGULAR )  
+1ern ( NOUN NOUN_PLURAL ) lemma=`1er` NN   
+1jährigen ( ADJECTIVE ) lemma=`1jährig` ADJA   
+1jähriger ( ADJECTIVE ) lemma=`1jährig` ADJA   
+1mal ( ADVERB )  

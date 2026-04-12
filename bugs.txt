@@ -1,0 +1,6 @@
+﻿Failed to load MeCab tagger
+Buffer allocation underflow
+Failed to load MeCab tagger
+Failed to load MeCab tagger
+Failed to load MeCab tagger
+Buffer allocation underflow

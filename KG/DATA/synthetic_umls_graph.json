@@ -1,0 +1,2991 @@
+{
+  "concepts": [
+    {
+      "CUI": "C0000001",
+      "Term": "Concept_1",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000002",
+      "Term": "Concept_2",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000003",
+      "Term": "Concept_3",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000004",
+      "Term": "Concept_4",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000005",
+      "Term": "Concept_5",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000006",
+      "Term": "Concept_6",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000007",
+      "Term": "Concept_7",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000008",
+      "Term": "Concept_8",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000009",
+      "Term": "Concept_9",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000010",
+      "Term": "Concept_10",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000011",
+      "Term": "Concept_11",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000012",
+      "Term": "Concept_12",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000013",
+      "Term": "Concept_13",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000014",
+      "Term": "Concept_14",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000015",
+      "Term": "Concept_15",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000016",
+      "Term": "Concept_16",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000017",
+      "Term": "Concept_17",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000018",
+      "Term": "Concept_18",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000019",
+      "Term": "Concept_19",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000020",
+      "Term": "Concept_20",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000021",
+      "Term": "Concept_21",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000022",
+      "Term": "Concept_22",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000023",
+      "Term": "Concept_23",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000024",
+      "Term": "Concept_24",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000025",
+      "Term": "Concept_25",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000026",
+      "Term": "Concept_26",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000027",
+      "Term": "Concept_27",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000028",
+      "Term": "Concept_28",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000029",
+      "Term": "Concept_29",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000030",
+      "Term": "Concept_30",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000031",
+      "Term": "Concept_31",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000032",
+      "Term": "Concept_32",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000033",
+      "Term": "Concept_33",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000034",
+      "Term": "Concept_34",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000035",
+      "Term": "Concept_35",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000036",
+      "Term": "Concept_36",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000037",
+      "Term": "Concept_37",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000038",
+      "Term": "Concept_38",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000039",
+      "Term": "Concept_39",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000040",
+      "Term": "Concept_40",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000041",
+      "Term": "Concept_41",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000042",
+      "Term": "Concept_42",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000043",
+      "Term": "Concept_43",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000044",
+      "Term": "Concept_44",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000045",
+      "Term": "Concept_45",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000046",
+      "Term": "Concept_46",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000047",
+      "Term": "Concept_47",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000048",
+      "Term": "Concept_48",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000049",
+      "Term": "Concept_49",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000050",
+      "Term": "Concept_50",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000051",
+      "Term": "Concept_51",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000052",
+      "Term": "Concept_52",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000053",
+      "Term": "Concept_53",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000054",
+      "Term": "Concept_54",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000055",
+      "Term": "Concept_55",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000056",
+      "Term": "Concept_56",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000057",
+      "Term": "Concept_57",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000058",
+      "Term": "Concept_58",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000059",
+      "Term": "Concept_59",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000060",
+      "Term": "Concept_60",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000061",
+      "Term": "Concept_61",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000062",
+      "Term": "Concept_62",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000063",
+      "Term": "Concept_63",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000064",
+      "Term": "Concept_64",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000065",
+      "Term": "Concept_65",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000066",
+      "Term": "Concept_66",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000067",
+      "Term": "Concept_67",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000068",
+      "Term": "Concept_68",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000069",
+      "Term": "Concept_69",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000070",
+      "Term": "Concept_70",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000071",
+      "Term": "Concept_71",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000072",
+      "Term": "Concept_72",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000073",
+      "Term": "Concept_73",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000074",
+      "Term": "Concept_74",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000075",
+      "Term": "Concept_75",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000076",
+      "Term": "Concept_76",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000077",
+      "Term": "Concept_77",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000078",
+      "Term": "Concept_78",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000079",
+      "Term": "Concept_79",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000080",
+      "Term": "Concept_80",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000081",
+      "Term": "Concept_81",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000082",
+      "Term": "Concept_82",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000083",
+      "Term": "Concept_83",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000084",
+      "Term": "Concept_84",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000085",
+      "Term": "Concept_85",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000086",
+      "Term": "Concept_86",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000087",
+      "Term": "Concept_87",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000088",
+      "Term": "Concept_88",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000089",
+      "Term": "Concept_89",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000090",
+      "Term": "Concept_90",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000091",
+      "Term": "Concept_91",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000092",
+      "Term": "Concept_92",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000093",
+      "Term": "Concept_93",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000094",
+      "Term": "Concept_94",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000095",
+      "Term": "Concept_95",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000096",
+      "Term": "Concept_96",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000097",
+      "Term": "Concept_97",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000098",
+      "Term": "Concept_98",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000099",
+      "Term": "Concept_99",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000100",
+      "Term": "Concept_100",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000101",
+      "Term": "Concept_101",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000102",
+      "Term": "Concept_102",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000103",
+      "Term": "Concept_103",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000104",
+      "Term": "Concept_104",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000105",
+      "Term": "Concept_105",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000106",
+      "Term": "Concept_106",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000107",
+      "Term": "Concept_107",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000108",
+      "Term": "Concept_108",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000109",
+      "Term": "Concept_109",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000110",
+      "Term": "Concept_110",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000111",
+      "Term": "Concept_111",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000112",
+      "Term": "Concept_112",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000113",
+      "Term": "Concept_113",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000114",
+      "Term": "Concept_114",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000115",
+      "Term": "Concept_115",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000116",
+      "Term": "Concept_116",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000117",
+      "Term": "Concept_117",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000118",
+      "Term": "Concept_118",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000119",
+      "Term": "Concept_119",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000120",
+      "Term": "Concept_120",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000121",
+      "Term": "Concept_121",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000122",
+      "Term": "Concept_122",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000123",
+      "Term": "Concept_123",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000124",
+      "Term": "Concept_124",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000125",
+      "Term": "Concept_125",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000126",
+      "Term": "Concept_126",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000127",
+      "Term": "Concept_127",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000128",
+      "Term": "Concept_128",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000129",
+      "Term": "Concept_129",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000130",
+      "Term": "Concept_130",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000131",
+      "Term": "Concept_131",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000132",
+      "Term": "Concept_132",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000133",
+      "Term": "Concept_133",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000134",
+      "Term": "Concept_134",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000135",
+      "Term": "Concept_135",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000136",
+      "Term": "Concept_136",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000137",
+      "Term": "Concept_137",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000138",
+      "Term": "Concept_138",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000139",
+      "Term": "Concept_139",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000140",
+      "Term": "Concept_140",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000141",
+      "Term": "Concept_141",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000142",
+      "Term": "Concept_142",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000143",
+      "Term": "Concept_143",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000144",
+      "Term": "Concept_144",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000145",
+      "Term": "Concept_145",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000146",
+      "Term": "Concept_146",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000147",
+      "Term": "Concept_147",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000148",
+      "Term": "Concept_148",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000149",
+      "Term": "Concept_149",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000150",
+      "Term": "Concept_150",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000151",
+      "Term": "Concept_151",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000152",
+      "Term": "Concept_152",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000153",
+      "Term": "Concept_153",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000154",
+      "Term": "Concept_154",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000155",
+      "Term": "Concept_155",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000156",
+      "Term": "Concept_156",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000157",
+      "Term": "Concept_157",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000158",
+      "Term": "Concept_158",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000159",
+      "Term": "Concept_159",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000160",
+      "Term": "Concept_160",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000161",
+      "Term": "Concept_161",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000162",
+      "Term": "Concept_162",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000163",
+      "Term": "Concept_163",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000164",
+      "Term": "Concept_164",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000165",
+      "Term": "Concept_165",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000166",
+      "Term": "Concept_166",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000167",
+      "Term": "Concept_167",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000168",
+      "Term": "Concept_168",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000169",
+      "Term": "Concept_169",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000170",
+      "Term": "Concept_170",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000171",
+      "Term": "Concept_171",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000172",
+      "Term": "Concept_172",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000173",
+      "Term": "Concept_173",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000174",
+      "Term": "Concept_174",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000175",
+      "Term": "Concept_175",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000176",
+      "Term": "Concept_176",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000177",
+      "Term": "Concept_177",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000178",
+      "Term": "Concept_178",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000179",
+      "Term": "Concept_179",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000180",
+      "Term": "Concept_180",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000181",
+      "Term": "Concept_181",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000182",
+      "Term": "Concept_182",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000183",
+      "Term": "Concept_183",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000184",
+      "Term": "Concept_184",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000185",
+      "Term": "Concept_185",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000186",
+      "Term": "Concept_186",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000187",
+      "Term": "Concept_187",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000188",
+      "Term": "Concept_188",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000189",
+      "Term": "Concept_189",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000190",
+      "Term": "Concept_190",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000191",
+      "Term": "Concept_191",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000192",
+      "Term": "Concept_192",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000193",
+      "Term": "Concept_193",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000194",
+      "Term": "Concept_194",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000195",
+      "Term": "Concept_195",
+      "SemanticType": "Disease"
+    },
+    {
+      "CUI": "C0000196",
+      "Term": "Concept_196",
+      "SemanticType": "Symptom"
+    },
+    {
+      "CUI": "C0000197",
+      "Term": "Concept_197",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000198",
+      "Term": "Concept_198",
+      "SemanticType": "Procedure"
+    },
+    {
+      "CUI": "C0000199",
+      "Term": "Concept_199",
+      "SemanticType": "Drug"
+    },
+    {
+      "CUI": "C0000200",
+      "Term": "Concept_200",
+      "SemanticType": "Drug"
+    }
+  ],
+  "relations": [
+    {
+      "CUI1": "C0000017",
+      "REL": "TREATS",
+      "CUI2": "C0000059"
+    },
+    {
+      "CUI1": "C0000084",
+      "REL": "CAUSES",
+      "CUI2": "C0000176"
+    },
+    {
+      "CUI1": "C0000038",
+      "REL": "CAUSES",
+      "CUI2": "C0000054"
+    },
+    {
+      "CUI1": "C0000025",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000030"
+    },
+    {
+      "CUI1": "C0000094",
+      "REL": "TREATS",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000118",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000042"
+    },
+    {
+      "CUI1": "C0000062",
+      "REL": "CAUSES",
+      "CUI2": "C0000073"
+    },
+    {
+      "CUI1": "C0000139",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000037"
+    },
+    {
+      "CUI1": "C0000114",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000182"
+    },
+    {
+      "CUI1": "C0000076",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000083"
+    },
+    {
+      "CUI1": "C0000122",
+      "REL": "TREATS",
+      "CUI2": "C0000095"
+    },
+    {
+      "CUI1": "C0000015",
+      "REL": "CAUSES",
+      "CUI2": "C0000121"
+    },
+    {
+      "CUI1": "C0000158",
+      "REL": "TREATS",
+      "CUI2": "C0000111"
+    },
+    {
+      "CUI1": "C0000072",
+      "REL": "TREATS",
+      "CUI2": "C0000133"
+    },
+    {
+      "CUI1": "C0000149",
+      "REL": "TREATS",
+      "CUI2": "C0000033"
+    },
+    {
+      "CUI1": "C0000161",
+      "REL": "TREATS",
+      "CUI2": "C0000197"
+    },
+    {
+      "CUI1": "C0000032",
+      "REL": "CAUSES",
+      "CUI2": "C0000100"
+    },
+    {
+      "CUI1": "C0000195",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000046"
+    },
+    {
+      "CUI1": "C0000094",
+      "REL": "TREATS",
+      "CUI2": "C0000025"
+    },
+    {
+      "CUI1": "C0000088",
+      "REL": "CAUSES",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000200",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000137"
+    },
+    {
+      "CUI1": "C0000023",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000149"
+    },
+    {
+      "CUI1": "C0000105",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000191"
+    },
+    {
+      "CUI1": "C0000134",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000008"
+    },
+    {
+      "CUI1": "C0000108",
+      "REL": "TREATS",
+      "CUI2": "C0000153"
+    },
+    {
+      "CUI1": "C0000011",
+      "REL": "TREATS",
+      "CUI2": "C0000133"
+    },
+    {
+      "CUI1": "C0000042",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000014"
+    },
+    {
+      "CUI1": "C0000007",
+      "REL": "TREATS",
+      "CUI2": "C0000152"
+    },
+    {
+      "CUI1": "C0000118",
+      "REL": "TREATS",
+      "CUI2": "C0000190"
+    },
+    {
+      "CUI1": "C0000065",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000173"
+    },
+    {
+      "CUI1": "C0000118",
+      "REL": "CAUSES",
+      "CUI2": "C0000076"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "TREATS",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000170",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000178",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000077"
+    },
+    {
+      "CUI1": "C0000025",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000173"
+    },
+    {
+      "CUI1": "C0000151",
+      "REL": "TREATS",
+      "CUI2": "C0000041"
+    },
+    {
+      "CUI1": "C0000199",
+      "REL": "TREATS",
+      "CUI2": "C0000076"
+    },
+    {
+      "CUI1": "C0000162",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000121"
+    },
+    {
+      "CUI1": "C0000196",
+      "REL": "CAUSES",
+      "CUI2": "C0000056"
+    },
+    {
+      "CUI1": "C0000105",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000128"
+    },
+    {
+      "CUI1": "C0000185",
+      "REL": "CAUSES",
+      "CUI2": "C0000052"
+    },
+    {
+      "CUI1": "C0000169",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000144"
+    },
+    {
+      "CUI1": "C0000081",
+      "REL": "TREATS",
+      "CUI2": "C0000042"
+    },
+    {
+      "CUI1": "C0000153",
+      "REL": "TREATS",
+      "CUI2": "C0000195"
+    },
+    {
+      "CUI1": "C0000193",
+      "REL": "TREATS",
+      "CUI2": "C0000013"
+    },
+    {
+      "CUI1": "C0000138",
+      "REL": "CAUSES",
+      "CUI2": "C0000006"
+    },
+    {
+      "CUI1": "C0000093",
+      "REL": "TREATS",
+      "CUI2": "C0000098"
+    },
+    {
+      "CUI1": "C0000103",
+      "REL": "TREATS",
+      "CUI2": "C0000197"
+    },
+    {
+      "CUI1": "C0000110",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000102"
+    },
+    {
+      "CUI1": "C0000151",
+      "REL": "TREATS",
+      "CUI2": "C0000040"
+    },
+    {
+      "CUI1": "C0000140",
+      "REL": "CAUSES",
+      "CUI2": "C0000079"
+    },
+    {
+      "CUI1": "C0000126",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000155"
+    },
+    {
+      "CUI1": "C0000158",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000048"
+    },
+    {
+      "CUI1": "C0000016",
+      "REL": "TREATS",
+      "CUI2": "C0000111"
+    },
+    {
+      "CUI1": "C0000141",
+      "REL": "TREATS",
+      "CUI2": "C0000183"
+    },
+    {
+      "CUI1": "C0000084",
+      "REL": "CAUSES",
+      "CUI2": "C0000156"
+    },
+    {
+      "CUI1": "C0000175",
+      "REL": "TREATS",
+      "CUI2": "C0000125"
+    },
+    {
+      "CUI1": "C0000199",
+      "REL": "TREATS",
+      "CUI2": "C0000056"
+    },
+    {
+      "CUI1": "C0000129",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000050"
+    },
+    {
+      "CUI1": "C0000184",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000170"
+    },
+    {
+      "CUI1": "C0000123",
+      "REL": "CAUSES",
+      "CUI2": "C0000122"
+    },
+    {
+      "CUI1": "C0000059",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000186"
+    },
+    {
+      "CUI1": "C0000049",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000177"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "TREATS",
+      "CUI2": "C0000082"
+    },
+    {
+      "CUI1": "C0000198",
+      "REL": "CAUSES",
+      "CUI2": "C0000130"
+    },
+    {
+      "CUI1": "C0000142",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000088"
+    },
+    {
+      "CUI1": "C0000060",
+      "REL": "CAUSES",
+      "CUI2": "C0000135"
+    },
+    {
+      "CUI1": "C0000094",
+      "REL": "CAUSES",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000071",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000051"
+    },
+    {
+      "CUI1": "C0000150",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000078"
+    },
+    {
+      "CUI1": "C0000048",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000059"
+    },
+    {
+      "CUI1": "C0000031",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000075"
+    },
+    {
+      "CUI1": "C0000166",
+      "REL": "CAUSES",
+      "CUI2": "C0000083"
+    },
+    {
+      "CUI1": "C0000176",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000197"
+    },
+    {
+      "CUI1": "C0000177",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000194"
+    },
+    {
+      "CUI1": "C0000076",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000111"
+    },
+    {
+      "CUI1": "C0000116",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000023"
+    },
+    {
+      "CUI1": "C0000067",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000065"
+    },
+    {
+      "CUI1": "C0000082",
+      "REL": "CAUSES",
+      "CUI2": "C0000115"
+    },
+    {
+      "CUI1": "C0000174",
+      "REL": "TREATS",
+      "CUI2": "C0000114"
+    },
+    {
+      "CUI1": "C0000055",
+      "REL": "TREATS",
+      "CUI2": "C0000132"
+    },
+    {
+      "CUI1": "C0000099",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000144"
+    },
+    {
+      "CUI1": "C0000184",
+      "REL": "TREATS",
+      "CUI2": "C0000155"
+    },
+    {
+      "CUI1": "C0000130",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000137"
+    },
+    {
+      "CUI1": "C0000085",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000038"
+    },
+    {
+      "CUI1": "C0000031",
+      "REL": "TREATS",
+      "CUI2": "C0000077"
+    },
+    {
+      "CUI1": "C0000125",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000162"
+    },
+    {
+      "CUI1": "C0000053",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000002"
+    },
+    {
+      "CUI1": "C0000010",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000099"
+    },
+    {
+      "CUI1": "C0000105",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000008"
+    },
+    {
+      "CUI1": "C0000153",
+      "REL": "TREATS",
+      "CUI2": "C0000193"
+    },
+    {
+      "CUI1": "C0000189",
+      "REL": "CAUSES",
+      "CUI2": "C0000173"
+    },
+    {
+      "CUI1": "C0000059",
+      "REL": "TREATS",
+      "CUI2": "C0000135"
+    },
+    {
+      "CUI1": "C0000032",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000128"
+    },
+    {
+      "CUI1": "C0000044",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000088"
+    },
+    {
+      "CUI1": "C0000125",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000039"
+    },
+    {
+      "CUI1": "C0000003",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000192"
+    },
+    {
+      "CUI1": "C0000072",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000180"
+    },
+    {
+      "CUI1": "C0000194",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000163"
+    },
+    {
+      "CUI1": "C0000045",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000148"
+    },
+    {
+      "CUI1": "C0000078",
+      "REL": "TREATS",
+      "CUI2": "C0000135"
+    },
+    {
+      "CUI1": "C0000191",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000196"
+    },
+    {
+      "CUI1": "C0000049",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000184"
+    },
+    {
+      "CUI1": "C0000178",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000068"
+    },
+    {
+      "CUI1": "C0000114",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000034"
+    },
+    {
+      "CUI1": "C0000193",
+      "REL": "CAUSES",
+      "CUI2": "C0000054"
+    },
+    {
+      "CUI1": "C0000159",
+      "REL": "TREATS",
+      "CUI2": "C0000047"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000074"
+    },
+    {
+      "CUI1": "C0000174",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000066"
+    },
+    {
+      "CUI1": "C0000169",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000166"
+    },
+    {
+      "CUI1": "C0000046",
+      "REL": "CAUSES",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000199",
+      "REL": "CAUSES",
+      "CUI2": "C0000109"
+    },
+    {
+      "CUI1": "C0000002",
+      "REL": "TREATS",
+      "CUI2": "C0000141"
+    },
+    {
+      "CUI1": "C0000174",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000006"
+    },
+    {
+      "CUI1": "C0000020",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000198"
+    },
+    {
+      "CUI1": "C0000199",
+      "REL": "TREATS",
+      "CUI2": "C0000127"
+    },
+    {
+      "CUI1": "C0000149",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000051"
+    },
+    {
+      "CUI1": "C0000155",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000179"
+    },
+    {
+      "CUI1": "C0000004",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000134"
+    },
+    {
+      "CUI1": "C0000025",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000034"
+    },
+    {
+      "CUI1": "C0000021",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000003"
+    },
+    {
+      "CUI1": "C0000132",
+      "REL": "CAUSES",
+      "CUI2": "C0000104"
+    },
+    {
+      "CUI1": "C0000070",
+      "REL": "TREATS",
+      "CUI2": "C0000115"
+    },
+    {
+      "CUI1": "C0000047",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000194"
+    },
+    {
+      "CUI1": "C0000171",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000021"
+    },
+    {
+      "CUI1": "C0000168",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000059"
+    },
+    {
+      "CUI1": "C0000101",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000068"
+    },
+    {
+      "CUI1": "C0000061",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000079"
+    },
+    {
+      "CUI1": "C0000140",
+      "REL": "TREATS",
+      "CUI2": "C0000154"
+    },
+    {
+      "CUI1": "C0000103",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000068",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000077"
+    },
+    {
+      "CUI1": "C0000005",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000151"
+    },
+    {
+      "CUI1": "C0000101",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000024",
+      "REL": "CAUSES",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000015",
+      "REL": "TREATS",
+      "CUI2": "C0000029"
+    },
+    {
+      "CUI1": "C0000166",
+      "REL": "TREATS",
+      "CUI2": "C0000112"
+    },
+    {
+      "CUI1": "C0000150",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000159"
+    },
+    {
+      "CUI1": "C0000105",
+      "REL": "TREATS",
+      "CUI2": "C0000195"
+    },
+    {
+      "CUI1": "C0000085",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000198"
+    },
+    {
+      "CUI1": "C0000104",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000052"
+    },
+    {
+      "CUI1": "C0000156",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000081"
+    },
+    {
+      "CUI1": "C0000079",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000191"
+    },
+    {
+      "CUI1": "C0000080",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000033"
+    },
+    {
+      "CUI1": "C0000153",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000004"
+    },
+    {
+      "CUI1": "C0000154",
+      "REL": "TREATS",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000157",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000174"
+    },
+    {
+      "CUI1": "C0000055",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000140"
+    },
+    {
+      "CUI1": "C0000095",
+      "REL": "CAUSES",
+      "CUI2": "C0000125"
+    },
+    {
+      "CUI1": "C0000129",
+      "REL": "TREATS",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000198",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000067"
+    },
+    {
+      "CUI1": "C0000068",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000127"
+    },
+    {
+      "CUI1": "C0000097",
+      "REL": "CAUSES",
+      "CUI2": "C0000178"
+    },
+    {
+      "CUI1": "C0000069",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000143"
+    },
+    {
+      "CUI1": "C0000097",
+      "REL": "TREATS",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000019",
+      "REL": "TREATS",
+      "CUI2": "C0000147"
+    },
+    {
+      "CUI1": "C0000016",
+      "REL": "TREATS",
+      "CUI2": "C0000069"
+    },
+    {
+      "CUI1": "C0000080",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000068"
+    },
+    {
+      "CUI1": "C0000179",
+      "REL": "CAUSES",
+      "CUI2": "C0000067"
+    },
+    {
+      "CUI1": "C0000072",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000123"
+    },
+    {
+      "CUI1": "C0000051",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000181"
+    },
+    {
+      "CUI1": "C0000028",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000076"
+    },
+    {
+      "CUI1": "C0000199",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000093"
+    },
+    {
+      "CUI1": "C0000031",
+      "REL": "TREATS",
+      "CUI2": "C0000055"
+    },
+    {
+      "CUI1": "C0000018",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000009",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000160"
+    },
+    {
+      "CUI1": "C0000188",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000178"
+    },
+    {
+      "CUI1": "C0000110",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000129"
+    },
+    {
+      "CUI1": "C0000100",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000075"
+    },
+    {
+      "CUI1": "C0000016",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000114"
+    },
+    {
+      "CUI1": "C0000155",
+      "REL": "TREATS",
+      "CUI2": "C0000194"
+    },
+    {
+      "CUI1": "C0000037",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000022"
+    },
+    {
+      "CUI1": "C0000026",
+      "REL": "CAUSES",
+      "CUI2": "C0000098"
+    },
+    {
+      "CUI1": "C0000174",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000180"
+    },
+    {
+      "CUI1": "C0000033",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000091"
+    },
+    {
+      "CUI1": "C0000156",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000099"
+    },
+    {
+      "CUI1": "C0000092",
+      "REL": "CAUSES",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000164",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000138"
+    },
+    {
+      "CUI1": "C0000154",
+      "REL": "CAUSES",
+      "CUI2": "C0000177"
+    },
+    {
+      "CUI1": "C0000092",
+      "REL": "CAUSES",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000139",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000103"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000120"
+    },
+    {
+      "CUI1": "C0000032",
+      "REL": "TREATS",
+      "CUI2": "C0000138"
+    },
+    {
+      "CUI1": "C0000146",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000111"
+    },
+    {
+      "CUI1": "C0000183",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000114"
+    },
+    {
+      "CUI1": "C0000043",
+      "REL": "CAUSES",
+      "CUI2": "C0000121"
+    },
+    {
+      "CUI1": "C0000015",
+      "REL": "TREATS",
+      "CUI2": "C0000131"
+    },
+    {
+      "CUI1": "C0000008",
+      "REL": "TREATS",
+      "CUI2": "C0000144"
+    },
+    {
+      "CUI1": "C0000158",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000151"
+    },
+    {
+      "CUI1": "C0000007",
+      "REL": "TREATS",
+      "CUI2": "C0000034"
+    },
+    {
+      "CUI1": "C0000051",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000118"
+    },
+    {
+      "CUI1": "C0000002",
+      "REL": "CAUSES",
+      "CUI2": "C0000113"
+    },
+    {
+      "CUI1": "C0000045",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000172"
+    },
+    {
+      "CUI1": "C0000149",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000069",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000163"
+    },
+    {
+      "CUI1": "C0000023",
+      "REL": "TREATS",
+      "CUI2": "C0000118"
+    },
+    {
+      "CUI1": "C0000086",
+      "REL": "TREATS",
+      "CUI2": "C0000024"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000152"
+    },
+    {
+      "CUI1": "C0000076",
+      "REL": "TREATS",
+      "CUI2": "C0000124"
+    },
+    {
+      "CUI1": "C0000057",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000179"
+    },
+    {
+      "CUI1": "C0000169",
+      "REL": "CAUSES",
+      "CUI2": "C0000144"
+    },
+    {
+      "CUI1": "C0000181",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000173"
+    },
+    {
+      "CUI1": "C0000017",
+      "REL": "TREATS",
+      "CUI2": "C0000183"
+    },
+    {
+      "CUI1": "C0000076",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000048"
+    },
+    {
+      "CUI1": "C0000141",
+      "REL": "TREATS",
+      "CUI2": "C0000049"
+    },
+    {
+      "CUI1": "C0000170",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000027"
+    },
+    {
+      "CUI1": "C0000118",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000185"
+    },
+    {
+      "CUI1": "C0000103",
+      "REL": "CAUSES",
+      "CUI2": "C0000151"
+    },
+    {
+      "CUI1": "C0000110",
+      "REL": "TREATS",
+      "CUI2": "C0000071"
+    },
+    {
+      "CUI1": "C0000053",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000152"
+    },
+    {
+      "CUI1": "C0000130",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000187"
+    },
+    {
+      "CUI1": "C0000014",
+      "REL": "CAUSES",
+      "CUI2": "C0000056"
+    },
+    {
+      "CUI1": "C0000045",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000026"
+    },
+    {
+      "CUI1": "C0000200",
+      "REL": "CAUSES",
+      "CUI2": "C0000110"
+    },
+    {
+      "CUI1": "C0000017",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000078"
+    },
+    {
+      "CUI1": "C0000197",
+      "REL": "CAUSES",
+      "CUI2": "C0000093"
+    },
+    {
+      "CUI1": "C0000054",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000061"
+    },
+    {
+      "CUI1": "C0000076",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000039"
+    },
+    {
+      "CUI1": "C0000109",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000189"
+    },
+    {
+      "CUI1": "C0000115",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000023"
+    },
+    {
+      "CUI1": "C0000054",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000118"
+    },
+    {
+      "CUI1": "C0000192",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000131"
+    },
+    {
+      "CUI1": "C0000010",
+      "REL": "CAUSES",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000058",
+      "REL": "TREATS",
+      "CUI2": "C0000052"
+    },
+    {
+      "CUI1": "C0000194",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000040"
+    },
+    {
+      "CUI1": "C0000012",
+      "REL": "TREATS",
+      "CUI2": "C0000061"
+    },
+    {
+      "CUI1": "C0000087",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000136"
+    },
+    {
+      "CUI1": "C0000170",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000125"
+    },
+    {
+      "CUI1": "C0000133",
+      "REL": "CAUSES",
+      "CUI2": "C0000158"
+    },
+    {
+      "CUI1": "C0000194",
+      "REL": "TREATS",
+      "CUI2": "C0000085"
+    },
+    {
+      "CUI1": "C0000054",
+      "REL": "TREATS",
+      "CUI2": "C0000111"
+    },
+    {
+      "CUI1": "C0000133",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000025"
+    },
+    {
+      "CUI1": "C0000169",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000072"
+    },
+    {
+      "CUI1": "C0000022",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000150"
+    },
+    {
+      "CUI1": "C0000005",
+      "REL": "TREATS",
+      "CUI2": "C0000177"
+    },
+    {
+      "CUI1": "C0000183",
+      "REL": "TREATS",
+      "CUI2": "C0000025"
+    },
+    {
+      "CUI1": "C0000137",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000044"
+    },
+    {
+      "CUI1": "C0000175",
+      "REL": "CAUSES",
+      "CUI2": "C0000135"
+    },
+    {
+      "CUI1": "C0000153",
+      "REL": "TREATS",
+      "CUI2": "C0000061"
+    },
+    {
+      "CUI1": "C0000150",
+      "REL": "CAUSES",
+      "CUI2": "C0000008"
+    },
+    {
+      "CUI1": "C0000135",
+      "REL": "TREATS",
+      "CUI2": "C0000027"
+    },
+    {
+      "CUI1": "C0000188",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000141"
+    },
+    {
+      "CUI1": "C0000008",
+      "REL": "CAUSES",
+      "CUI2": "C0000184"
+    },
+    {
+      "CUI1": "C0000028",
+      "REL": "TREATS",
+      "CUI2": "C0000016"
+    },
+    {
+      "CUI1": "C0000129",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000192"
+    },
+    {
+      "CUI1": "C0000086",
+      "REL": "CAUSES",
+      "CUI2": "C0000182"
+    },
+    {
+      "CUI1": "C0000108",
+      "REL": "CAUSES",
+      "CUI2": "C0000168"
+    },
+    {
+      "CUI1": "C0000156",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000126"
+    },
+    {
+      "CUI1": "C0000030",
+      "REL": "TREATS",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000178",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000145"
+    },
+    {
+      "CUI1": "C0000175",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000006"
+    },
+    {
+      "CUI1": "C0000078",
+      "REL": "CAUSES",
+      "CUI2": "C0000157"
+    },
+    {
+      "CUI1": "C0000126",
+      "REL": "TREATS",
+      "CUI2": "C0000100"
+    },
+    {
+      "CUI1": "C0000082",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000196"
+    },
+    {
+      "CUI1": "C0000021",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000160"
+    },
+    {
+      "CUI1": "C0000121",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000054"
+    },
+    {
+      "CUI1": "C0000171",
+      "REL": "TREATS",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000192",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000163"
+    },
+    {
+      "CUI1": "C0000006",
+      "REL": "CAUSES",
+      "CUI2": "C0000192"
+    },
+    {
+      "CUI1": "C0000092",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000081"
+    },
+    {
+      "CUI1": "C0000153",
+      "REL": "CAUSES",
+      "CUI2": "C0000186"
+    },
+    {
+      "CUI1": "C0000087",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000052"
+    },
+    {
+      "CUI1": "C0000061",
+      "REL": "TREATS",
+      "CUI2": "C0000028"
+    },
+    {
+      "CUI1": "C0000188",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000085"
+    },
+    {
+      "CUI1": "C0000138",
+      "REL": "TREATS",
+      "CUI2": "C0000126"
+    },
+    {
+      "CUI1": "C0000072",
+      "REL": "TREATS",
+      "CUI2": "C0000130"
+    },
+    {
+      "CUI1": "C0000171",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000125"
+    },
+    {
+      "CUI1": "C0000032",
+      "REL": "TREATS",
+      "CUI2": "C0000015"
+    },
+    {
+      "CUI1": "C0000084",
+      "REL": "TREATS",
+      "CUI2": "C0000169"
+    },
+    {
+      "CUI1": "C0000125",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000112"
+    },
+    {
+      "CUI1": "C0000091",
+      "REL": "CAUSES",
+      "CUI2": "C0000200"
+    },
+    {
+      "CUI1": "C0000007",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000074"
+    },
+    {
+      "CUI1": "C0000115",
+      "REL": "TREATS",
+      "CUI2": "C0000102"
+    },
+    {
+      "CUI1": "C0000093",
+      "REL": "TREATS",
+      "CUI2": "C0000066"
+    },
+    {
+      "CUI1": "C0000127",
+      "REL": "TREATS",
+      "CUI2": "C0000162"
+    },
+    {
+      "CUI1": "C0000146",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000047"
+    },
+    {
+      "CUI1": "C0000036",
+      "REL": "CAUSES",
+      "CUI2": "C0000043"
+    },
+    {
+      "CUI1": "C0000117",
+      "REL": "TREATS",
+      "CUI2": "C0000082"
+    },
+    {
+      "CUI1": "C0000093",
+      "REL": "TREATS",
+      "CUI2": "C0000014"
+    },
+    {
+      "CUI1": "C0000081",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000197"
+    },
+    {
+      "CUI1": "C0000128",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000158"
+    },
+    {
+      "CUI1": "C0000138",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000114"
+    },
+    {
+      "CUI1": "C0000193",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000162"
+    },
+    {
+      "CUI1": "C0000001",
+      "REL": "TREATS",
+      "CUI2": "C0000045"
+    },
+    {
+      "CUI1": "C0000058",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000182"
+    },
+    {
+      "CUI1": "C0000017",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000029"
+    },
+    {
+      "CUI1": "C0000078",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000109"
+    },
+    {
+      "CUI1": "C0000110",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000132"
+    },
+    {
+      "CUI1": "C0000178",
+      "REL": "CAUSES",
+      "CUI2": "C0000115"
+    },
+    {
+      "CUI1": "C0000100",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000075"
+    },
+    {
+      "CUI1": "C0000033",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000032"
+    },
+    {
+      "CUI1": "C0000188",
+      "REL": "CAUSES",
+      "CUI2": "C0000068"
+    },
+    {
+      "CUI1": "C0000108",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000003"
+    },
+    {
+      "CUI1": "C0000060",
+      "REL": "CAUSES",
+      "CUI2": "C0000170"
+    },
+    {
+      "CUI1": "C0000011",
+      "REL": "CAUSES",
+      "CUI2": "C0000123"
+    },
+    {
+      "CUI1": "C0000019",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000004"
+    },
+    {
+      "CUI1": "C0000102",
+      "REL": "CAUSES",
+      "CUI2": "C0000064"
+    },
+    {
+      "CUI1": "C0000189",
+      "REL": "CAUSES",
+      "CUI2": "C0000177"
+    },
+    {
+      "CUI1": "C0000052",
+      "REL": "TREATS",
+      "CUI2": "C0000041"
+    },
+    {
+      "CUI1": "C0000164",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000036"
+    },
+    {
+      "CUI1": "C0000124",
+      "REL": "CAUSES",
+      "CUI2": "C0000122"
+    },
+    {
+      "CUI1": "C0000197",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000006"
+    },
+    {
+      "CUI1": "C0000072",
+      "REL": "CAUSES",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000194",
+      "REL": "CAUSES",
+      "CUI2": "C0000031"
+    },
+    {
+      "CUI1": "C0000134",
+      "REL": "CAUSES",
+      "CUI2": "C0000189"
+    },
+    {
+      "CUI1": "C0000066",
+      "REL": "CAUSES",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000132",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000112"
+    },
+    {
+      "CUI1": "C0000081",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000009"
+    },
+    {
+      "CUI1": "C0000028",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000088"
+    },
+    {
+      "CUI1": "C0000049",
+      "REL": "CAUSES",
+      "CUI2": "C0000057"
+    },
+    {
+      "CUI1": "C0000195",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000071"
+    },
+    {
+      "CUI1": "C0000029",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000198"
+    },
+    {
+      "CUI1": "C0000122",
+      "REL": "TREATS",
+      "CUI2": "C0000015"
+    },
+    {
+      "CUI1": "C0000071",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000002"
+    },
+    {
+      "CUI1": "C0000187",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000058"
+    },
+    {
+      "CUI1": "C0000052",
+      "REL": "CAUSES",
+      "CUI2": "C0000107"
+    },
+    {
+      "CUI1": "C0000111",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000127"
+    },
+    {
+      "CUI1": "C0000125",
+      "REL": "CAUSES",
+      "CUI2": "C0000063"
+    },
+    {
+      "CUI1": "C0000164",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000194"
+    },
+    {
+      "CUI1": "C0000071",
+      "REL": "TREATS",
+      "CUI2": "C0000004"
+    },
+    {
+      "CUI1": "C0000132",
+      "REL": "TREATS",
+      "CUI2": "C0000009"
+    },
+    {
+      "CUI1": "C0000145",
+      "REL": "CAUSES",
+      "CUI2": "C0000159"
+    },
+    {
+      "CUI1": "C0000042",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000151"
+    },
+    {
+      "CUI1": "C0000002",
+      "REL": "TREATS",
+      "CUI2": "C0000154"
+    },
+    {
+      "CUI1": "C0000045",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000099"
+    },
+    {
+      "CUI1": "C0000131",
+      "REL": "CAUSES",
+      "CUI2": "C0000044"
+    },
+    {
+      "CUI1": "C0000191",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000094"
+    },
+    {
+      "CUI1": "C0000085",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000007"
+    },
+    {
+      "CUI1": "C0000163",
+      "REL": "CAUSES",
+      "CUI2": "C0000049"
+    },
+    {
+      "CUI1": "C0000039",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000169"
+    },
+    {
+      "CUI1": "C0000112",
+      "REL": "TREATS",
+      "CUI2": "C0000037"
+    },
+    {
+      "CUI1": "C0000120",
+      "REL": "TREATS",
+      "CUI2": "C0000110"
+    },
+    {
+      "CUI1": "C0000114",
+      "REL": "CAUSES",
+      "CUI2": "C0000159"
+    },
+    {
+      "CUI1": "C0000200",
+      "REL": "CAUSES",
+      "CUI2": "C0000164"
+    },
+    {
+      "CUI1": "C0000061",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000086"
+    },
+    {
+      "CUI1": "C0000070",
+      "REL": "CAUSES",
+      "CUI2": "C0000195"
+    },
+    {
+      "CUI1": "C0000026",
+      "REL": "CAUSES",
+      "CUI2": "C0000140"
+    },
+    {
+      "CUI1": "C0000024",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000143"
+    },
+    {
+      "CUI1": "C0000143",
+      "REL": "CAUSES",
+      "CUI2": "C0000198"
+    },
+    {
+      "CUI1": "C0000106",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000105"
+    },
+    {
+      "CUI1": "C0000013",
+      "REL": "CAUSES",
+      "CUI2": "C0000149"
+    },
+    {
+      "CUI1": "C0000023",
+      "REL": "CAUSES",
+      "CUI2": "C0000147"
+    },
+    {
+      "CUI1": "C0000115",
+      "REL": "CAUSES",
+      "CUI2": "C0000189"
+    },
+    {
+      "CUI1": "C0000103",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000124"
+    },
+    {
+      "CUI1": "C0000110",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000089"
+    },
+    {
+      "CUI1": "C0000181",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000174"
+    },
+    {
+      "CUI1": "C0000176",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000110"
+    },
+    {
+      "CUI1": "C0000050",
+      "REL": "CAUSES",
+      "CUI2": "C0000107"
+    },
+    {
+      "CUI1": "C0000160",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000017"
+    },
+    {
+      "CUI1": "C0000018",
+      "REL": "CAUSES",
+      "CUI2": "C0000194"
+    },
+    {
+      "CUI1": "C0000012",
+      "REL": "CAUSES",
+      "CUI2": "C0000041"
+    },
+    {
+      "CUI1": "C0000183",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000164"
+    },
+    {
+      "CUI1": "C0000184",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000195"
+    },
+    {
+      "CUI1": "C0000022",
+      "REL": "TREATS",
+      "CUI2": "C0000138"
+    },
+    {
+      "CUI1": "C0000096",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000066"
+    },
+    {
+      "CUI1": "C0000009",
+      "REL": "CAUSES",
+      "CUI2": "C0000138"
+    },
+    {
+      "CUI1": "C0000016",
+      "REL": "CAUSES",
+      "CUI2": "C0000116"
+    },
+    {
+      "CUI1": "C0000033",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000152"
+    },
+    {
+      "CUI1": "C0000067",
+      "REL": "TREATS",
+      "CUI2": "C0000180"
+    },
+    {
+      "CUI1": "C0000090",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000173"
+    },
+    {
+      "CUI1": "C0000031",
+      "REL": "TREATS",
+      "CUI2": "C0000013"
+    },
+    {
+      "CUI1": "C0000131",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000139"
+    },
+    {
+      "CUI1": "C0000051",
+      "REL": "CAUSES",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000188",
+      "REL": "TREATS",
+      "CUI2": "C0000063"
+    },
+    {
+      "CUI1": "C0000165",
+      "REL": "CAUSES",
+      "CUI2": "C0000112"
+    },
+    {
+      "CUI1": "C0000118",
+      "REL": "TREATS",
+      "CUI2": "C0000141"
+    },
+    {
+      "CUI1": "C0000123",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000040"
+    },
+    {
+      "CUI1": "C0000065",
+      "REL": "TREATS",
+      "CUI2": "C0000072"
+    },
+    {
+      "CUI1": "C0000052",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000169"
+    },
+    {
+      "CUI1": "C0000069",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000135"
+    },
+    {
+      "CUI1": "C0000006",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000189"
+    },
+    {
+      "CUI1": "C0000098",
+      "REL": "CAUSES",
+      "CUI2": "C0000018"
+    },
+    {
+      "CUI1": "C0000138",
+      "REL": "CAUSES",
+      "CUI2": "C0000188"
+    },
+    {
+      "CUI1": "C0000170",
+      "REL": "TREATS",
+      "CUI2": "C0000016"
+    },
+    {
+      "CUI1": "C0000157",
+      "REL": "TREATS",
+      "CUI2": "C0000005"
+    },
+    {
+      "CUI1": "C0000175",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000168"
+    },
+    {
+      "CUI1": "C0000097",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000049"
+    },
+    {
+      "CUI1": "C0000149",
+      "REL": "CAUSES",
+      "CUI2": "C0000198"
+    },
+    {
+      "CUI1": "C0000019",
+      "REL": "CAUSES",
+      "CUI2": "C0000025"
+    },
+    {
+      "CUI1": "C0000182",
+      "REL": "CAUSES",
+      "CUI2": "C0000161"
+    },
+    {
+      "CUI1": "C0000135",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000058"
+    },
+    {
+      "CUI1": "C0000149",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000158"
+    },
+    {
+      "CUI1": "C0000140",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000132"
+    },
+    {
+      "CUI1": "C0000169",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000095"
+    },
+    {
+      "CUI1": "C0000081",
+      "REL": "CAUSES",
+      "CUI2": "C0000080"
+    },
+    {
+      "CUI1": "C0000081",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000007"
+    },
+    {
+      "CUI1": "C0000122",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000138"
+    },
+    {
+      "CUI1": "C0000039",
+      "REL": "CAUSES",
+      "CUI2": "C0000125"
+    },
+    {
+      "CUI1": "C0000044",
+      "REL": "CAUSES",
+      "CUI2": "C0000187"
+    },
+    {
+      "CUI1": "C0000048",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000200"
+    },
+    {
+      "CUI1": "C0000151",
+      "REL": "CAUSES",
+      "CUI2": "C0000033"
+    },
+    {
+      "CUI1": "C0000068",
+      "REL": "ASSOCIATED_WITH",
+      "CUI2": "C0000001"
+    },
+    {
+      "CUI1": "C0000009",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000150"
+    },
+    {
+      "CUI1": "C0000031",
+      "REL": "TREATS",
+      "CUI2": "C0000086"
+    },
+    {
+      "CUI1": "C0000010",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000143"
+    },
+    {
+      "CUI1": "C0000103",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000075"
+    },
+    {
+      "CUI1": "C0000150",
+      "REL": "RISK_FACTOR_FOR",
+      "CUI2": "C0000140"
+    },
+    {
+      "CUI1": "C0000002",
+      "REL": "CAUSES",
+      "CUI2": "C0000042"
+    }
+  ]
+}
