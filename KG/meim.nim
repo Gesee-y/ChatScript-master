@@ -36,35 +36,59 @@ import tensor, kg_loader, meim_model, trainer
 # ---------------------------------------------------------------------------
 
 const demoTriples = [
-  ("albert_einstein",    "nationality",     "germany"),
+  # --- Expertise & Domaines (Multi-expertise) ---
   ("albert_einstein",    "field",           "physics"),
-  ("marie_curie",        "nationality",     "poland"),
+  ("albert_einstein",    "field",           "philosophy"),
   ("marie_curie",        "field",           "chemistry"),
-  ("niels_bohr",         "nationality",     "denmark"),
-  ("niels_bohr",         "field",           "physics"),
-  ("max_planck",         "nationality",     "germany"),
-  ("max_planck",         "field",           "physics"),
-  ("lise_meitner",       "nationality",     "austria"),
-  ("lise_meitner",       "field",           "physics"),
+  ("marie_curie",        "field",           "physics"),
+  ("linus_pauling",      "field",           "chemistry"),
+  ("linus_pauling",      "field",           "biology"),
+  
+  # --- Nationalités & Géographie ---
+  ("albert_einstein",    "nationality",     "germany"),
+  ("albert_einstein",    "born_in",         "ulm"),
+  ("ulm",                "located_in",      "germany"),
+  ("marie_curie",        "nationality",     "poland"),
+  ("marie_curie",        "nationality",     "france"),
   ("richard_feynman",    "nationality",     "usa"),
-  ("richard_feynman",    "field",           "physics"),
-  ("werner_heisenberg",  "nationality",     "germany"),
-  ("werner_heisenberg",  "field",           "physics"),
-  ("erwin_schrodinger",  "nationality",     "austria"),
-  ("erwin_schrodinger",  "field",           "physics"),
-  ("enrico_fermi",       "nationality",     "italy"),
-  ("enrico_fermi",       "field",           "physics"),
-  ("paul_dirac",         "nationality",     "uk"),
-  ("paul_dirac",         "field",           "physics"),
+  
+  # --- Hiérarchie Académique (Relations de Mentorat/Collaboration) ---
+  ("max_planck",         "mentored",        "albert_einstein"),
+  ("niels_bohr",         "collaborated_with","werner_heisenberg"),
+  ("ernest_rutherford",  "mentored",        "niels_bohr"),
+  ("j_j_thomson",        "mentored",        "ernest_rutherford"),
+  ("robert_oppenheimer", "collaborated_with","richard_feynman"),
+
+  # --- Distinctions (Propriétés partagées) ---
+  ("albert_einstein",    "won_award",       "nobel_prize_physics"),
+  ("marie_curie",        "won_award",       "nobel_prize_physics"),
+  ("marie_curie",        "won_award",       "nobel_prize_chemistry"),
+  ("richard_feynman",    "won_award",       "nobel_prize_physics"),
+  ("linus_pauling",      "won_award",       "nobel_prize_chemistry"),
+  ("nobel_prize_physics", "category",       "natural_science"),
+  ("nobel_prize_chemistry","category",       "natural_science"),
+
+  # --- Ontologie (Taxonomie) ---
+  ("physics",            "sub_domain_of",   "natural_science"),
+  ("chemistry",          "sub_domain_of",   "natural_science"),
+  ("biology",            "sub_domain_of",   "natural_science"),
+  ("natural_science",    "type",            "academic_discipline"),
+  ("philosophy",         "type",            "humanities"),
+
+  # --- Localisation & Continents ---
   ("germany",            "continent",       "europe"),
+  ("france",             "continent",       "europe"),
   ("poland",             "continent",       "europe"),
-  ("denmark",            "continent",       "europe"),
-  ("austria",            "continent",       "europe"),
-  ("italy",              "continent",       "europe"),
   ("uk",                 "continent",       "europe"),
+  ("denmark",            "continent",       "europe"),
   ("usa",                "continent",       "north_america"),
-  ("physics",            "domain",          "natural_science"),
-  ("chemistry",          "domain",          "natural_science"),
+  
+  # --- Relations de "Fait" pour tester l'inférence inverse ---
+  ("quantum_mechanics",  "part_of",         "physics"),
+  ("relativity",         "part_of",         "physics"),
+  ("albert_einstein",    "developed",       "relativity"),
+  ("werner_heisenberg",  "developed",       "quantum_mechanics"),
+  ("niels_bohr",         "developed",       "quantum_mechanics")
 ]
 
 proc buildDemoKG(): KGDataset =
@@ -187,23 +211,46 @@ proc cmdDemo(args: seq[string]) =
   discard train(params, cfg, kg, verbose = true)
 
   echo ""
-  echo "=== Predictions ==="
-  echo "Top-5 tails for (albert_einstein, field):"
-  let preds = predictTails(params, cfg, kg, "albert_einstein", "field", topK = 5)
-  for i, p in preds:
+  echo "=== Advanced Inferences ==="
+
+  # 1. Test de Transitivité (Einstein -> ? -> North America)
+  echo "Top-5 continents for Albert Einstein (Inference via USA/Germany):"
+  let predsCont = predictTails(params, cfg, kg, "albert_einstein", "continent", topK = 5)
+  for i, p in predsCont:
+    echo &"  {i+1}. {p.entityName:<30}  score={p.score:.4f}"
+
+  # 2. Test d'Asymétrie (Qui a été mentoré par Max Planck ?)
+  echo ""
+  echo "Top-5 students mentored by Max Planck (Directional test):"
+  let predsMent = predictTails(params, cfg, kg, "max_planck", "mentored", topK = 5)
+  for i, p in predsMent:
+    echo &"  {i+1}. {p.entityName:<30}  score={p.score:.4f}"
+
+  # 3. Test de Multi-expertise (Marie Curie)
+  echo ""
+  echo "Top-5 fields for Marie Curie (Should show Chemistry AND Physics):"
+  let predsCurie = predictTails(params, cfg, kg, "marie_curie", "field", topK = 5)
+  for i, p in predsCurie:
+    echo &"  {i+1}. {p.entityName:<30}  score={p.score:.4f}"
+
+  # 4. Test d'Inférence Inverse (Qui travaille dans les 'Natural Sciences' ?)
+  echo ""
+  echo "Top-5 entities linked to 'natural_science' (Inference via sub_domain_of):"
+  let predsScience = predictHeads(params, cfg, kg, "natural_science", "sub_domain_of", topK = 5)
+  for i, p in predsScience:
     echo &"  {i+1}. {p.entityName:<30}  score={p.score:.4f}"
 
   echo ""
-  echo "Top-5 heads for (field, physics):"
-  let preds2 = predictHeads(params, cfg, kg, "physics", "field", topK = 5)
-  for i, p in preds2:
-    echo &"  {i+1}. {p.entityName:<30}  score={p.score:.4f}"
+  echo "=== Complex Triple Validation ==="
+  let triplesToTest = [
+    ("albert_einstein", "won_award", "nobel_prize_physics"),  # Direct (True)
+    ("richard_feynman", "nationality", "usa"),               # Direct (True)
+    ("richard_feynman", "nationality", "germany"),           # False
+    ("linus_pauling", "field", "biology"),                   # Multi-label (True)
+    ("albert_einstein", "mentored", "max_planck")            # Reversed Relation (Should be Low/False)
+  ]
 
-  echo ""
-  echo "Triple scores:"
-  for (h, r, t) in [("albert_einstein","field","physics"),
-                     ("marie_curie","field","physics"),
-                     ("albert_einstein","nationality","germany")]:
+  for (h, r, t) in triplesToTest:
     let s = scoreTripleByName(params, cfg, kg, h, t, r)
     echo &"  ({h}, {r}, {t})  ->  {s:.4f}"
 

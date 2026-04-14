@@ -35,13 +35,16 @@ proc trainBatch1vsAll*(params: var MEIMParams; cfg: MEIMConfig;
   var totalLoss   = 0.0'f32
   var totalOrtho  = 0.0'f32
 
+  # Pre-calculate normalized partitions ONCE per batch
+  let normCache = getNormalizedEntityPartitions(params, cfg)
+
   for triple in batch:
     let h = triple.head
     let t = triple.tail
     let r = triple.rel
 
     # --- Tail prediction (h, r) -> ? ---
-    let tailScores = scoreAllTails(params, cfg, h, r)
+    let tailScores = scoreAllTails(params, cfg, h, r, normCache)
     let tailProbs  = softmax(tailScores)
     # CE loss:  -log p[t]
     totalLoss -= ln(max(tailProbs[t], 1e-10'f32))
@@ -49,16 +52,16 @@ proc trainBatch1vsAll*(params: var MEIMParams; cfg: MEIMConfig;
     for tId in 0 ..< cfg.numEntities:
       let dScore = tailProbs[tId] - (if tId == t: 1.0'f32 else: 0.0'f32)
       if abs(dScore) > 1e-7'f32:
-        accumulateScoreGrad(params, cfg, h, tId, r, dScore / batch.len.float32, grads)
+        accumulateScoreGrad(params, cfg, h, tId, r, dScore / batch.len.float32, grads, normCache)
 
     # --- Head prediction ? <- (r, t) ---
-    let headScores = scoreAllHeads(params, cfg, t, r)
+    let headScores = scoreAllHeads(params, cfg, t, r, normCache)
     let headProbs  = softmax(headScores)
     totalLoss -= ln(max(headProbs[h], 1e-10'f32))
     for hId in 0 ..< cfg.numEntities:
       let dScore = headProbs[hId] - (if hId == h: 1.0'f32 else: 0.0'f32)
       if abs(dScore) > 1e-7'f32:
-        accumulateScoreGrad(params, cfg, hId, t, r, dScore / batch.len.float32, grads)
+        accumulateScoreGrad(params, cfg, hId, t, r, dScore / batch.len.float32, grads, normCache)
 
     # --- Orthogonality loss & its gradient ---
     let ortho = computeOrthoLoss(params, cfg, r)

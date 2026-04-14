@@ -1,0 +1,14 @@
+Aspirin,treats,Headache
+Aspirin,treats,Fever
+Ibuprofen,treats,Headache
+Paracetamol,treats,Fever
+Fever,symptom_of,Disease_X
+Headache,symptom_of,Disease_X
+Cough,symptom_of,Disease_Y
+Fever,symptom_of,Disease_Y
+Acetylsalicylic_Acid,is_a,Aspirin
+Component_Alpha,part_of,Acetylsalicylic_Acid
+Component_Beta,part_of,Ibuprofen
+Advil,is_a,Ibuprofen
+Tylenol,is_a,Paracetamol
+Acetaminophen,treats,Fever
