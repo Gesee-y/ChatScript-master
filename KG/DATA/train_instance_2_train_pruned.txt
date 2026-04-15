@@ -1,0 +1,188 @@
+# ============================================================
+# INSTANCE 2 — Maladies Chroniques, Cardiovasculaires & Métaboliques
+# 500 triplets | Format: head,relation,tail
+# ============================================================
+
+# --- Maladies Cardiovasculaires & Symptômes ---
+Hypertension,causes_symptom,Blurred_Vision
+Heart_Failure,causes_symptom,Chest_Pain
+Coronary_Artery_Disease,causes_symptom,Chest_Pain
+Myocardial_Infarction,causes_symptom,Jaw_Pain
+Atrial_Fibrillation,causes_symptom,Dizziness
+Stroke,causes_symptom,Confusion
+Peripheral_Artery_Disease,causes_symptom,Leg_Cramps
+Deep_Vein_Thrombosis,causes_symptom,Leg_Pain
+Pulmonary_Embolism,causes_symptom,Chest_Pain
+
+# --- Maladies Métaboliques & Symptômes ---
+Diabetes_Type_1,causes_symptom,Blurred_Vision
+Diabetes_Type_2,causes_symptom,Blurred_Vision
+Obesity,causes_symptom,Fatigue
+Metabolic_Syndrome,causes_symptom,Abdominal_Obesity
+Hypothyroidism,causes_symptom,Cold_Intolerance
+Hyperthyroidism,causes_symptom,Anxiety
+Gout,causes_symptom,Joint_Stiffness
+Dyslipidemia,causes_symptom,High_Cholesterol
+Hypoglycemia,causes_symptom,Confusion
+Hyperkalemia,causes_symptom,Irregular_Heartbeat
+Hyponatremia,causes_symptom,Confusion
+
+# --- Traitements Cardiovasculaires ---
+Lisinopril,treats,Chronic_Kidney_Disease
+Enalapril,treats,Heart_Failure
+Ramipril,treats,Heart_Failure
+Metoprolol,treats,Atrial_Fibrillation
+Atenolol,treats,Atrial_Fibrillation
+Carvedilol,treats,Heart_Failure
+Amlodipine,treats,Coronary_Artery_Disease
+Diltiazem,treats,Atrial_Fibrillation
+Verapamil,treats,Atrial_Fibrillation
+Hydrochlorothiazide,treats,Edema
+Furosemide,treats,Edema
+Spironolactone,treats,Heart_Failure
+Valsartan,treats,Heart_Failure
+Losartan,treats,Chronic_Kidney_Disease
+Digoxin,treats,Atrial_Fibrillation
+Sacubitril,treats,Heart_Failure
+Ivabradine,treats,Heart_Failure
+Nitroglycerin,treats,Chest_Pain
+Isosorbide,treats,Coronary_Artery_Disease
+Aspirin,treats,Myocardial_Infarction
+Clopidogrel,treats,Blood_Clots
+Warfarin,treats,Atrial_Fibrillation
+Rivaroxaban,treats,Atrial_Fibrillation
+Apixaban,treats,Atrial_Fibrillation
+Heparin,treats,Deep_Vein_Thrombosis
+Atorvastatin,treats,Coronary_Artery_Disease
+Ezetimibe,treats,High_Cholesterol
+Fenofibrate,treats,High_Triglycerides
+Indomethacin,treats,Gout
+
+# --- Traitements Métaboliques ---
+Insulin,treats,Diabetes_Type_1
+Glimepiride,treats,Diabetes_Type_2
+Glyburide,treats,Diabetes_Type_2
+Gliclazide,treats,Diabetes_Type_2
+Vildagliptin,treats,Diabetes_Type_2
+Saxagliptin,treats,Diabetes_Type_2
+Linagliptin,treats,Diabetes_Type_2
+Dapagliflozin,treats,Diabetes_Type_2
+Empagliflozin,treats,Diabetes_Type_2
+Semaglutide,treats,Diabetes_Type_2
+Exenatide,treats,Diabetes_Type_2
+Levothyroxine,treats,Hypothyroidism
+Methimazole,treats,Hyperthyroidism
+Propylthiouracil,treats,Hyperthyroidism
+Radioactive_Iodine,treats,Hyperthyroidism
+Dextrose,treats,Hypoglycemia
+Glucagon,treats,Hypoglycemia
+
+# --- Taxonomie Maladies Cardiovasculaires ---
+Cardiovascular_Disorder,is_a,Maladie
+Metabolic_Disorder,is_a,Maladie
+
+# --- Taxonomie Médicaments Cardiovasculaires ---
+ACE_Inhibitor,is_a,Medicament
+Beta_Blocker,is_a,Medicament
+Calcium_Channel_Blocker,is_a,Medicament
+Diuretic,is_a,Medicament
+ARB,is_a,Medicament
+Anticoagulant,is_a,Medicament
+Antiplatelet,is_a,Medicament
+Statin,is_a,Medicament
+Antidiabetic,is_a,Medicament
+
+# --- Taxonomie Symptômes ---
+High_Blood_Pressure,is_a,Symptom
+Dizziness,is_a,Symptom
+Blurred_Vision,is_a,Symptom
+Nosebleed,is_a,Symptom
+Edema,is_a,Symptom
+Heart_Palpitations,is_a,Symptom
+Severe_Chest_Pain,is_a,Symptom
+Left_Arm_Pain,is_a,Symptom
+Jaw_Pain,is_a,Symptom
+Irregular_Heartbeat,is_a,Symptom
+Sudden_Weakness,is_a,Symptom
+Speech_Difficulty,is_a,Symptom
+Facial_Drooping,is_a,Symptom
+Vision_Loss,is_a,Symptom
+Leg_Pain,is_a,Symptom
+Leg_Cramps,is_a,Symptom
+Numbness_in_Legs,is_a,Symptom
+Leg_Swelling,is_a,Symptom
+Frequent_Urination,is_a,Symptom
+Slow_Healing,is_a,Symptom
+Numbness_in_Feet,is_a,Symptom
+Cold_Intolerance,is_a,Symptom
+Heat_Intolerance,is_a,Symptom
+Tremors,is_a,Symptom
+Abdominal_Obesity,is_a,Symptom
+Shakiness,is_a,Symptom
+Muscle_Weakness,is_a,Symptom
+Weight_Gain,is_a,Symptom
+Slow_Heart_Rate,is_a,Symptom
+Rapid_Heart_Rate,is_a,Symptom
+Thirst,is_a,Symptom
+High_Blood_Sugar,is_a,Symptom
+
+# --- Contre-indications Critiques ---
+Metformin,contraindicated_with,Kidney_Failure
+Warfarin,contraindicated_with,Active_Bleeding
+Lisinopril,contraindicated_with,Hyperkalemia
+
+# --- Interactions médicamenteuses ---
+Warfarin,interacts_with,Amoxicillin
+Digoxin,interacts_with,Amiodarone
+
+# --- Diagnostics ---
+Heart_Failure,diagnosed_by,BNP_Test
+Coronary_Artery_Disease,diagnosed_by,Coronary_Angiography
+Myocardial_Infarction,diagnosed_by,ECG
+Atrial_Fibrillation,diagnosed_by,ECG
+Stroke,diagnosed_by,CT_Scan
+Diabetes_Type_2,diagnosed_by,Fasting_Glucose_Test
+Hyperthyroidism,diagnosed_by,T4_Test
+Gout,diagnosed_by,Joint_Fluid_Analysis
+
+# --- Facteurs de risque ---
+Hypertension,risk_factor_for,Chronic_Kidney_Disease
+Diabetes_Type_2,risk_factor_for,Coronary_Artery_Disease
+Obesity,risk_factor_for,Diabetes_Type_2
+Dyslipidemia,risk_factor_for,Coronary_Artery_Disease
+Smoking,risk_factor_for,Coronary_Artery_Disease
+Atrial_Fibrillation,risk_factor_for,Heart_Failure
+Gout,risk_factor_for,Coronary_Artery_Disease
+Hypothyroidism,risk_factor_for,Dyslipidemia
+
+# --- Complications ---
+Hypertension,can_cause,Chronic_Kidney_Disease
+Diabetes_Type_2,can_cause,Chronic_Kidney_Disease
+Myocardial_Infarction,can_cause,Arrhythmia
+Atrial_Fibrillation,can_cause,Heart_Failure
+Stroke,can_cause,Paralysis
+Obesity,can_cause,Diabetes_Type_2
+
+# --- Organe cible ---
+Hypertension,affects_organ,Blood_Vessels
+Diabetes_Type_2,affects_organ,Blood_Vessels
+
+# --- Monitoring & Suivi ---
+Diabetes_Type_2,monitored_by,Fasting_Glucose_Test
+Heart_Failure,monitored_by,BNP_Test
+Chronic_Kidney_Disease,monitored_by,Creatinine_Test
+
+# --- Prévention ---
+Hypertension,prevented_by,Low_Sodium_Diet
+Diabetes_Type_2,prevented_by,Low_Carb_Diet
+Coronary_Artery_Disease,prevented_by,Smoking_Cessation
+Stroke,prevented_by,Anticoagulation
+Gout,prevented_by,Hydration
+
+# --- Populations à risque ---
+Hypertension,affects_population,African_Americans
+Diabetes_Type_2,affects_population,Elderly
+Diabetes_Type_1,affects_population,Children
+Gout,affects_population,Elderly
+Myocardial_Infarction,affects_population,Elderly
+Hypothyroidism,affects_population,Elderly

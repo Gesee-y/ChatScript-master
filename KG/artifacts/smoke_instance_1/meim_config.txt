@@ -1,0 +1,17 @@
+numEntities=131
+numRelations=11
+K=1
+Ce=4
+Cr=4
+inputDropRate=0.2
+hiddenDropRate=0.3
+lambdaOrtho=0.1
+lambdaUnitNorm=0.1
+orthoP=3
+batchSize=16
+learningRate=0.001
+lrDecay=1.0
+maxEpochs=1
+evalEvery=1
+kVsAll=false
+kVsAllK=10

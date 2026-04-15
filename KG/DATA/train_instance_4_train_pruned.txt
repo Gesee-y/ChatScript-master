@@ -1,0 +1,227 @@
+# ============================================================
+# INSTANCE 4 — Rhumatologie, Oncologie, Pédiatrie, Dermatologie & Pharmacologie
+# 500 triplets | Format: head,relation,tail
+# ============================================================
+
+# --- Maladies Rhumatologiques & Symptômes ---
+Rheumatoid_Arthritis,causes_symptom,Fatigue
+Osteoarthritis,causes_symptom,Joint_Pain
+Lupus,causes_symptom,Butterfly_Rash
+Fibromyalgia,causes_symptom,Fatigue
+Ankylosing_Spondylitis,causes_symptom,Fatigue
+Gout,causes_symptom,Joint_Warmth
+Psoriatic_Arthritis,causes_symptom,Joint_Pain
+Sjogren_Syndrome,causes_symptom,Dry_Eyes
+Vasculitis,causes_symptom,Fatigue
+
+# --- Maladies Oncologiques & Symptômes ---
+Lung_Cancer,causes_symptom,Chest_Pain
+Breast_Cancer,causes_symptom,Breast_Lump
+Colorectal_Cancer,causes_symptom,Abdominal_Pain
+Prostate_Cancer,causes_symptom,Blood_in_Urine
+Leukemia,causes_symptom,Bone_Pain
+Lymphoma,causes_symptom,Fatigue
+Melanoma,causes_symptom,Changing_Mole
+Stomach_Cancer,causes_symptom,Abdominal_Pain
+Liver_Cancer,causes_symptom,Abdominal_Swelling
+Pancreatic_Cancer,causes_symptom,Abdominal_Pain
+Bladder_Cancer,causes_symptom,Blood_in_Urine
+
+# --- Maladies Dermatologiques & Symptômes ---
+Psoriasis,causes_symptom,Itching
+Eczema,causes_symptom,Dry_Skin
+Acne,causes_symptom,Blackheads
+Urticaria,causes_symptom,Hives
+Rosacea,causes_symptom,Facial_Redness
+Scabies,causes_symptom,Rash
+Tinea,causes_symptom,Itching
+Cellulitis,causes_symptom,Pain
+
+# --- Maladies Urologiques & Symptômes ---
+Urinary_Tract_Infection,causes_symptom,Burning_Urination
+Chronic_Kidney_Disease,causes_symptom,Decreased_Urination
+Kidney_Stones,causes_symptom,Blood_in_Urine
+Benign_Prostatic_Hyperplasia,causes_symptom,Difficulty_Urinating
+Kidney_Failure,causes_symptom,Decreased_Urination
+
+# --- Maladies Pédiatriques & Symptômes ---
+Otitis_Media,causes_symptom,Ear_Pain
+Hand_Foot_Mouth_Disease,causes_symptom,Fever
+Whooping_Cough,causes_symptom,Gasping
+Kawasaki_Disease,causes_symptom,High_Fever
+RSV,causes_symptom,Cough
+Croup,causes_symptom,Barking_Cough
+
+# --- Traitements Rhumatologiques ---
+Hydroxychloroquine,treats,Lupus
+Sulfasalazine,treats,Ankylosing_Spondylitis
+Adalimumab,treats,Crohn_Disease
+Rituximab,treats,Lupus
+Secukinumab,treats,Ankylosing_Spondylitis
+Ixekizumab,treats,Psoriasis
+Indomethacin,treats,Gout
+Febuxostat,treats,Gout
+Pregabalin,treats,Fibromyalgia
+Duloxetine,treats,Fibromyalgia
+Tramadol,treats,Fibromyalgia
+Celecoxib,treats,Osteoarthritis
+Diclofenac,treats,Osteoarthritis
+Glucosamine,treats,Osteoarthritis
+Hyaluronic_Acid,treats,Osteoarthritis
+Pilocarpine,treats,Sjogren_Syndrome
+
+# --- Traitements Oncologiques ---
+Cyclophosphamide,treats,Breast_Cancer
+Doxorubicin,treats,Breast_Cancer
+Paclitaxel,treats,Breast_Cancer
+Carboplatin,treats,Lung_Cancer
+Imatinib,treats,Gastrointestinal_Stromal_Tumor
+Methotrexate,treats,Leukemia
+Fluorouracil,treats,Colorectal_Cancer
+Bevacizumab,treats,Colorectal_Cancer
+Pembrolizumab,treats,Lung_Cancer
+Sorafenib,treats,Kidney_Cancer
+Gemcitabine,treats,Bladder_Cancer
+
+# --- Traitements Dermatologiques ---
+Topical_Corticosteroid,treats,Eczema
+Tacrolimus,treats,Eczema
+Dupilumab,treats,Eczema
+Tretinoin,treats,Acne
+Benzoyl_Peroxide,treats,Acne
+Doxycycline,treats,Acne
+Clindamycin,treats,Acne
+Antihistamine,treats,Urticaria
+Cetirizine,treats,Urticaria
+Metronidazole_Gel,treats,Rosacea
+Azelaic_Acid,treats,Rosacea
+Permethrin,treats,Scabies
+Cefalexin,treats,Cellulitis
+Dicloxacillin,treats,Cellulitis
+
+# --- Traitements Urologiques ---
+Trimethoprim,treats,Urinary_Tract_Infection
+Lithotripsy,treats,Kidney_Stones
+Potassium_Citrate,treats,Kidney_Stones
+Dialysis,treats,Kidney_Failure
+Erythropoietin,treats,Chronic_Kidney_Disease
+Furosemide,treats,Kidney_Failure
+
+# --- Traitements Pédiatriques ---
+Amoxicillin,treats,Otitis_Media
+Paracetamol,treats,Fever
+Ibuprofen,treats,Fever
+Epinephrine,treats,Croup
+Salbutamol,treats,RSV
+Azithromycin,treats,Whooping_Cough
+Immunoglobulin,treats,Kawasaki_Disease
+
+# --- Taxonomie Maladies ---
+Multiple_Sclerosis,is_a,Autoimmune_Disease
+Celiac_Disease,is_a,Autoimmune_Disease
+Autoimmune_Disease,is_a,Maladie
+Musculoskeletal_Disorder,is_a,Maladie
+Prostate_Cancer,is_a,Cancer
+Bladder_Cancer,is_a,Cancer
+Cancer,is_a,Maladie
+Dermatological_Condition,is_a,Maladie
+Urological_Disorder,is_a,Maladie
+Pediatric_Condition,is_a,Maladie
+
+# --- Taxonomie Médicaments ---
+DMARD,is_a,Medicament
+Biologic,is_a,Medicament
+Chemotherapy,is_a,Medicament
+Targeted_Therapy,is_a,Medicament
+Hormone_Therapy,is_a,Medicament
+Antifungal,is_a,Medicament
+
+# --- Taxonomie Symptômes ---
+Joint_Swelling,is_a,Symptom
+Morning_Stiffness,is_a,Symptom
+Butterfly_Rash,is_a,Symptom
+Hair_Loss,is_a,Symptom
+Widespread_Pain,is_a,Symptom
+Memory_Problems,is_a,Symptom
+Lower_Back_Pain,is_a,Symptom
+Hip_Pain,is_a,Symptom
+Swollen_Fingers,is_a,Symptom
+Skin_Plaques,is_a,Symptom
+Dry_Eyes,is_a,Symptom
+Dry_Mouth,is_a,Symptom
+Skin_Inflammation,is_a,Symptom
+Joint_Warmth,is_a,Symptom
+Breast_Lump,is_a,Symptom
+Nipple_Discharge,is_a,Symptom
+Difficult_Urinating,is_a,Symptom
+Blood_in_Urine,is_a,Symptom
+Pelvic_Pain,is_a,Symptom
+Bone_Pain,is_a,Symptom
+Frequent_Infections,is_a,Symptom
+Easy_Bruising,is_a,Symptom
+Changing_Mole,is_a,Symptom
+Severe_Flank_Pain,is_a,Symptom
+Cloudy_Urine,is_a,Symptom
+Ear_Pain,is_a,Symptom
+Mouth_Sores,is_a,Symptom
+Barking_Cough,is_a,Symptom
+Stridor,is_a,Symptom
+Hoarseness,is_a,Symptom
+Itching,is_a,Symptom
+Scaling,is_a,Symptom
+Hives,is_a,Symptom
+Dry_Skin,is_a,Symptom
+Pimples,is_a,Symptom
+Blackheads,is_a,Symptom
+Ring_Shaped_Rash,is_a,Symptom
+
+# --- Contre-indications ---
+Methotrexate,contraindicated_with,Kidney_Failure
+Cyclophosphamide,contraindicated_with,Active_Infection
+
+# --- Interactions médicamenteuses ---
+Methotrexate,interacts_with,NSAIDs
+Warfarin,interacts_with,Methotrexate
+Cyclosporine,interacts_with,Statins
+
+# --- Diagnostics ---
+Rheumatoid_Arthritis,diagnosed_by,Anti_CCP_Test
+Lupus,diagnosed_by,ANA_Test
+Ankylosing_Spondylitis,diagnosed_by,HLA_B27_Test
+Gout,diagnosed_by,Joint_Fluid_Analysis
+Lung_Cancer,diagnosed_by,Biopsy
+Breast_Cancer,diagnosed_by,Biopsy
+Colorectal_Cancer,diagnosed_by,CEA_Test
+Prostate_Cancer,diagnosed_by,Biopsy
+Leukemia,diagnosed_by,Blood_Count
+Lymphoma,diagnosed_by,Lymph_Node_Biopsy
+Kidney_Stones,diagnosed_by,CT_Scan
+Chronic_Kidney_Disease,diagnosed_by,Creatinine_Test
+
+# --- Facteurs de risque ---
+Lupus,risk_factor_for,Cardiovascular_Disorder
+Obesity,risk_factor_for,Osteoarthritis
+Smoking,risk_factor_for,Bladder_Cancer
+Family_History,risk_factor_for,Breast_Cancer
+HPV,risk_factor_for,Cervical_Cancer
+Hepatitis_B,risk_factor_for,Liver_Cancer
+Hepatitis_C,risk_factor_for,Liver_Cancer
+Liver_Cirrhosis,risk_factor_for,Liver_Cancer
+
+# --- Complications ---
+Rheumatoid_Arthritis,can_cause,Cardiovascular_Disorder
+Lupus,can_cause,Cardiovascular_Disorder
+Gout,can_cause,Kidney_Stones
+Leukemia,can_cause,Bleeding
+Chronic_Kidney_Disease,can_cause,Anemia
+Kidney_Stones,can_cause,Kidney_Damage
+
+# --- Organe cible ---
+Rheumatoid_Arthritis,affects_organ,Joints
+Lupus,affects_organ,Joints
+Leukemia,affects_organ,Blood
+
+# --- Prévention ---
+Cervical_Cancer,prevented_by,HPV_Vaccine
+Melanoma,prevented_by,Sunscreen
+Urinary_Tract_Infection,prevented_by,Hydration

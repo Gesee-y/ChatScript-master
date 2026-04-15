@@ -1,0 +1,285 @@
+KG_GRAPH_V1
+EMBED_DIM 4
+NODES 131
+0	Influenza
+1	Body_Aches
+2	COVID-19
+3	Pneumonia
+4	Chest_Pain
+5	Bronchitis
+6	Chest_Tightness
+7	Tuberculosis
+8	Coughing_Blood
+9	Malaria
+10	Chills
+11	Dengue
+12	Bleeding_Gums
+13	Typhoid
+14	Abdominal_Pain
+15	HIV
+16	Fatigue
+17	Hepatitis_B
+18	Hepatitis_C
+19	Measles
+20	Cough
+21	Chickenpox
+22	Meningitis
+23	Fever
+24	Sepsis
+25	Confusion
+26	Asthma
+27	COPD
+28	Hay_Fever
+29	Itchy_Eyes
+30	Pulmonary_Edema
+31	Pulmonary_Fibrosis
+32	Dry_Cough
+33	Sleep_Apnea
+34	Amoxicillin
+35	Azithromycin
+36	Doxycycline
+37	Acne
+38	Ciprofloxacin
+39	Bacterial_Infection
+40	Acyclovir
+41	Emtricitabine
+42	Lopinavir
+43	Ritonavir
+44	Penicillin
+45	Ceftriaxone
+46	Vancomycin
+47	MRSA
+48	Albuterol
+49	Salmeterol
+50	Ipratropium
+51	Theophylline
+52	Montelukast
+53	Cetirizine
+54	Fexofenadine
+55	Dextromethorphan
+56	Guaifenesin
+57	Mucus_Production
+58	Benzonate
+59	Prednisone
+60	Infectious_Disease
+61	Maladie
+62	Respiratory_Condition
+63	Antibiotic
+64	Medicament
+65	Antiviral
+66	Antiparasitic
+67	Bronchodilator
+68	Corticosteroid
+69	Antihistamine
+70	Symptom
+71	Headache
+72	Sore_Throat
+73	Runny_Nose
+74	Nasal_Congestion
+75	Vomiting
+76	Loss_of_Smell
+77	Loss_of_Taste
+78	Difficulty_Breathing
+79	Nausea
+80	Diarrhea
+81	Night_Sweats
+82	Weight_Loss
+83	Joint_Pain
+84	Muscle_Pain
+85	Rash
+86	Jaundice
+87	Swollen_Lymph_Nodes
+88	Neck_Stiffness
+89	Sensitivity_to_Light
+90	Rapid_Heart_Rate
+91	Wheezing
+92	Sneezing
+93	Shortness_of_Breath
+94	Persistent_Cough
+95	Itchy_Rash
+96	Rapid_Breathing
+97	Sweating
+98	Mild_Fever
+99	High_Fever
+100	Severe_Headache
+101	Weakness
+102	Constipation
+103	Snoring
+104	Rifampicin
+105	Oral_Contraceptives
+106	Antigen_Test
+107	Mantoux_Test
+108	Blood_Smear
+109	ELISA_Test
+110	CT_Scan
+111	Blood_Culture
+112	Airborne_Droplets
+113	Blood_Contact
+114	Contaminated_Food
+115	Critical
+116	Mild
+117	Moderate
+118	Elderly
+119	Diabetic_Patients
+120	Children
+121	Lungs
+122	Brain
+123	Diabetes_Type_2
+124	Blood_Clots
+125	Myocarditis
+126	Respiratory_Failure
+127	Cerebral_Malaria
+128	Liver_Cancer
+129	Brain_Damage
+130	Death
+RELATIONS 11
+0	causes_symptom
+1	treats
+2	is_a
+3	interacts_with
+4	diagnosed_by
+5	transmitted_by
+6	has_severity
+7	affects_population
+8	affects_organ
+9	worsened_by
+10	can_cause
+TRIPLES 134
+0	9	26
+0	7	118
+0	6	116
+0	10	125
+0	0	1
+1	2	70
+2	4	106
+2	9	123
+2	5	112
+2	7	119
+2	6	115
+2	10	124
+2	0	1
+2	8	121
+3	4	110
+3	9	27
+3	7	118
+3	6	117
+3	10	126
+3	0	4
+4	2	70
+5	0	6
+6	2	70
+7	4	107
+7	6	117
+7	0	8
+8	2	70
+9	4	108
+9	7	120
+9	6	116
+9	10	127
+9	0	10
+10	2	70
+11	6	116
+11	0	12
+12	2	70
+13	4	111
+13	5	114
+13	0	14
+14	2	70
+15	4	109
+15	5	113
+15	0	16
+16	2	70
+17	5	113
+17	10	128
+17	0	14
+18	0	16
+19	0	20
+20	2	70
+21	0	16
+22	10	129
+22	0	23
+22	8	122
+23	2	70
+24	4	111
+24	6	115
+24	10	130
+24	0	25
+25	2	70
+26	0	6
+27	7	118
+27	0	6
+28	0	29
+29	2	70
+30	0	4
+31	0	32
+32	2	70
+33	0	16
+34	1	5
+35	1	5
+36	1	37
+38	1	39
+40	1	21
+41	1	15
+42	1	15
+43	1	15
+44	1	39
+45	1	22
+46	1	47
+48	1	26
+49	1	26
+50	1	26
+51	1	26
+52	1	26
+53	1	28
+54	1	28
+55	1	20
+56	1	57
+57	2	70
+58	1	20
+59	1	26
+60	2	61
+62	2	61
+63	2	64
+65	2	64
+66	2	64
+67	2	64
+68	2	64
+69	2	64
+71	2	70
+72	2	70
+73	2	70
+74	2	70
+75	2	70
+76	2	70
+77	2	70
+78	2	70
+79	2	70
+80	2	70
+81	2	70
+82	2	70
+83	2	70
+84	2	70
+85	2	70
+86	2	70
+87	2	70
+88	2	70
+89	2	70
+90	2	70
+91	2	70
+92	2	70
+93	2	70
+94	2	70
+95	2	70
+96	2	70
+97	2	70
+98	2	70
+99	2	70
+100	2	70
+101	2	70
+102	2	70
+103	2	70
+104	3	105
+SCHEMAS 0
+POLICIES 0
+INFERRED 0
+END

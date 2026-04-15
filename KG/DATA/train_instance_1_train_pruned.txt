@@ -1,0 +1,174 @@
+# ============================================================
+# INSTANCE 1 — Maladies Infectieuses, Respiratoires & Traitements de Base
+# 500 triplets | Format: head,relation,tail
+# ============================================================
+
+# --- Maladies Infectieuses & Symptômes ---
+Influenza,causes_symptom,Body_Aches
+COVID-19,causes_symptom,Body_Aches
+Pneumonia,causes_symptom,Chest_Pain
+Bronchitis,causes_symptom,Chest_Tightness
+Tuberculosis,causes_symptom,Coughing_Blood
+Malaria,causes_symptom,Chills
+Dengue,causes_symptom,Bleeding_Gums
+Typhoid,causes_symptom,Abdominal_Pain
+HIV,causes_symptom,Fatigue
+Hepatitis_B,causes_symptom,Abdominal_Pain
+Hepatitis_C,causes_symptom,Fatigue
+Measles,causes_symptom,Cough
+Chickenpox,causes_symptom,Fatigue
+Meningitis,causes_symptom,Fever
+Sepsis,causes_symptom,Confusion
+
+# --- Maladies Respiratoires ---
+Asthma,causes_symptom,Chest_Tightness
+COPD,causes_symptom,Chest_Tightness
+Hay_Fever,causes_symptom,Itchy_Eyes
+Pulmonary_Edema,causes_symptom,Chest_Pain
+Pulmonary_Fibrosis,causes_symptom,Dry_Cough
+Sleep_Apnea,causes_symptom,Fatigue
+
+# --- Traitements Maladies Infectieuses ---
+Amoxicillin,treats,Bronchitis
+Azithromycin,treats,Bronchitis
+Doxycycline,treats,Acne
+Ciprofloxacin,treats,Bacterial_Infection
+Acyclovir,treats,Chickenpox
+Emtricitabine,treats,HIV
+Lopinavir,treats,HIV
+Ritonavir,treats,HIV
+Penicillin,treats,Bacterial_Infection
+Ceftriaxone,treats,Meningitis
+Vancomycin,treats,MRSA
+
+# --- Traitements Respiratoires ---
+Albuterol,treats,Asthma
+Salmeterol,treats,Asthma
+Ipratropium,treats,Asthma
+Theophylline,treats,Asthma
+Montelukast,treats,Asthma
+Cetirizine,treats,Hay_Fever
+Fexofenadine,treats,Hay_Fever
+Dextromethorphan,treats,Cough
+Guaifenesin,treats,Mucus_Production
+Benzonate,treats,Cough
+Prednisone,treats,Asthma
+
+# --- Taxonomie des Maladies Infectieuses ---
+Infectious_Disease,is_a,Maladie
+Respiratory_Condition,is_a,Maladie
+
+# --- Taxonomie des Antibiotiques ---
+Antibiotic,is_a,Medicament
+Antiviral,is_a,Medicament
+Antiparasitic,is_a,Medicament
+Bronchodilator,is_a,Medicament
+Corticosteroid,is_a,Medicament
+Antihistamine,is_a,Medicament
+
+# --- Taxonomie Symptômes ---
+Fever,is_a,Symptom
+Cough,is_a,Symptom
+Fatigue,is_a,Symptom
+Headache,is_a,Symptom
+Chills,is_a,Symptom
+Body_Aches,is_a,Symptom
+Sore_Throat,is_a,Symptom
+Runny_Nose,is_a,Symptom
+Nasal_Congestion,is_a,Symptom
+Vomiting,is_a,Symptom
+Loss_of_Smell,is_a,Symptom
+Loss_of_Taste,is_a,Symptom
+Difficulty_Breathing,is_a,Symptom
+Nausea,is_a,Symptom
+Diarrhea,is_a,Symptom
+Chest_Pain,is_a,Symptom
+Night_Sweats,is_a,Symptom
+Weight_Loss,is_a,Symptom
+Coughing_Blood,is_a,Symptom
+Joint_Pain,is_a,Symptom
+Muscle_Pain,is_a,Symptom
+Rash,is_a,Symptom
+Jaundice,is_a,Symptom
+Swollen_Lymph_Nodes,is_a,Symptom
+Neck_Stiffness,is_a,Symptom
+Sensitivity_to_Light,is_a,Symptom
+Rapid_Heart_Rate,is_a,Symptom
+Confusion,is_a,Symptom
+Wheezing,is_a,Symptom
+Sneezing,is_a,Symptom
+Itchy_Eyes,is_a,Symptom
+Shortness_of_Breath,is_a,Symptom
+Chest_Tightness,is_a,Symptom
+Mucus_Production,is_a,Symptom
+Persistent_Cough,is_a,Symptom
+Itchy_Rash,is_a,Symptom
+Rapid_Breathing,is_a,Symptom
+Sweating,is_a,Symptom
+Mild_Fever,is_a,Symptom
+High_Fever,is_a,Symptom
+Severe_Headache,is_a,Symptom
+Abdominal_Pain,is_a,Symptom
+Weakness,is_a,Symptom
+Constipation,is_a,Symptom
+Bleeding_Gums,is_a,Symptom
+Dry_Cough,is_a,Symptom
+Snoring,is_a,Symptom
+
+# --- Contre-indications ---
+
+# --- Interactions médicamenteuses ---
+Rifampicin,interacts_with,Oral_Contraceptives
+
+# --- Diagnostics & Tests ---
+COVID-19,diagnosed_by,Antigen_Test
+Tuberculosis,diagnosed_by,Mantoux_Test
+Malaria,diagnosed_by,Blood_Smear
+HIV,diagnosed_by,ELISA_Test
+Pneumonia,diagnosed_by,CT_Scan
+Sepsis,diagnosed_by,Blood_Culture
+Typhoid,diagnosed_by,Blood_Culture
+
+# --- Mode de transmission ---
+COVID-19,transmitted_by,Airborne_Droplets
+HIV,transmitted_by,Blood_Contact
+Hepatitis_B,transmitted_by,Blood_Contact
+Typhoid,transmitted_by,Contaminated_Food
+
+# --- Prévention & Vaccins ---
+
+# --- Sévérité ---
+COVID-19,has_severity,Critical
+Influenza,has_severity,Mild
+Pneumonia,has_severity,Moderate
+Tuberculosis,has_severity,Moderate
+Malaria,has_severity,Mild
+Sepsis,has_severity,Critical
+Dengue,has_severity,Mild
+
+# --- Populations à risque ---
+Influenza,affects_population,Elderly
+COVID-19,affects_population,Diabetic_Patients
+Pneumonia,affects_population,Elderly
+Malaria,affects_population,Children
+COPD,affects_population,Elderly
+
+# --- Organe cible ---
+COVID-19,affects_organ,Lungs
+Meningitis,affects_organ,Brain
+
+# --- Comorbidités ---
+COVID-19,worsened_by,Diabetes_Type_2
+Influenza,worsened_by,Asthma
+Pneumonia,worsened_by,COPD
+
+# --- Complications ---
+COVID-19,can_cause,Blood_Clots
+Influenza,can_cause,Myocarditis
+Pneumonia,can_cause,Respiratory_Failure
+Malaria,can_cause,Cerebral_Malaria
+Hepatitis_B,can_cause,Liver_Cancer
+Meningitis,can_cause,Brain_Damage
+Sepsis,can_cause,Death
+
+# --- Durée de la maladie ---

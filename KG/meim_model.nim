@@ -3,7 +3,7 @@
 # Model architecture for MEIM (Multi-partition Embedding Interaction Model).
 # Implements the core tensor interaction: S(h,r,t) = sum_k h_k^T M_{W,r,k} t_k.
 
-import math, strformat, strutils, random, tables, algorithm, sets
+import math, strformat, strutils, random, tables, algorithm, sets, os
 import tensor, kg_loader
 
 # ---------------------------------------------------------------------------
@@ -436,13 +436,54 @@ proc loadParams*(path: string): MEIMParams =
 proc saveConfig*(cfg: MEIMConfig, path: string) =
   var f: File; if not open(f, path, fmWrite): return
   defer: close(f)
-  f.writeLine(&"{cfg.numEntities}"); f.writeLine(&"{cfg.numRelations}")
-  f.writeLine(&"{cfg.K}"); f.writeLine(&"{cfg.Ce}"); f.writeLine(&"{cfg.Cr}")
-  f.writeLine(&"{cfg.inputDropRate}"); f.writeLine(&"{cfg.hiddenDropRate}")
+  f.writeLine(&"numEntities={cfg.numEntities}")
+  f.writeLine(&"numRelations={cfg.numRelations}")
+  f.writeLine(&"K={cfg.K}")
+  f.writeLine(&"Ce={cfg.Ce}")
+  f.writeLine(&"Cr={cfg.Cr}")
+  f.writeLine(&"inputDropRate={cfg.inputDropRate}")
+  f.writeLine(&"hiddenDropRate={cfg.hiddenDropRate}")
+  f.writeLine(&"lambdaOrtho={cfg.lambdaOrtho}")
+  f.writeLine(&"lambdaUnitNorm={cfg.lambdaUnitNorm}")
+  f.writeLine(&"orthoP={cfg.orthoP}")
+  f.writeLine(&"batchSize={cfg.batchSize}")
+  f.writeLine(&"learningRate={cfg.learningRate}")
+  f.writeLine(&"lrDecay={cfg.lrDecay}")
+  f.writeLine(&"maxEpochs={cfg.maxEpochs}")
+  f.writeLine(&"evalEvery={cfg.evalEvery}")
+  f.writeLine(&"kVsAll={cfg.kVsAll}")
+  f.writeLine(&"kVsAllK={cfg.kVsAllK}")
 
 proc loadConfig*(path: string): MEIMConfig =
-  let l = readFile(path).splitLines(); if l.len < 5: return
-  result.numEntities = parseInt(l[0]); result.numRelations = parseInt(l[1])
-  result.K = parseInt(l[2]); result.Ce = parseInt(l[3]); result.Cr = parseInt(l[4])
-  if l.len > 5: result.inputDropRate = parseFloat(l[5]).float32
-  if l.len > 6: result.hiddenDropRate = parseFloat(l[6]).float32
+  result = defaultConfig(0, 0)
+  if not fileExists(path):
+    return
+
+  for rawLine in readFile(path).splitLines():
+    let line = rawLine.strip()
+    if line.len == 0 or '=' notin line:
+      continue
+    let parts = line.split('=', maxsplit = 1)
+    if parts.len != 2:
+      continue
+    let key = parts[0].strip()
+    let value = parts[1].strip()
+    case key
+    of "numEntities": result.numEntities = parseInt(value)
+    of "numRelations": result.numRelations = parseInt(value)
+    of "K": result.K = parseInt(value)
+    of "Ce": result.Ce = parseInt(value)
+    of "Cr": result.Cr = parseInt(value)
+    of "inputDropRate": result.inputDropRate = parseFloat(value).float32
+    of "hiddenDropRate": result.hiddenDropRate = parseFloat(value).float32
+    of "lambdaOrtho": result.lambdaOrtho = parseFloat(value).float32
+    of "lambdaUnitNorm": result.lambdaUnitNorm = parseFloat(value).float32
+    of "orthoP": result.orthoP = parseInt(value)
+    of "batchSize": result.batchSize = parseInt(value)
+    of "learningRate": result.learningRate = parseFloat(value).float32
+    of "lrDecay": result.lrDecay = parseFloat(value).float32
+    of "maxEpochs": result.maxEpochs = parseInt(value)
+    of "evalEvery": result.evalEvery = parseInt(value)
+    of "kVsAll": result.kVsAll = parseBool(value)
+    of "kVsAllK": result.kVsAllK = parseInt(value)
+    else: discard

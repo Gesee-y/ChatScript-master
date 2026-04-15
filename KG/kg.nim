@@ -1,4 +1,4 @@
-import std/[tables, strutils, sets, deques, math, algorithm, sequtils,
+import std/[tables, strutils, strformat, sets, deques, math, algorithm, sequtils,
     parseutils, os]
 import kg_loader, meim_model, trainer
 
@@ -29,6 +29,12 @@ import kg_loader, meim_model, trainer
 ##  • Cosine-similarity-weighted BFS with pruning threshold.
 ##  • Zero-shot nearest-neighbour inference (`zeroShotTail/Head`).
 ##  • Hubness mitigation via L2-normalised scores before ranking.
+##
+## Serialisation
+## ─────────────
+##  • saveKnowledgeGraph / loadKnowledgeGraph – full graph dump (relations +
+##    policies + schemas + inferred cache) to a structured text file.
+##  • saveGraphEmbeddings / loadGraphEmbeddings – per-node embeddings to TSV.
 
 # ───────────────────────────────────────────────────────────────────────────
 # Types
@@ -439,13 +445,6 @@ proc queryHeadNames*(kg: KnowledgeGraph, relation, tail: string): seq[string] =
 proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
                     maxDepth: int = 5,
                     simThreshold: float = 0.0): seq[QueryResult] =
-  ## Structural generalisation via BFS on asserted edges only.
-  ##
-  ## • Returns rkExact results first (direct hits found along traversal).
-  ## • Returns rkCached for previously inferred results (O(1) lookup).
-  ## • Returns rkInferred for fresh inferences, which are then cached.
-  ## • NEVER writes to the asserted graph.
-  ## • Cosine-similarity ordering when embeddings are available.
   result = @[]
   if not kg.nodeMap.hasKey(head) or not kg.relMap.hasKey(relation): return
 
@@ -454,7 +453,6 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
   let headEmb = kg.nodes[startId].embedding
   let useEmb = kg.embedDim > 0 and headEmb.len == kg.embedDim
 
-  # ── Check cache first ────────────────────────────────────────────────────
   var cachedResults: seq[QueryResult]
   for i in 0 ..< kg.nodes.len:
     if kg.isCached(startId, targetRelId, i):
@@ -466,14 +464,12 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
   if cachedResults.len > 0:
     return cachedResults
 
-  # ── BFS on asserted edges ────────────────────────────────────────────────
   var queue = initDeque[(int, int)]()
   queue.addLast((startId, 0))
   var visited = initHashSet[int]()
   visited.incl(startId)
   var foundIds = initHashSet[int]()
 
-  # Schema Check: Expected tail ancestor
   let tailAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[
       targetRelId].tailType else: -1
 
@@ -481,7 +477,6 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
     let (currId, depth) = queue.popFirst()
     if kg.nodes[currId].outgoing.hasKey(targetRelId):
       for tId in kg.nodes[currId].outgoing[targetRelId]:
-        # Enforce Schema
         if tailAncestor == -1 or kg.isA(tId, tailAncestor):
           foundIds.incl(tId)
     if depth < maxDepth:
@@ -503,9 +498,7 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
           visited.incl(tId)
           queue.addLast((tId, depth + 1))
 
-  # ── Classify results and populate cache ─────────────────────────────────
   for id in foundIds:
-    # Is this an asserted direct link from `head`?
     let isAsserted = kg.nodes[startId].outgoing.hasKey(targetRelId) and
                      id in kg.nodes[startId].outgoing[targetRelId]
     let score = if useEmb: cosineSim(headEmb, kg.nodes[id].embedding) else: 1.0
@@ -527,7 +520,6 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
 proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
                     maxDepth: int = 3,
                     simThreshold: float = 0.0): seq[QueryResult] =
-  ## Symmetric inductive BFS.  Same cache + provenance guarantees.
   result = @[]
   if not kg.relMap.hasKey(relation) or not kg.nodeMap.hasKey(tail): return
 
@@ -536,7 +528,6 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
   let tailEmb = kg.nodes[startId].embedding
   let useEmb = kg.embedDim > 0 and tailEmb.len == kg.embedDim
 
-  # ── Check cache first ────────────────────────────────────────────────────
   var cachedResults: seq[QueryResult]
   for i in 0 ..< kg.nodes.len:
     if kg.isCached(i, targetRelId, startId):
@@ -548,14 +539,12 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
   if cachedResults.len > 0:
     return cachedResults
 
-  # ── BFS on asserted edges ────────────────────────────────────────────────
   var queue = initDeque[(int, int)]()
   queue.addLast((startId, 0))
   var visited = initHashSet[int]()
   visited.incl(startId)
   var foundIds = initHashSet[int]()
 
-  # Schema Check: Expected head ancestor
   let headAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[
       targetRelId].headType else: -1
 
@@ -563,7 +552,6 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
     let (currId, depth) = queue.popFirst()
     if kg.nodes[currId].incoming.hasKey(targetRelId):
       for sId in kg.nodes[currId].incoming[targetRelId]:
-        # Enforce Schema
         if headAncestor == -1 or kg.isA(sId, headAncestor):
           foundIds.incl(sId)
     if depth < maxDepth:
@@ -585,7 +573,6 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
           visited.incl(sId)
           queue.addLast((sId, depth + 1))
 
-  # ── Classify and cache ───────────────────────────────────────────────────
   for id in foundIds:
     let isAsserted = kg.nodes[startId].incoming.hasKey(targetRelId) and
                      id in kg.nodes[startId].incoming[targetRelId]
@@ -611,9 +598,6 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
 
 proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
                    topK: int = 10, threshold: float = 0.25): seq[QueryResult] =
-  ## Pure embedding-based inference for (head, relation, ?).
-  ## Results are always flagged `wasInferred = true`.
-  ## Cache-first: a repeated call is O(nodes) lookup only.
   result = @[]
   if kg.embedDim == 0 or not kg.nodeMap.hasKey(head): return
   let headId = kg.nodeMap[head]
@@ -621,7 +605,6 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
   let headEmb = kg.nodes[headId].embedding
   if headEmb.len == 0: return
 
-  # Cache check
   var cached: seq[QueryResult]
   for i in 0 ..< kg.nodes.len:
     if kg.isCached(headId, relId, i):
@@ -634,8 +617,6 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
       if a.score > b.score: -1 elif a.score < b.score: 1 else: 0)
     return cached[0 ..< min(topK, cached.len)]
 
-  # Fresh inference: Link Prediction based on neighbors
-  # Goal: Find nodes S similar to `head`, then return what S links to via `relation`.
   var tailScores = initTable[int, float]()
   let tailAncestor = if kg.relSchemas.hasKey(relid): kg.relSchemas[
       relid].tailType else: -1
@@ -644,13 +625,10 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
     if (tailAncestor != -1 and not kg.isA(sId, tailAncestor)): continue
 
     let sim = cosineSim(headEmb, kg.nodes[sId].embedding)
-    if sim > threshold: # Similarity threshold for neighborhood
-      # Check grounded outgoing edges for relation from this similar node S
+    if sim > threshold:
       if kg.nodes[sId].outgoing.hasKey(relId):
         for tId in kg.nodes[sId].outgoing[relId]:
-          # Enforce Schema on candidates
           if tailAncestor != -1 and not kg.isA(tId, tailAncestor): continue
-          # Score is the max similarity to any neighbor that points to this tail
           tailScores[tId] = max(tailScores.getOrDefault(tId, 0.0), sim)
 
   var scored: seq[(int, float)]
@@ -671,7 +649,6 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
 
 proc zeroShotHead*(kg: KnowledgeGraph, relation, tail: string,
                    topK: int = 10): seq[QueryResult] =
-  ## Symmetric zero-shot head inference.
   result = @[]
   if kg.embedDim == 0 or not kg.nodeMap.hasKey(tail): return
   let tailId = kg.nodeMap[tail]
@@ -733,8 +710,6 @@ proc topSimilarNodes*(kg: KnowledgeGraph, name: string,
   return scored[0 ..< min(k, scored.len)]
 
 proc getAllDescendants*(kg: KnowledgeGraph, ancestorId: int): HashSet[int] =
-  ## Returns all nodes that have 'ancestorId' as an ancestor via 'is_a' relation.
-  ## This is the inverse of isA(node, ancestor).
   result = initHashSet[int]()
   let isARelId = kg.relMap.getOrDefault("is_a", -1)
   if isARelId == -1:
@@ -755,7 +730,6 @@ proc getAllDescendants*(kg: KnowledgeGraph, ancestorId: int): HashSet[int] =
 
 proc getAllowedEntities*(kg: KnowledgeGraph, relId: int, headMode: bool,
     robust: bool): HashSet[int] =
-  ## Pre-calculates the set of entities satisfying taxonomic and robust constraints.
   let ancestorId = if relId != -1 and kg.relSchemas.hasKey(relId):
                      if headMode: kg.relSchemas[
                          relId].headType else: kg.relSchemas[relId].tailType
@@ -785,8 +759,295 @@ proc getAllowedEntities*(kg: KnowledgeGraph, relId: int, headMode: bool,
     result = candidates
 
 # ───────────────────────────────────────────────────────────────────────────
-# Tests
+# Serialisation – KnowledgeGraph full dump (text format)
 # ───────────────────────────────────────────────────────────────────────────
+#
+# File format (UTF-8 text):
+#
+#   KG_GRAPH_V1
+#   EMBED_DIM <D>
+#   NODES <N>
+#   <id>\t<name>           -- N lines
+#   RELATIONS <M>
+#   <id>\t<name>           -- M lines
+#   TRIPLES <T>            -- asserted outgoing (head, rel, tail) by integer ID
+#   <head>\t<rel>\t<tail>  -- T lines
+#   SCHEMAS <S>
+#   <relId>\t<headType>\t<tailType>
+#   POLICIES <P>
+#   <relId>\t<allDown:0|1>\t<down_ids…>\t|\t<allUp:0|1>\t<up_ids…>
+#   INFERRED <I>
+#   <head>\t<rel>\t<tail>\t<score>
+#   END
+#
+# Embeddings are stored in a separate file (see saveGraphEmbeddings).
+# ───────────────────────────────────────────────────────────────────────────
+
+const kgGraphHeader = "KG_GRAPH_V1"
+
+proc saveKnowledgeGraph*(kg: KnowledgeGraph; path: string;
+                          includeCache: bool = true) =
+  ## Serialise the full KnowledgeGraph (nodes, relations, asserted triples,
+  ## schemas, policies and optionally the inference cache) to a text file.
+  ## Embeddings are NOT included here – use `saveGraphEmbeddings` for those.
+  var f: File
+  if not open(f, path, fmWrite):
+    raise newException(IOError, "[saveKnowledgeGraph] Cannot open: " & path & ".")
+  defer: close(f)
+
+  f.writeLine(kgGraphHeader)
+  f.writeLine(&"EMBED_DIM {kg.embedDim}")
+
+  # --- Nodes ---
+  f.writeLine(&"NODES {kg.nodes.len}")
+  for node in kg.nodes:
+    f.writeLine(&"{node.id}\t{node.name}")
+
+  # --- Relations ---
+  # Build reverse map id -> name
+  var relIdToName = newSeq[string](kg.nextRelId)
+  for name, id in kg.relMap:
+    if id < relIdToName.len: relIdToName[id] = name
+  f.writeLine(&"RELATIONS {kg.nextRelId}")
+  for id in 0 ..< kg.nextRelId:
+    f.writeLine(&"{id}\t{relIdToName[id]}")
+
+  # --- Asserted triples (reconstruct from outgoing edges) ---
+  var tripleCount = 0
+  for node in kg.nodes:
+    for relId, tails in node.outgoing:
+      tripleCount += tails.len
+
+  f.writeLine(&"TRIPLES {tripleCount}")
+  for node in kg.nodes:
+    for relId, tails in node.outgoing:
+      for tailId in tails:
+        f.writeLine(&"{node.id}\t{relId}\t{tailId}")
+
+  # --- Schemas ---
+  f.writeLine(&"SCHEMAS {kg.relSchemas.len}")
+  for relId, schema in kg.relSchemas:
+    f.writeLine(&"{relId}\t{schema.headType}\t{schema.tailType}")
+
+  # --- Policies ---
+  f.writeLine(&"POLICIES {kg.relPolicies.len}")
+  for relId, pol in kg.relPolicies:
+    let ad = if pol.allAllowedDown: 1 else: 0
+    let au = if pol.allAllowedUp: 1 else: 0
+    var line = &"{relId}\t{ad}"
+    for d in pol.allowedDown: line.add(&"\t{d}")
+    line.add("\t|")
+    line.add(&"\t{au}")
+    for u in pol.allowedUp: line.add(&"\t{u}")
+    f.writeLine(line)
+
+  # --- Inference cache (optional) ---
+  if includeCache:
+    f.writeLine(&"INFERRED {kg.inferredTriplets.len}")
+    for key, score in kg.inferredTriplets:
+      f.writeLine(&"{key.head}\t{key.rel}\t{key.tail}\t{score}")
+  else:
+    f.writeLine("INFERRED 0")
+
+  f.writeLine("END")
+
+  echo &"[saveKnowledgeGraph] Saved {kg.nodes.len} nodes, {tripleCount} triples to: {path}"
+
+proc loadKnowledgeGraph*(path: string): KnowledgeGraph =
+  ## Reload a KnowledgeGraph previously saved with `saveKnowledgeGraph`.
+  if not fileExists(path):
+    raise newException(IOError, &"[loadKnowledgeGraph] File not found: {path}")
+
+  result = newKnowledgeGraph()
+  let fileLines = readFile(path).splitLines()
+  var idx = 0
+
+  proc next(): string =
+    while idx < fileLines.len:
+      let l = fileLines[idx].strip()
+      inc idx
+      if l.len > 0: return l
+    ""
+
+  proc readSection(keyword: string): int =
+    let line = next()
+    let parts = line.splitWhitespace()
+    if parts.len < 2 or parts[0] != keyword:
+      raise newException(IOError,
+        &"[loadKnowledgeGraph] Expected '{keyword} <n>', got: '{line}'")
+    parseInt(parts[1])
+
+  # Header
+  let header = next()
+  if header != kgGraphHeader:
+    raise newException(IOError,
+      &"[loadKnowledgeGraph] Unknown header: '{header}'")
+
+  # Embed dim
+  let dimLine = next()
+  let dimParts = dimLine.splitWhitespace()
+  if dimParts.len >= 2 and dimParts[0] == "EMBED_DIM":
+    result.embedDim = parseInt(dimParts[1])
+
+  # Nodes
+  let nNodes = readSection("NODES")
+  result.nodes = newSeq[KnowledgeNode](nNodes)
+  for _ in 0 ..< nNodes:
+    let parts = next().split('\t')
+    if parts.len < 2: continue
+    let id = parseInt(parts[0])
+    let name = parts[1]
+    var node = KnowledgeNode(
+      id: id,
+      name: name,
+      outgoing: initTable[int, seq[int]](),
+      incoming: initTable[int, seq[int]]()
+    )
+    if result.embedDim > 0:
+      node.embedding = newSeq[float](result.embedDim)
+    result.nodes[id] = node
+    result.nodeMap[name] = id
+
+  # Relations
+  let nRels = readSection("RELATIONS")
+  result.nextRelId = nRels
+  for _ in 0 ..< nRels:
+    let parts = next().split('\t')
+    if parts.len < 2: continue
+    let id = parseInt(parts[0])
+    let name = parts[1]
+    result.relMap[name] = id
+
+  # Triples (rebuild outgoing + incoming + robustness sets)
+  let nTriples = readSection("TRIPLES")
+  for _ in 0 ..< nTriples:
+    let parts = next().split('\t')
+    if parts.len < 3: continue
+    let headId = parseInt(parts[0])
+    let relId  = parseInt(parts[1])
+    let tailId = parseInt(parts[2])
+
+    result.nodes[headId].outgoing.mgetOrPut(relId, @[]).add(tailId)
+    result.nodes[tailId].incoming.mgetOrPut(relId, @[]).add(headId)
+    result.relAllowedTails.mgetOrPut(relId, initHashSet[int]()).incl(tailId)
+    result.relAllowedHeads.mgetOrPut(relId, initHashSet[int]()).incl(headId)
+
+  # Schemas
+  let nSchemas = readSection("SCHEMAS")
+  for _ in 0 ..< nSchemas:
+    let parts = next().split('\t')
+    if parts.len < 3: continue
+    let relId    = parseInt(parts[0])
+    let headType = parseInt(parts[1])
+    let tailType = parseInt(parts[2])
+    result.relSchemas[relId] = (headType: headType, tailType: tailType)
+
+  # Policies
+  let nPolicies = readSection("POLICIES")
+  for _ in 0 ..< nPolicies:
+    let parts = next().split('\t')
+    if parts.len < 2: continue
+    let relId = parseInt(parts[0])
+    var pol = GeneralizationPolicy(
+      allowedDown: initHashSet[int](),
+      allAllowedDown: false,
+      allowedUp: initHashSet[int](),
+      allAllowedUp: false
+    )
+    # Parse: relId \t allDown \t d1 \t d2 … \t | \t allUp \t u1 …
+    var readingDown = true
+    var firstDown = true
+    var firstUp = true
+    for i in 1 ..< parts.len:
+      let tok = parts[i].strip()
+      if tok == "|":
+        readingDown = false
+        firstUp = true
+        continue
+      if readingDown:
+        if firstDown:
+          pol.allAllowedDown = (tok == "1")
+          firstDown = false
+        else:
+          pol.allowedDown.incl(parseInt(tok))
+      else:
+        if firstUp:
+          pol.allAllowedUp = (tok == "1")
+          firstUp = false
+        else:
+          pol.allowedUp.incl(parseInt(tok))
+    result.relPolicies[relId] = pol
+
+  # Inference cache
+  let nInferred = readSection("INFERRED")
+  for _ in 0 ..< nInferred:
+    let parts = next().split('\t')
+    if parts.len < 4: continue
+    let headId = parseInt(parts[0])
+    let relId  = parseInt(parts[1])
+    let tailId = parseInt(parts[2])
+    let score  = parseFloat(parts[3])
+    result.inferredTriplets[(headId, relId, tailId)] = score
+
+  echo &"[loadKnowledgeGraph] Loaded {nNodes} nodes, {nTriples} triples, " &
+       &"{nInferred} cached inferences from: {path}"
+
+# ───────────────────────────────────────────────────────────────────────────
+# Serialisation – Node embeddings  (TSV: name \t f0 \t f1 … \t f_{D-1})
+# ───────────────────────────────────────────────────────────────────────────
+
+proc saveGraphEmbeddings*(kg: KnowledgeGraph; path: string;
+                           delimiter: char = '\t') =
+  ## Write per-node embeddings to a TSV file.
+  ## Nodes with no embedding (empty seq) are skipped.
+  ## Reload with `loadGraphEmbeddings`.
+  var f: File
+  if not open(f, path, fmWrite):
+    raise newException(IOError, &"[saveGraphEmbeddings] Cannot open: {path}")
+  defer: close(f)
+
+  var written = 0
+  for node in kg.nodes:
+    if node.embedding.len == 0: continue
+    var line = node.name
+    for v in node.embedding:
+      line.add(delimiter)
+      line.add($v)
+    f.writeLine(line)
+    inc written
+
+  echo &"[saveGraphEmbeddings] Saved {written} node embeddings (dim={kg.embedDim}) to: {path}"
+
+proc loadGraphEmbeddings*(kg: KnowledgeGraph; path: string;
+                           delimiter: char = '\t') =
+  ## Reload embeddings from a TSV file produced by `saveGraphEmbeddings`
+  ## (or any compatible format: name \t f0 \t f1 …).
+  ## Unknown node names are silently ignored.
+  ## Sets `kg.embedDim` from the first parsed line if it was 0.
+  if not fileExists(path):
+    raise newException(IOError, &"[loadGraphEmbeddings] File not found: {path}")
+
+  var loaded = 0
+  for rawLine in lines(path):
+    let line = rawLine.strip()
+    if line.len == 0 or line.startsWith('#'): continue
+
+    let parts = line.split(delimiter)
+    if parts.len < 2: continue
+
+    let name = parts[0].strip()
+    if not kg.nodeMap.hasKey(name): continue
+
+    let id = kg.nodeMap[name]
+    var emb = newSeq[float](parts.len - 1)
+    for j in 1 ..< parts.len:
+      emb[j - 1] = parseFloat(parts[j].strip())
+
+    if kg.embedDim == 0: kg.embedDim = emb.len
+    kg.nodes[id].embedding = emb
+    inc loaded
+
+  echo &"[loadGraphEmbeddings] Loaded {loaded} embeddings (dim={kg.embedDim}) from: {path}"
 
 # ───────────────────────────────────────────────────────────────────────────
 # Fusion API: KG + MEIM (Neuro-Symbolic)
@@ -794,19 +1055,17 @@ proc getAllowedEntities*(kg: KnowledgeGraph, relId: int, headMode: bool,
 
 type
   HybridEngine* = object
-    ## Combines Symbolic KG and Neural MEIM.
     kg*: KnowledgeGraph
     meimParams*: MEIMParams
     meimConfig*: MEIMConfig
-    dataset*: KGDataset ## Shared vocabulary mappings
-    useNeural*: bool    ## Enable/disable neural fallback
+    dataset*: KGDataset
+    useNeural*: bool
 
 proc newHybridEngine*(kg: KnowledgeGraph): HybridEngine =
   result.kg = kg
   result.useNeural = false
 
 proc syncMappings*(engine: var HybridEngine) =
-  ## Rebuilds the dataset vocabulary from the symbolic graph nodes/relations.
   var eToId = initTable[string, int]()
   var rToId = initTable[string, int]()
   var idToE: seq[string]
@@ -827,7 +1086,6 @@ proc syncMappings*(engine: var HybridEngine) =
   engine.dataset.idToEntity = idToE
   engine.dataset.idToRelation = idToR
 
-  # Update config sizes
   engine.meimConfig.numEntities = idToE.len
   engine.meimConfig.numRelations = idToR.len
 
@@ -835,31 +1093,22 @@ proc queryHybridTail*(engine: var HybridEngine,
                       head, relation: string,
                       threshold: float = 0.6,
                       robust: bool = true): seq[QueryResult] =
-  ## Cascade query logic: Exact -> BFS -> ZSL -> MEIM.
-  ## If 'robust' is true, candidates are filtered by observed semantic types.
-  ## Taxonomic guardrail: If a schema exists for 'relation', results MUST match.
-
   let rId = engine.kg.relMap.getOrDefault(relation, -1)
   let hId = engine.kg.nodeMap.getOrDefault(head, -1)
 
-  # Schema Check for Head
   if rId != -1 and hId != -1 and engine.kg.relSchemas.hasKey(rId):
     let schema = engine.kg.relSchemas[rId]
     if not engine.kg.isA(hId, schema.headType):
-      # Head doesn't match schema (e.g., trying to treat with a Disease node)
       return @[]
 
-  # 1. Exact query
   result = engine.kg.queryTail(head, relation)
   if result.len > 0: return
 
-  # 2. BFS Inference
   result = engine.kg.searchTailBFS(head, relation)
   if result.len > 0:
     let maxScore = result.mapIt(it.score).foldl(max(a, b), 0.0)
     if maxScore >= threshold: return
 
-  # 3. zero-shot Inference
   let allowedTails = if rId != -1: engine.kg.relAllowedTails.getOrDefault(rId,
       initHashSet[int]()) else: initHashSet[int]()
   let tailAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(
@@ -870,11 +1119,7 @@ proc queryHybridTail*(engine: var HybridEngine,
   for res in zsl:
     let tId = engine.kg.nodeMap.getOrDefault(res.name, -1)
     if tId == -1: continue
-
-    # Check Schema
     if tailAncestor != -1 and not engine.kg.isA(tId, tailAncestor): continue
-
-    # Check Robust Filter (Historical usage)
     if not robust or allowedTails.len == 0 or tId in allowedTails:
       filteredZsl.add res
 
@@ -884,7 +1129,6 @@ proc queryHybridTail*(engine: var HybridEngine,
       result = filteredZsl
       return
 
-  # 4. Neural Fallback (MEIM)
   if engine.useNeural and engine.meimParams.entityEmb.data.len > 0:
     let filter = engine.kg.getAllowedEntities(rId, false, robust)
     let pred = predictTails(engine.meimParams, engine.meimConfig, engine.dataset,
@@ -898,28 +1142,22 @@ proc queryHybridHead*(engine: var HybridEngine,
                       relation, tail: string,
                       threshold: float = 0.6,
                       robust: bool = true): seq[QueryResult] =
-  ## Cascade query logic: Exact -> BFS -> ZSL -> MEIM.
-
   let rId = engine.kg.relMap.getOrDefault(relation, -1)
   let tId = engine.kg.nodeMap.getOrDefault(tail, -1)
 
-  # Schema Check for Tail
   if rId != -1 and tId != -1 and engine.kg.relSchemas.hasKey(rId):
     let schema = engine.kg.relSchemas[rId]
     if not engine.kg.isA(tId, schema.tailType):
       return @[]
 
-  # 1. Exact query
   result = engine.kg.queryHead(relation, tail)
   if result.len > 0: return
 
-  # 2. BFS Inference
   result = engine.kg.searchHeadBFS(relation, tail)
   if result.len > 0:
     let maxScore = result.mapIt(it.score).foldl(max(a, b), 0.0)
     if maxScore >= threshold: return
 
-  # 3. Zero-Shot Inference
   let allowedHeads = if rId != -1: engine.kg.relAllowedHeads.getOrDefault(rId,
       initHashSet[int]()) else: initHashSet[int]()
   let headAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(
@@ -930,10 +1168,7 @@ proc queryHybridHead*(engine: var HybridEngine,
   for res in zsl:
     let hId = engine.kg.nodeMap.getOrDefault(res.name, -1)
     if hId == -1: continue
-
-    # Check Schema
     if headAncestor != -1 and not engine.kg.isA(hId, headAncestor): continue
-
     if not robust or allowedHeads.len == 0 or hId in allowedHeads:
       filteredZsl.add res
 
@@ -943,17 +1178,13 @@ proc queryHybridHead*(engine: var HybridEngine,
       result = filteredZsl
       return
 
-  # 4. Neural Fallback (MEIM)
   if engine.useNeural and engine.meimParams.entityEmb.data.len > 0:
     let pred = predictHeads(engine.meimParams, engine.meimConfig, engine.dataset,
                             tail, relation, topK = 30)
     for p in pred:
       let hId = engine.kg.nodeMap.getOrDefault(p.entityName, -1)
       if hId == -1: continue
-
-      # Check Schema
       if headAncestor != -1 and not engine.kg.isA(hId, headAncestor): continue
-
       if not robust or allowedHeads.len == 0 or hId in allowedHeads:
         result.add QueryResult(name: p.entityName, score: p.score.float,
           kind: rkInferred, wasInferred: true)
@@ -961,8 +1192,6 @@ proc queryHybridHead*(engine: var HybridEngine,
 proc queryCombinedTails*(engine: var HybridEngine,
                          heads: seq[string],
                          relation: string): seq[QueryResult] =
-  ## Combined interrogation: Interrogate multiple heads (e.g., 2 symptoms)
-  ## and find the best candidate tail (disease) by intersecting results.
   if heads.len == 0: return
 
   var candidateScores = initTable[string, float]()
@@ -974,7 +1203,6 @@ proc queryCombinedTails*(engine: var HybridEngine,
       candidateScores[r.name] = candidateScores.getOrDefault(r.name, 0.0) + r.score
       candidateCounts[r.name] = candidateCounts.getOrDefault(r.name, 0) + 1
 
-  # Intersection + mean score
   for name, count in candidateCounts:
     if count == heads.len:
       result.add QueryResult(
@@ -989,7 +1217,6 @@ proc queryCombinedTails*(engine: var HybridEngine,
 proc queryCombinedHeads*(engine: var HybridEngine,
                           relation: string,
                           tails: seq[string]): seq[QueryResult] =
-  ## Interrogate multiple tails (symptoms) and find the best candidate head (disease).
   if tails.len == 0: return
 
   var candidateScores = initTable[string, float]()
@@ -1011,6 +1238,46 @@ proc queryCombinedHeads*(engine: var HybridEngine,
       )
 
   result.sort(proc(a, b: QueryResult): int = cmp(b.score, a.score))
+
+# ───────────────────────────────────────────────────────────────────────────
+# Serialisation – HybridEngine  (convenience wrapper)
+# ───────────────────────────────────────────────────────────────────────────
+
+proc saveHybridEngine*(engine: HybridEngine; dir: string;
+                        includeCache: bool = true) =
+  ## Save the full engine state into `dir`:
+  ##   <dir>/kg.txt          – graph structure + policies + (optionally) cache
+  ##   <dir>/kg_embeddings.tsv – node embeddings
+  ##   <dir>/meim_params.bin – MEIM model weights (binary)
+  ##   <dir>/meim_config.txt – MEIM hyper-parameters
+  createDir(dir)
+  saveKnowledgeGraph(engine.kg, dir / "kg.txt", includeCache)
+  saveGraphEmbeddings(engine.kg, dir / "kg_embeddings.tsv")
+  saveParams(engine.meimParams, dir / "meim_params.bin")
+  saveConfig(engine.meimConfig, dir / "meim_config.txt")
+  echo &"[saveHybridEngine] Engine saved to directory: {dir}"
+
+proc loadHybridEngine*(dir: string): HybridEngine =
+  ## Reload an engine previously saved with `saveHybridEngine`.
+  let kgPath     = dir / "kg.txt"
+  let embPath    = dir / "kg_embeddings.tsv"
+  let paramsPath = dir / "meim_params.bin"
+  let cfgPath    = dir / "meim_config.txt"
+
+  result.kg = loadKnowledgeGraph(kgPath)
+
+  if fileExists(embPath):
+    loadGraphEmbeddings(result.kg, embPath)
+
+  if fileExists(cfgPath):
+    result.meimConfig = loadConfig(cfgPath)
+
+  if fileExists(paramsPath):
+    result.meimParams = loadParams(paramsPath)
+    result.useNeural = result.meimParams.entityEmb.data.len > 0
+
+  result.syncMappings()
+  echo &"[loadHybridEngine] Engine loaded from directory: {dir}"
 
 when isMainModule:
   import std/unittest
@@ -1131,9 +1398,37 @@ when isMainModule:
       let countAfter = kg.nodes[kg.nodeMap["Aspirin"]].outgoing.len
       check countBefore == countAfter
 
+    test "saveKnowledgeGraph / loadKnowledgeGraph round-trip":
+      let dumpPath = "/test_kg_dump.txt"
+      kg.saveKnowledgeGraph(dumpPath, includeCache = false)
+      let kg2 = loadKnowledgeGraph(dumpPath)
+      check kg2.nodes.len == kg.nodes.len
+      check kg2.nextRelId == kg.nextRelId
+      let res = kg2.queryTail("Aspirin", "treats")
+      check res.len == 2
+      for r in res:
+        check r.kind == rkExact
+      removeFile(dumpPath)
+
+    test "saveGraphEmbeddings / loadGraphEmbeddings round-trip":
+      let embPath = "/test_kg_emb.tsv"
+      kg.saveGraphEmbeddings(embPath)
+      var kg3 = newKnowledgeGraph(embedDim = 4)
+      kg3.loadTriplets([("Aspirin", "treats", "Headache")])
+      kg3.loadGraphEmbeddings(embPath)
+      check kg3.nodes[kg3.nodeMap["Aspirin"]].embedding[0] == 1.0
+      removeFile(embPath)
+
+    test "saveKnowledgeGraph preserves inference cache":
+      discard kg.searchTailBFS("MedicA", "treats", maxDepth = 2)
+      let dumpPath = "/test_kg_cache.txt"
+      kg.saveKnowledgeGraph(dumpPath, includeCache = true)
+      let kg4 = loadKnowledgeGraph(dumpPath)
+      check kg4.inferredTriplets.len == kg.inferredTriplets.len
+      removeFile(dumpPath)
+
     test "loadGloveEmbeddings — selective and case-insensitive":
       let glovePath = "test_glove.txt"
-      # medicA is in KG (though capitalized differently), caffeine is NOT.
       let content = [
         "aspirin 1.0 0.0 0.0 0.0",
         "medica 0.9 0.1 0.0 0.0",
@@ -1150,9 +1445,7 @@ when isMainModule:
       check kgG.embedDim == 4
       check kgG.nodes[kgG.nodeMap["Aspirin"]].embedding[0] == 1.0
       check kgG.nodes[kgG.nodeMap["MedicA"]].embedding[1] == 0.1
-      # "Pain" was not in GloVe, so it should be empty or default
       check kgG.nodes[kgG.nodeMap["Pain"]].embedding.allIt(it == 0.0)
-      # Graph should NOT have caffeine
       check "caffeine" notin kgG.nodeMap
 
       removeFile(glovePath)
@@ -1165,18 +1458,14 @@ when isMainModule:
       var engine = newHybridEngine(kgH)
       engine.syncMappings()
 
-      # 1. Exact
       let resExact = engine.queryHybridTail("A", "is_a")
       check resExact.len == 1
       check resExact[0].name == "B"
       check resExact[0].kind == rkExact
 
-      # 2. BFS Fallback
       let resBFS = engine.queryHybridTail("A", "target", threshold = 0.5)
-      # "target" doesn't exist, so it should be empty
       check resBFS.len == 0
 
-      # Now add a path for BFS
       kgH.addTriplet("A", "part_of", "B")
       kgH.addTriplet("B", "treats", "D")
       kgH.addRelevantDown("treats", "part_of")
@@ -1197,11 +1486,9 @@ when isMainModule:
       var engine = newHybridEngine(kgC)
       engine.syncMappings()
 
-      # Querying only S1
       let res1 = engine.queryCombinedTails(@["S1"], "symptom_of")
-      check res1.len == 2 # D1, D2
-      
-      # Querying S1 AND S2 -> Should intersect on D2
+      check res1.len == 2
+
       let resBoth = engine.queryCombinedTails(@["S1", "S2"], "symptom_of")
       check resBoth.len == 1
       check resBoth[0].name == "D2"
