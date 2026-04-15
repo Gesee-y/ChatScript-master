@@ -6,7 +6,7 @@ when isMainModule:
     "--train", "KG" / "DATA" / "train_instance_3_train_pruned.txt",
     "--answers", "KG" / "DATA" / "train_instance_3_answers.csv",
     "--outdir", "KG" / "artifacts" / "instance_3",
-    "--epochs", "50",
+    "--epochs", "200",
     "--batch", "32",
     "--eval", "5",
     "--seed", "42",
