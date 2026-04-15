@@ -3,7 +3,7 @@
 # Model architecture for MEIM (Multi-partition Embedding Interaction Model).
 # Implements the core tensor interaction: S(h,r,t) = sum_k h_k^T M_{W,r,k} t_k.
 
-import math, strformat, strutils, random, tables, algorithm
+import math, strformat, strutils, random, tables, algorithm, sets
 import tensor, kg_loader
 
 # ---------------------------------------------------------------------------
@@ -215,7 +215,8 @@ proc computeOrthoLoss*(params: MEIMParams; cfg: MEIMConfig;
 
 proc scoreAllTails*(params: MEIMParams; cfg: MEIMConfig;
                     headId, relId: int;
-                    cache: seq[seq[Tensor]] = @[]): seq[float32] =
+                    cache: seq[seq[Tensor]] = @[];
+                    allowedIds: HashSet[int] = initHashSet[int]()): seq[float32] =
   result = newSeq[float32](cfg.numEntities)
   var hParts = newSeq[Tensor](cfg.K)
   var Mks    = newSeq[Tensor](cfg.K)
@@ -229,6 +230,10 @@ proc scoreAllTails*(params: MEIMParams; cfg: MEIMConfig;
   let allNormalized = if cache.len > 0: cache else: getNormalizedEntityPartitions(params, cfg)
 
   for tId in 0 ..< cfg.numEntities:
+    if allowedIds.len > 0 and tId notin allowedIds:
+      result[tId] = -1e30'f32
+      continue
+
     var s = 0.0'f32
     for k in 0 ..< cfg.K:
       let tk = allNormalized[tId][k]
@@ -238,7 +243,8 @@ proc scoreAllTails*(params: MEIMParams; cfg: MEIMConfig;
 
 proc scoreAllHeads*(params: MEIMParams; cfg: MEIMConfig;
                     tailId, relId: int;
-                    cache: seq[seq[Tensor]] = @[]): seq[float32] =
+                    cache: seq[seq[Tensor]] = @[];
+                    allowedIds: HashSet[int] = initHashSet[int]()): seq[float32] =
   result = newSeq[float32](cfg.numEntities)
   var tParts = newSeq[Tensor](cfg.K)
   var Mks    = newSeq[Tensor](cfg.K)
@@ -251,6 +257,10 @@ proc scoreAllHeads*(params: MEIMParams; cfg: MEIMConfig;
   let allNormalized = if cache.len > 0: cache else: getNormalizedEntityPartitions(params, cfg)
 
   for hId in 0 ..< cfg.numEntities:
+    if allowedIds.len > 0 and hId notin allowedIds:
+      result[hId] = -1e30'f32
+      continue
+
     var s = 0.0'f32
     for k in 0 ..< cfg.K:
       let hk = allNormalized[hId][k]

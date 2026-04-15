@@ -7,7 +7,7 @@
 ## Evaluation: filtered MRR, H@1, H@3, H@10 following the standard
 ## knowledge graph embedding protocol (Bordes et al., 2013).
 
-import math, random, sequtils, strformat, tables, algorithm, times
+import math, random, sequtils, strformat, tables, algorithm, times, sets
 import tensor, kg_loader, meim_model
 
 # ---------------------------------------------------------------------------
@@ -276,7 +276,8 @@ type
     score*:      float32
 
 proc predictTails*(params: MEIMParams; cfg: MEIMConfig; kg: KGDataset;
-                   headName, relName: string; topK: int = 10): seq[Prediction] =
+                   headName, relName: string; topK: int = 10;
+                   allowedIds: HashSet[int] = initHashSet[int]()): seq[Prediction] =
   ## Predict the top-K tail entities for a given (head, relation) pair.
   if headName notin kg.entityToId:
     echo &"Unknown entity: {headName}"; return
@@ -285,7 +286,7 @@ proc predictTails*(params: MEIMParams; cfg: MEIMConfig; kg: KGDataset;
 
   let headId = kg.entityToId[headName]
   let relId  = kg.relationToId[relName]
-  let scores = scoreAllTails(params, cfg, headId, relId)
+  let scores = scoreAllTails(params, cfg, headId, relId, allowedIds = allowedIds)
 
   # Rank by score descending.
   var ranked = toSeq(0 ..< cfg.numEntities)
@@ -298,7 +299,8 @@ proc predictTails*(params: MEIMParams; cfg: MEIMConfig; kg: KGDataset;
                           score: scores[eid])
 
 proc predictHeads*(params: MEIMParams; cfg: MEIMConfig; kg: KGDataset;
-                   tailName, relName: string; topK: int = 10): seq[Prediction] =
+                   tailName, relName: string; topK: int = 10;
+                   allowedIds: HashSet[int] = initHashSet[int]()): seq[Prediction] =
   ## Predict the top-K head entities for a given (relation, tail) pair.
   if tailName notin kg.entityToId:
     echo &"Unknown entity: {tailName}"; return
@@ -307,7 +309,7 @@ proc predictHeads*(params: MEIMParams; cfg: MEIMConfig; kg: KGDataset;
 
   let tailId = kg.entityToId[tailName]
   let relId  = kg.relationToId[relName]
-  let scores = scoreAllHeads(params, cfg, tailId, relId)
+  let scores = scoreAllHeads(params, cfg, tailId, relId, allowedIds = allowedIds)
 
   var ranked = toSeq(0 ..< cfg.numEntities)
   ranked.sort(proc(a, b: int): int = cmp(scores[b], scores[a]))

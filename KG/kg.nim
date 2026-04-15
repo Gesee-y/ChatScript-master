@@ -1,4 +1,5 @@
-import std/[tables, strutils, sets, deques, math, algorithm, sequtils, parseutils, os]
+import std/[tables, strutils, sets, deques, math, algorithm, sequtils,
+    parseutils, os]
 import kg_loader, meim_model, trainer
 
 ## Knowledge Graph — KGZS-SC Enhanced  (accuracy-safe edition)
@@ -178,7 +179,8 @@ proc isUpAllowed(kg: KnowledgeGraph, targetRelId, currentRelId: int): bool =
   let p = addr(kg.relPolicies[targetRelId])
   return p.allAllowedUp or currentRelId in p.allowedUp
 
-proc setSchema*(kg: KnowledgeGraph, relation, headTypeNode, tailTypeNode: string) =
+proc setSchema*(kg: KnowledgeGraph, relation, headTypeNode,
+    tailTypeNode: string) =
   ## Defines taxonomic constraints for a relation.
   let rId = kg.getOrAddRelation(relation)
   let hId = kg.getOrAddNode(headTypeNode)
@@ -190,19 +192,16 @@ proc isA*(kg: KnowledgeGraph, nodeId, ancestorId: int): bool =
   if nodeId == ancestorId: return true
   let isARelId = kg.relMap.getOrDefault("is_a", -1)
   if isARelId == -1: return false
-  
+
   var queue = initDeque[int]()
   queue.addLast(nodeId)
   var visited = initHashSet[int]()
   visited.incl(nodeId)
-  
+
   while queue.len > 0:
     let curr = queue.popFirst()
     if curr == ancestorId: return true
-    
-    # Remonter via 'is_a'
-    # Dans notre KG, 'is_a' est stocké soit en sortant (A is_a B) soit entrant.
-    # On veut remonter : A -> is_a -> B. Donc on suit 'outgoing[is_a]'.
+
     if kg.nodes[curr].outgoing.hasKey(isARelId):
       for parent in kg.nodes[curr].outgoing[isARelId]:
         if parent notin visited:
@@ -307,17 +306,17 @@ proc loadGloveEmbeddings*(kg: KnowledgeGraph, path: string) =
   var line = ""
   while f.readLine(line):
     if line.len == 0: continue
-    
+
     # Fast-scan for the first space to extract the word
     let firstSpace = line.find(' ')
     if firstSpace <= 0: continue
-    
+
     # Check if the word is relevant before doing any heavy parsing
     let wordLower = line[0 ..< firstSpace].toLowerAscii()
-    
+
     if lookup.hasKey(wordLower):
       let ids = lookup[wordLower]
-      
+
       # Determine dimension if we don't know it yet
       if kg.embedDim == 0:
         var count = 0
@@ -332,7 +331,7 @@ proc loadGloveEmbeddings*(kg: KnowledgeGraph, path: string) =
         kg.embedDim = count
 
       if kg.embedDim == 0: continue
-      
+
       var emb = newSeq[float](kg.embedDim)
       var pos = firstSpace
       var d = 0
@@ -340,14 +339,14 @@ proc loadGloveEmbeddings*(kg: KnowledgeGraph, path: string) =
         # Skip spaces
         while pos < line.len and line[pos] == ' ': inc pos
         if pos >= line.len: break
-        
+
         var val: float
         let consumed = parseFloat(line, val, pos)
         if consumed == 0: break
         emb[d] = val
         pos += consumed
         inc d
-      
+
       # Only assign if we successfully parsed exactly the expected number of dimensions
       if d == kg.embedDim:
         for id in ids:
@@ -475,7 +474,8 @@ proc searchTailBFS*(kg: KnowledgeGraph, head, relation: string,
   var foundIds = initHashSet[int]()
 
   # Schema Check: Expected tail ancestor
-  let tailAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[targetRelId].tailType else: -1
+  let tailAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[
+      targetRelId].tailType else: -1
 
   while queue.len > 0:
     let (currId, depth) = queue.popFirst()
@@ -556,7 +556,8 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
   var foundIds = initHashSet[int]()
 
   # Schema Check: Expected head ancestor
-  let headAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[targetRelId].headType else: -1
+  let headAncestor = if kg.relSchemas.hasKey(targetRelId): kg.relSchemas[
+      targetRelId].headType else: -1
 
   while queue.len > 0:
     let (currId, depth) = queue.popFirst()
@@ -609,7 +610,7 @@ proc searchHeadBFS*(kg: KnowledgeGraph, relation, tail: string,
 # ───────────────────────────────────────────────────────────────────────────
 
 proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
-                   topK: int = 5): seq[QueryResult] =
+                   topK: int = 10, threshold: float = 0.25): seq[QueryResult] =
   ## Pure embedding-based inference for (head, relation, ?).
   ## Results are always flagged `wasInferred = true`.
   ## Cache-first: a repeated call is O(nodes) lookup only.
@@ -636,13 +637,19 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
   # Fresh inference: Link Prediction based on neighbors
   # Goal: Find nodes S similar to `head`, then return what S links to via `relation`.
   var tailScores = initTable[int, float]()
+  let tailAncestor = if kg.relSchemas.hasKey(relid): kg.relSchemas[
+      relid].tailType else: -1
   for sId in 0 ..< kg.nodes.len:
     if sId == headId: continue
+    if (tailAncestor != -1 and not kg.isA(sId, tailAncestor)): continue
+
     let sim = cosineSim(headEmb, kg.nodes[sId].embedding)
-    if sim > 0.5: # Similarity threshold for neighborhood
+    if sim > threshold: # Similarity threshold for neighborhood
       # Check grounded outgoing edges for relation from this similar node S
       if kg.nodes[sId].outgoing.hasKey(relId):
         for tId in kg.nodes[sId].outgoing[relId]:
+          # Enforce Schema on candidates
+          if tailAncestor != -1 and not kg.isA(tId, tailAncestor): continue
           # Score is the max similarity to any neighbor that points to this tail
           tailScores[tId] = max(tailScores.getOrDefault(tId, 0.0), sim)
 
@@ -663,7 +670,7 @@ proc zeroShotTail*(kg: KnowledgeGraph, head, relation: string,
                             wasInferred: true))
 
 proc zeroShotHead*(kg: KnowledgeGraph, relation, tail: string,
-                   topK: int = 5): seq[QueryResult] =
+                   topK: int = 10): seq[QueryResult] =
   ## Symmetric zero-shot head inference.
   result = @[]
   if kg.embedDim == 0 or not kg.nodeMap.hasKey(tail): return
@@ -685,8 +692,11 @@ proc zeroShotHead*(kg: KnowledgeGraph, relation, tail: string,
     return cached[0 ..< min(topK, cached.len)]
 
   var scored: seq[(int, float)]
+  let headAncestor = if kg.relSchemas.hasKey(relId): kg.relSchemas[
+      relId].headType else: -1
   for i in 0 ..< kg.nodes.len:
     if i == tailId: continue
+    if headAncestor != -1 and not kg.isA(i, headAncestor): continue
     let sim = cosineSim(tailEmb, kg.nodes[i].embedding)
     if sim > 0.0: scored.add((i, sim))
 
@@ -722,6 +732,58 @@ proc topSimilarNodes*(kg: KnowledgeGraph, name: string,
     if a.score > b.score: -1 elif a.score < b.score: 1 else: 0)
   return scored[0 ..< min(k, scored.len)]
 
+proc getAllDescendants*(kg: KnowledgeGraph, ancestorId: int): HashSet[int] =
+  ## Returns all nodes that have 'ancestorId' as an ancestor via 'is_a' relation.
+  ## This is the inverse of isA(node, ancestor).
+  result = initHashSet[int]()
+  let isARelId = kg.relMap.getOrDefault("is_a", -1)
+  if isARelId == -1:
+    result.incl(ancestorId)
+    return
+
+  var queue = initDeque[int]()
+  queue.addLast(ancestorId)
+  result.incl(ancestorId)
+
+  while queue.len > 0:
+    let curr = queue.popFirst()
+    if kg.nodes[curr].incoming.hasKey(isARelId):
+      for child in kg.nodes[curr].incoming[isARelId]:
+        if child notin result:
+          result.incl(child)
+          queue.addLast(child)
+
+proc getAllowedEntities*(kg: KnowledgeGraph, relId: int, headMode: bool,
+    robust: bool): HashSet[int] =
+  ## Pre-calculates the set of entities satisfying taxonomic and robust constraints.
+  let ancestorId = if relId != -1 and kg.relSchemas.hasKey(relId):
+                     if headMode: kg.relSchemas[
+                         relId].headType else: kg.relSchemas[relId].tailType
+                   else: -1
+
+  var candidates: HashSet[int]
+  var hasAncestor = false
+  if ancestorId != -1:
+    candidates = kg.getAllDescendants(ancestorId)
+    hasAncestor = true
+
+  let robustSet = if relId != -1:
+                    if headMode: kg.relAllowedHeads.getOrDefault(relId,
+                        initHashSet[int]())
+                    else: kg.relAllowedTails.getOrDefault(relId, initHashSet[
+                        int]())
+                  else: initHashSet[int]()
+
+  if robust and robustSet.len > 0:
+    if hasAncestor:
+      result = initHashSet[int]()
+      for id in robustSet:
+        if id in candidates: result.incl(id)
+    else:
+      result = robustSet
+  else:
+    result = candidates
+
 # ───────────────────────────────────────────────────────────────────────────
 # Tests
 # ───────────────────────────────────────────────────────────────────────────
@@ -733,11 +795,11 @@ proc topSimilarNodes*(kg: KnowledgeGraph, name: string,
 type
   HybridEngine* = object
     ## Combines Symbolic KG and Neural MEIM.
-    kg*:           KnowledgeGraph
-    meimParams*:   MEIMParams
-    meimConfig*:   MEIMConfig
-    dataset*:      KGDataset  ## Shared vocabulary mappings
-    useNeural*:    bool       ## Enable/disable neural fallback
+    kg*: KnowledgeGraph
+    meimParams*: MEIMParams
+    meimConfig*: MEIMConfig
+    dataset*: KGDataset ## Shared vocabulary mappings
+    useNeural*: bool    ## Enable/disable neural fallback
 
 proc newHybridEngine*(kg: KnowledgeGraph): HybridEngine =
   result.kg = kg
@@ -749,28 +811,28 @@ proc syncMappings*(engine: var HybridEngine) =
   var rToId = initTable[string, int]()
   var idToE: seq[string]
   var idToR: seq[string]
-  
+
   for name, id in engine.kg.nodeMap:
     eToId[name] = id
     if id >= idToE.len: idToE.setLen(id + 1)
     idToE[id] = name
-    
+
   for name, id in engine.kg.relMap:
     rToId[name] = id
     if id >= idToR.len: idToR.setLen(id + 1)
     idToR[id] = name
-    
+
   engine.dataset.entityToId = eToId
   engine.dataset.relationToId = rToId
   engine.dataset.idToEntity = idToE
   engine.dataset.idToRelation = idToR
-  
+
   # Update config sizes
   engine.meimConfig.numEntities = idToE.len
   engine.meimConfig.numRelations = idToR.len
 
-proc queryHybridTail*(engine: var HybridEngine, 
-                      head, relation: string, 
+proc queryHybridTail*(engine: var HybridEngine,
+                      head, relation: string,
                       threshold: float = 0.6,
                       robust: bool = true): seq[QueryResult] =
   ## Cascade query logic: Exact -> BFS -> ZSL -> MEIM.
@@ -779,7 +841,7 @@ proc queryHybridTail*(engine: var HybridEngine,
 
   let rId = engine.kg.relMap.getOrDefault(relation, -1)
   let hId = engine.kg.nodeMap.getOrDefault(head, -1)
-  
+
   # Schema Check for Head
   if rId != -1 and hId != -1 and engine.kg.relSchemas.hasKey(rId):
     let schema = engine.kg.relSchemas[rId]
@@ -798,50 +860,46 @@ proc queryHybridTail*(engine: var HybridEngine,
     if maxScore >= threshold: return
 
   # 3. zero-shot Inference
-  let allowedTails = if rId != -1: engine.kg.relAllowedTails.getOrDefault(rId, initHashSet[int]()) else: initHashSet[int]()
-  let tailAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(rId): engine.kg.relSchemas[rId].tailType else: -1
+  let allowedTails = if rId != -1: engine.kg.relAllowedTails.getOrDefault(rId,
+      initHashSet[int]()) else: initHashSet[int]()
+  let tailAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(
+      rId): engine.kg.relSchemas[rId].tailType else: -1
 
   let zsl = engine.kg.zeroShotTail(head, relation)
   var filteredZsl: seq[QueryResult] = @[]
   for res in zsl:
     let tId = engine.kg.nodeMap.getOrDefault(res.name, -1)
     if tId == -1: continue
-    
+
     # Check Schema
     if tailAncestor != -1 and not engine.kg.isA(tId, tailAncestor): continue
-    
+
     # Check Robust Filter (Historical usage)
     if not robust or allowedTails.len == 0 or tId in allowedTails:
       filteredZsl.add res
 
   if filteredZsl.len > 0:
     let maxScore = filteredZsl.mapIt(it.score).foldl(max(a, b), 0.0)
-    if maxScore >= threshold: 
+    if maxScore >= threshold:
       result = filteredZsl
       return
 
   # 4. Neural Fallback (MEIM)
   if engine.useNeural and engine.meimParams.entityEmb.data.len > 0:
-    let pred = predictTails(engine.meimParams, engine.meimConfig, engine.dataset, 
-                            head, relation, topK = 30)
+    let filter = engine.kg.getAllowedEntities(rId, false, robust)
+    let pred = predictTails(engine.meimParams, engine.meimConfig, engine.dataset,
+                            head, relation, topK = 30, allowedIds = filter)
     for p in pred:
-      let tId = engine.kg.nodeMap.getOrDefault(p.entityName, -1)
-      if tId == -1: continue
-      
-      # Check Schema
-      if tailAncestor != -1 and not engine.kg.isA(tId, tailAncestor): continue
-      
-      # Check Robust Filter
-      if not robust or allowedTails.len == 0 or tId in allowedTails:
-          result.add QueryResult(name: p.entityName, score: p.score.float, kind: rkInferred, wasInferred: true)
-          if result.len >= 10: break
+      result.add QueryResult(name: p.entityName, score: p.score.float,
+          kind: rkInferred, wasInferred: true)
+      if result.len >= 10: break
 
-proc queryHybridHead*(engine: var HybridEngine, 
-                      relation, tail: string, 
+proc queryHybridHead*(engine: var HybridEngine,
+                      relation, tail: string,
                       threshold: float = 0.6,
                       robust: bool = true): seq[QueryResult] =
   ## Cascade query logic: Exact -> BFS -> ZSL -> MEIM.
-  
+
   let rId = engine.kg.relMap.getOrDefault(relation, -1)
   let tId = engine.kg.nodeMap.getOrDefault(tail, -1)
 
@@ -854,16 +912,18 @@ proc queryHybridHead*(engine: var HybridEngine,
   # 1. Exact query
   result = engine.kg.queryHead(relation, tail)
   if result.len > 0: return
-  
+
   # 2. BFS Inference
   result = engine.kg.searchHeadBFS(relation, tail)
   if result.len > 0:
     let maxScore = result.mapIt(it.score).foldl(max(a, b), 0.0)
     if maxScore >= threshold: return
-    
+
   # 3. Zero-Shot Inference
-  let allowedHeads = if rId != -1: engine.kg.relAllowedHeads.getOrDefault(rId, initHashSet[int]()) else: initHashSet[int]()
-  let headAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(rId): engine.kg.relSchemas[rId].headType else: -1
+  let allowedHeads = if rId != -1: engine.kg.relAllowedHeads.getOrDefault(rId,
+      initHashSet[int]()) else: initHashSet[int]()
+  let headAncestor = if rId != -1 and engine.kg.relSchemas.hasKey(
+      rId): engine.kg.relSchemas[rId].headType else: -1
 
   let zsl = engine.kg.zeroShotHead(relation, tail)
   var filteredZsl: seq[QueryResult] = @[]
@@ -879,13 +939,13 @@ proc queryHybridHead*(engine: var HybridEngine,
 
   if filteredZsl.len > 0:
     let maxScore = filteredZsl.mapIt(it.score).foldl(max(a, b), 0.0)
-    if maxScore >= threshold: 
+    if maxScore >= threshold:
       result = filteredZsl
       return
 
   # 4. Neural Fallback (MEIM)
   if engine.useNeural and engine.meimParams.entityEmb.data.len > 0:
-    let pred = predictHeads(engine.meimParams, engine.meimConfig, engine.dataset, 
+    let pred = predictHeads(engine.meimParams, engine.meimConfig, engine.dataset,
                             tail, relation, topK = 30)
     for p in pred:
       let hId = engine.kg.nodeMap.getOrDefault(p.entityName, -1)
@@ -895,25 +955,25 @@ proc queryHybridHead*(engine: var HybridEngine,
       if headAncestor != -1 and not engine.kg.isA(hId, headAncestor): continue
 
       if not robust or allowedHeads.len == 0 or hId in allowedHeads:
-          result.add QueryResult(name: p.entityName, score: p.score.float, kind: rkInferred, wasInferred: true)
-          if result.len >= 10: break
+        result.add QueryResult(name: p.entityName, score: p.score.float,
+          kind: rkInferred, wasInferred: true)
 
 proc queryCombinedTails*(engine: var HybridEngine,
-                         heads: seq[string], 
+                         heads: seq[string],
                          relation: string): seq[QueryResult] =
   ## Combined interrogation: Interrogate multiple heads (e.g., 2 symptoms)
   ## and find the best candidate tail (disease) by intersecting results.
   if heads.len == 0: return
-  
+
   var candidateScores = initTable[string, float]()
   var candidateCounts = initTable[string, int]()
-  
+
   for h in heads:
     let res = engine.queryHybridTail(h, relation, robust = true)
     for r in res:
       candidateScores[r.name] = candidateScores.getOrDefault(r.name, 0.0) + r.score
       candidateCounts[r.name] = candidateCounts.getOrDefault(r.name, 0) + 1
-      
+
   # Intersection + mean score
   for name, count in candidateCounts:
     if count == heads.len:
@@ -923,7 +983,7 @@ proc queryCombinedTails*(engine: var HybridEngine,
         kind: rkInferred,
         wasInferred: true
       )
-      
+
   result.sort(proc(a, b: QueryResult): int = cmp(b.score, a.score))
 
 proc queryCombinedHeads*(engine: var HybridEngine,
@@ -931,16 +991,16 @@ proc queryCombinedHeads*(engine: var HybridEngine,
                           tails: seq[string]): seq[QueryResult] =
   ## Interrogate multiple tails (symptoms) and find the best candidate head (disease).
   if tails.len == 0: return
-  
+
   var candidateScores = initTable[string, float]()
   var candidateCounts = initTable[string, int]()
-  
+
   for t in tails:
     let res = engine.queryHybridHead(relation, t, robust = true)
     for r in res:
       candidateScores[r.name] = candidateScores.getOrDefault(r.name, 0.0) + r.score
       candidateCounts[r.name] = candidateCounts.getOrDefault(r.name, 0) + 1
-      
+
   for name, count in candidateCounts:
     if count == tails.len:
       result.add QueryResult(
@@ -949,7 +1009,7 @@ proc queryCombinedHeads*(engine: var HybridEngine,
         kind: rkInferred,
         wasInferred: true
       )
-      
+
   result.sort(proc(a, b: QueryResult): int = cmp(b.score, a.score))
 
 when isMainModule:
@@ -1080,13 +1140,13 @@ when isMainModule:
         "caffeine 0.5 0.5 0.5 0.5"
       ].join("\n")
       writeFile(glovePath, content)
-      
+
       var kgG = newKnowledgeGraph()
       kgG.addTriplet("Aspirin", "treats", "Pain")
       kgG.addTriplet("MedicA", "is_a", "Aspirin")
-      
+
       kgG.loadGloveEmbeddings(glovePath)
-      
+
       check kgG.embedDim == 4
       check kgG.nodes[kgG.nodeMap["Aspirin"]].embedding[0] == 1.0
       check kgG.nodes[kgG.nodeMap["MedicA"]].embedding[1] == 0.1
@@ -1094,28 +1154,28 @@ when isMainModule:
       check kgG.nodes[kgG.nodeMap["Pain"]].embedding.allIt(it == 0.0)
       # Graph should NOT have caffeine
       check "caffeine" notin kgG.nodeMap
-      
+
       removeFile(glovePath)
 
     test "HybridEngine cascade — Exact -> BFS":
       var kgH = newKnowledgeGraph()
       kgH.addTriplet("A", "is_a", "B")
       kgH.addTriplet("B", "is_a", "C")
-      
+
       var engine = newHybridEngine(kgH)
       engine.syncMappings()
-      
+
       # 1. Exact
       let resExact = engine.queryHybridTail("A", "is_a")
       check resExact.len == 1
       check resExact[0].name == "B"
       check resExact[0].kind == rkExact
-      
+
       # 2. BFS Fallback
-      let resBFS = engine.queryHybridTail("A", "target", threshold = 0.5) 
+      let resBFS = engine.queryHybridTail("A", "target", threshold = 0.5)
       # "target" doesn't exist, so it should be empty
       check resBFS.len == 0
-      
+
       # Now add a path for BFS
       kgH.addTriplet("A", "part_of", "B")
       kgH.addTriplet("B", "treats", "D")
@@ -1136,7 +1196,7 @@ when isMainModule:
       ])
       var engine = newHybridEngine(kgC)
       engine.syncMappings()
-      
+
       # Querying only S1
       let res1 = engine.queryCombinedTails(@["S1"], "symptom_of")
       check res1.len == 2 # D1, D2
